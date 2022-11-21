@@ -6,7 +6,7 @@ function HeroImage(props) {
         <>
             <div className='Hero-image'>
             {/* <Navbar/> */}
-                <div className='hero-text' style={{marginTop:'300px',marginLeft:'150px'}}>
+                <div className='hero-text' style={{marginLeft:'150px'}}>
                     <h1 className='Enhancing' style={{fontSize:'40px',fontWeight:'bolder',color:'#1E1E1E'}}>
                     Enhancing Brands, Enhancing Lives
                     </h1>

@@ -1,12 +1,12 @@
 import React from 'react';
 import HeroImage from '../components/HeroImage';
 import rect2 from '../media/Rectangle 2.png';
-import rect3 from '../media/Rectangle 3.png';
 
 function Home(props) {
     return (
         <>
-            {/* <HeroImage/> */}
+            <HeroImage/>
+            {/* about section */}
             <div className='about'>
                 <div className='grid'>
                     <div className='grid-item'>
@@ -44,7 +44,48 @@ function Home(props) {
                     </p>
                 </div>
             </div>
+            {/* picture section */}
+            <div className='pic-grid'>
+                <div className='grid-item-1'></div>
+                <div className='grid-item-2'></div>
+                <div className='grid-item-3'></div>
+                <div className='grid-item-4'></div>
+            </div>
+            {/* testimony section */}
+            <div className='testimony'>
+                <div style={{textAlign:"center"}}>
+                    <h2>Testimonials</h2>
+                    <p>We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.</p>
+                </div>
+                {/* testimony cards */}
+                <div style={{paddingLeft:'100px',paddingRight:'100px',paddingBottom:'10px'}}>
+                    <div className='card-grid-1'>
+                        <div className='grid-card-1'></div>
+                        <div className='grid-card-2'></div>
+                    </div>
+                    <div className='card-grid-2'>
+                        <div className='grid-card-3'>
+                            <p>Recreating Stories and Experiences for manufacturing Industries Recreating Stories and Experiences for manufacturing IndustriesRecreating Stories and Experiences for manufacturing Industries</p>
+                        </div>
+                        <div className='grid-card-4'></div>
+                    </div>
+                    {/* percentage */}
+                    <div className='grid-percentage'>
+                        <div className='grid-percentage-1'>
 
+                        </div>
+                        <div className='grid-percentage-2'>
+
+                        </div>
+                        <div className='grid-percentage-3'>
+
+                        </div>
+                        <div className='grid-percentage-4'>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     );
 }
