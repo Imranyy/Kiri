@@ -6,14 +6,14 @@ function HeroImage(props) {
         <>
             <div className='Hero-image'>
             {/* <Navbar/> */}
-                <div>
-                    <h1 className='Enhancing'>
+                <div className='hero-text' style={{marginTop:'300px',marginLeft:'150px'}}>
+                    <h1 className='Enhancing' style={{fontSize:'40px',fontWeight:'bolder'}}>
                     Enhancing Brands, Enhancing Lives
                     </h1>
-                    <p className='text'>
+                    <p className='text' style={{marginTop:"20px",fontSize:'20px'}}>
                         We focus on deep customer insights to provide growth.
                     </p>
-                    <button className='btn btn-danger'>
+                    <button style={{marginTop:"20px", color:'white', background:'red',width:'100px',height:'50px', border:'none'}}>
                         Contact Us
                     </button>
                 </div>
