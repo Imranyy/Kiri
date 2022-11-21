@@ -19,14 +19,16 @@ button{
   cursor: pointer;
 }
 .about{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  max-width: 100%;
   background: rgb(245, 238, 230);
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  max-width: 100%;
 }
 .grid-item2{
   margin-left: 100px;
