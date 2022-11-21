@@ -1,11 +1,11 @@
 import React from 'react';
-
+import {Link} from "react-router-dom";
 function Navbar(props) {
     return (
         <>
             <nav class="navbar navbar-expand-lg bg-light" style={{boxShadow: "0 2px 4px 0 rgba(0,0,0,0.2)"}}>
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
+                    <Link to='/' class="navbar-brand">Kiri</Link>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
