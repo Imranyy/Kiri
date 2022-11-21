@@ -122,3 +122,43 @@ button{
   grid-template-columns: repeat(4,1fr);
   max-width: 100%;
 }
+
+/* footer */
+footer{
+  color:#ffffff;
+  height: 380px;
+  background: linear-gradient(90deg, #CC2031 31.98%, #E9AF3F 100%);
+  padding-top: 50px;
+}
+.content{
+  display: flex;
+  justify-content: space-around;
+}
+footer h2{
+  font-weight: bolder;
+  font-size: 30px;
+  line-height: 44px;
+}
+footer  ul{
+  margin-top: 20px;
+}
+footer ul li{
+  margin-top: 10px;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #FFFAFA;
+}
+footer ul li img{
+  width: 32px;
+  height:30px;
+}
+footer ul li a{
+  text-decoration: none;
+  color: white;
+}
+footer .social-icons{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}

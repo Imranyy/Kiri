@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/Footer';
 import HeroImage from '../components/HeroImage';
 import rect2 from '../media/Rectangle 2.png';
 
@@ -86,6 +87,7 @@ function Home(props) {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </>
     );
 }
