@@ -100,7 +100,7 @@ function Home(props) {
                         <h3>News article title</h3>
                         <p>Short description Short description Short description Short description Short description</p>
                     </div>
-                    <div className='grid-article-2'>
+                    <div className='grid-article-1'>
                         <img src={articleImage2} alt='..'/>
                         <h3>News article title</h3>
                         <p>Short description Short description Short description Short description Short description</p>

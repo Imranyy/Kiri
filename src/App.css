@@ -1,10 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
 *{
   padding: 0;
   margin: 0;
-  font-family: 'League Spartan', sans-serif;
-}
-.heading {
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Helvetica'; */
 }
 nav{
   margin-left: 128px;
@@ -101,7 +100,7 @@ button{
 .grid-item-2{
   width: 360px;
   height: 300px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 82.81%), url('./media/Brand\ management\ image.png');
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 81.77%), url('./media/Brand\ management\ image.png');
 }
 .grid-item-3{
   width: 360px;
@@ -111,7 +110,7 @@ button{
 .grid-item-4{
   width: 268px;
   height: 300px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 71.35%), url('./media/Training\ Image.png');
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 81.77%), url('./media/Training\ Image.png');
 }
 
 /* testimony */
@@ -173,7 +172,7 @@ button{
   padding-top: 30px;
   padding-bottom: 40px;
   color:white;
-  height: 688px;
+  height: 550px;
   background: linear-gradient(90deg, #CC2031 31.98%, #E9AF3F 100%);
 }
 .recent-articles h4{
@@ -194,6 +193,12 @@ button{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   max-width: 100%;
+}
+.grid-article-1 h3{
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 44px;
+  margin-bottom: 5px;
 }
 
 /* talk more section */
