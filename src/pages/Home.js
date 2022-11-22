@@ -2,6 +2,8 @@ import React from 'react';
 import Footer from '../components/Footer';
 import HeroImage from '../components/HeroImage';
 import rect2 from '../media/Rectangle 2.png';
+import articleImage1 from "../media/articleImage1.png";
+import articleImage2 from "../media/articleImage2.png";
 
 function Home(props) {
     return (
@@ -87,6 +89,25 @@ function Home(props) {
                     </div>
                 </div>
             </div>
+            {/* recent article section */}
+            <div className='recent-articles'>
+                <h4>RECENT ARTICLES</h4>
+                <h2>Get Updated on the latest trends</h2>
+                <div className='grid-article'>
+                    <div className='grid-article-1'>
+                        <img src={articleImage1} alt='..'/>
+                        <h3>News article title</h3>
+                        <p>Short description Short description Short description Short description Short description</p>
+                    </div>
+                    <div className='grid-article-2'>
+                        <img src={articleImage2} alt='..'/>
+                        <h3>News article title</h3>
+                        <p>Short description Short description Short description Short description Short description</p>
+                    </div>
+                </div>
+            </div>
+
+
             {/* talk more section */}
             <div className='talk-more'>
                 <div className='grid-talk-more'>

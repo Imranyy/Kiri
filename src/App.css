@@ -165,6 +165,36 @@ button{
   max-width: 100%;
 }
 
+/* recent article */
+.recent-articles{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  color:white;
+  height: 688px;
+  background: linear-gradient(90deg, #CC2031 31.98%, #E9AF3F 100%);
+}
+.recent-articles h4{
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 33px;
+  text-transform: uppercase;
+}
+.recent-articles h2{
+  font-weight: lighter;
+  font-size: 40px;
+  line-height: 55px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.grid-article{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  max-width: 100%;
+}
+
 /* talk more section */
 .talk-more{
   background: rgb(245, 238, 230);

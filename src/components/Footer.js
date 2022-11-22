@@ -34,13 +34,13 @@ function Footer(props) {
                             <li style={{display:'flex'}}>
                                 <img src={mail} alt='..'/>
                                 <div style={{display:'inline-block',marginLeft:'20px'}}>
-                                    <p>Office Address</p><h3>Kisumu some place</h3>
+                                    <p>Email Us</p><h3>someemaildress@email.com</h3>
                                 </div>
                             </li>
                             <li style={{display:'flex'}}>
                                 <img src={phone} alt='..'/>
                                 <div style={{diplay:'inline-block',marginLeft:'20px'}}>
-                                    <p>Office Address</p><h3>Kisumu some place</h3>
+                                    <p>Call Us</p><h3>+25470090099848</h3>
                                 </div>
                             </li>
                         </ul>
