@@ -87,6 +87,29 @@ function Home(props) {
                     </div>
                 </div>
             </div>
+            {/* talk more section */}
+            <div className='talk-more'>
+                <div className='grid-talk-more'>
+                    <div className='grid-talk-1'>
+                        <h1>Let’s talk about building your reputation</h1>
+                    </div>
+                    <div className='grid-talk-2'>
+                        <form>
+                            <h3 style={{marginBottom:"20px",width:"242px",height:"44px",fontSize:'40px',fontWeight:'bolder'}}>Get in touch</h3>
+                            <label>Name</label><br/>
+                            <input/><br/><br/>
+                            <label>Email</label><br/>
+                            <input/><br/><br/>
+                            <label>Phone</label><br/>
+                            <input/><br/><br/>
+                            <label>Message</label><br/>
+                            <textarea></textarea><br/>
+                            <button>Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
             <Footer/>
         </>
     );
