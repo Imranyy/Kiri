@@ -338,13 +338,32 @@ button{
   height: 100vh;
 }
 .header{
+  padding-left: 125px;
   height: 529px;
   left: -1px;
   top: 105px;
   background:  url('./media/blogPageImages/Rectangle\ 56.png');
 }
 .header h1{
-
+  width: 594px;
+  height: 137px;
+  padding-top: 166px;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 66px;
+  background: linear-gradient(90deg, #CC2031 31.98%, #E9AF3F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+}
+.header button{
+  margin-top: 10px;
+  color: #FFFAFA;
+  width: 135px;
+  height: 50px;
+  background: #CC2031;
+  border: none;
 }
 /* footer */
 footer{
