@@ -54,16 +54,18 @@ function Home(props) {
                     </div>
                 </div>
 
-                <div style={{display:'flex',justifyContent:'center',marginTop:'50px',lineHeight: '55px'}}>
-                    <h1 className= 'heading' style={{color:'red',marginRight:'6px'}}>Recreating</h1> 
-                    <h1 className= 'heading' style={{fontWeight:'normal'}}>Stories and Experiences for manufacturing Industries</h1>
-                </div>
+                <div className='vectorbuld2'>
+                    <div style={{display:'flex',justifyContent:'center',marginTop:'50px',lineHeight: '55px'}}>
+                        <h1 className= 'heading' style={{color:'red',marginRight:'6px'}}>Recreating</h1> 
+                        <h1 className= 'heading' style={{fontWeight:'normal'}}>Stories and Experiences for manufacturing Industries</h1>
+                    </div>
 
-                <div style={{textAlign:'center',marginTop:'30px',lineHeight: '55px'}}>
-                    <h3 className='heading' >SERVICES</h3>
-                    <p style={{marginTop:'-25px'}}>
-                        We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.
-                    </p>
+                    <div style={{textAlign:'center',marginTop:'30px',lineHeight: '55px'}}>
+                        <h3 className='heading' >SERVICES</h3>
+                        <p style={{marginTop:'-25px'}}>
+                            We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.
+                        </p>
+                    </div>
                 </div>
             </div>
             {/* picture section */}

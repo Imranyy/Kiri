@@ -66,6 +66,8 @@ button{
   padding-bottom: 40px;
 }
 .grid{
+  background: url('./media/VectorBuld.png');
+  background-repeat: no-repeat;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   max-width: 100%;
@@ -114,11 +116,20 @@ button{
   height: 300px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 81.77%), url('./media/Training\ Image.png');
 }
+.vectorbuld2{
+  background: url('./media/Vectorbuld2.png');
+  background-repeat: no-repeat;
+  background-size: 150px;
+  background-position: right top;
 
+}
 /* testimony */
 .testimony{
   background: rgb(245, 238, 230);
   padding-top: 40px;
+  background: url('./media/vectorQuote1.png');
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 /* grid-card-1 */
 .card-grid-1{
@@ -133,6 +144,9 @@ button{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   max-width: 100%;
+  background: url('./media/vectorQuote2.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 /* card */
 .grid-card{
@@ -202,6 +216,7 @@ button{
   background: #1E1E1E;
 }
 .grid-history{
+  background: url('./media/VectorHourGlass.png') no-repeat right top;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   max-width: 100%;
@@ -270,8 +285,10 @@ button{
   padding-right: 100px;
   padding-top: 30px;
   padding-bottom: 40px;
+  height: 500px;
 }
 .grid-talk-more{
+  background: url('./media/Vectorchat.png') no-repeat top left;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   max-width: 100%;
@@ -286,12 +303,14 @@ button{
 }
 .grid-talk-2{
   margin-left: 50px;
+  background: url('./media/VectorChat2.png') no-repeat right;
+  background-size: 400px;
 }
 .grid-talk-2 form{
   padding-top: 26px;
   padding-left: 50px;
   width: 369px;
-  height: 538px;
+  height: 490px;
   background: rgba(233, 175, 63, 0.2);
 }
 .grid-talk-2 form input{
