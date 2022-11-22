@@ -4,6 +4,7 @@ import HeroImage from '../components/HeroImage';
 import rect2 from '../media/Rectangle 2.png';
 import articleImage1 from "../media/articleImage1.png";
 import articleImage2 from "../media/articleImage2.png";
+import history from '../media/historyImage.png'
 
 function Home(props) {
     return (
@@ -90,6 +91,26 @@ function Home(props) {
                     </div>
                 </div>
             </div>
+            {/* history section */}
+            <div className='history-section'>
+                <div className='grid-history'>
+                    <div className='grid-history-1'>
+                        <div className='reflection'></div>
+                        <img src={history} alt='...'/>
+                    </div>
+                    <div className='grid-history-2'>
+                        <h4>Our history</h4>
+                        <p>Kiri Marketing Consultants is a Private Limited company founded in 2020 during the Covid 19 pandemic.
+
+                            Our Founder has been a beneficiary of many missions driven projects especially ones that support women entrepreneurs for sustainable impact. She also has professional experience working for a Non-Profit organization. Her experiences and such initiatives have enabled her to harness her skills as a team leader and helped her gain a better perspective when it comes to mission-driven companies.
+
+                            “The company was initially a Social Media Management company for small entrepreneurs and start-up companies and was birthed out of passion. With time and through more experience and realization of the gap in the market, there was a need to re-strategize and rebrand to full Digital Marketing, Branding and PR Agency for mission driven companies, social enterprises and nonprofit organizations.”
+
+                            Eileen, Founder/ CEO.
+                        </p>
+                    </div>
+                </div>
+            </div>
             {/* recent article section */}
             <div className='recent-articles'>
                 <h4>RECENT ARTICLES</h4>
@@ -119,13 +140,13 @@ function Home(props) {
                         <form>
                             <h3 style={{marginBottom:"20px",width:"242px",height:"44px",fontSize:'40px',fontWeight:'bolder'}}>Get in touch</h3>
                             <label>Name</label><br/>
-                            <input/><br/><br/>
+                            <input type="text" required/><br/><br/>
                             <label>Email</label><br/>
-                            <input/><br/><br/>
+                            <input type='email' required/><br/><br/>
                             <label>Phone</label><br/>
-                            <input/><br/><br/>
+                            <input type="number" required/><br/><br/>
                             <label>Message</label><br/>
-                            <textarea></textarea><br/>
+                            <textarea required></textarea><br/>
                             <button>Send Message</button>
                         </form>
                     </div>

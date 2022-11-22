@@ -3,8 +3,10 @@
   padding: 0;
   margin: 0;
   font-family: 'Nunito', sans-serif;
-  /* font-family: 'Helvetica'; */
 }
+/* .header{
+  font-family: 'League Spartan';
+} */
 nav{
   margin-left: 128px;
   display: flex;
@@ -164,7 +166,42 @@ button{
   grid-template-columns: repeat(4,1fr);
   max-width: 100%;
 }
-
+/* history section */
+.history-section{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  color:white;
+  height: 400px;
+  background: #1E1E1E;
+}
+.grid-history{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  max-width: 100%;
+}
+.grid-history-1 .reflection{
+  width: 380px;
+  height: 380px;
+  background: url('./media/reflectionImage.png');
+}
+.grid-history-1 img{
+  margin-top: -360px;
+  height: 380px;
+  width: 380px;
+  margin-left: 30px;
+}
+.grid-history-2{
+  margin-top: 20px;
+}
+.grid-history-2 h4{
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 33px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
 /* recent article */
 .recent-articles{
   padding-left: 100px;
