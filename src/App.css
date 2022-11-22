@@ -45,7 +45,7 @@ nav ul a:hover{
 /* Hero Image */
 .Hero{
   padding-top: 50px;
-  background: linear-gradient(180deg, #FBEFD9 3.13%, rgba(255, 250, 250, 0) 100%), linear-gradient(90.51deg, rgba(250, 233, 234, 0.6) 51.15%, rgba(255, 250, 250, 0) 96.81%), url('./media/Hero\ Image.png');
+  background:  url('./media/Hero\ Image.png');
 }
 .Hero-image{
   width: 100%;
@@ -99,22 +99,22 @@ button{
 .grid-item-1{
   width: 360px;
   height: 300px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 76.04%), url('./media/Public\ relations\ image.png');
+  background: url('./media/Public\ relations\ image.png');
 }
 .grid-item-2{
   width: 360px;
   height: 300px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 81.77%), url('./media/Brand\ management\ image.png');
+  background:  url('./media/Brand\ management\ image.png');
 }
 .grid-item-3{
   width: 360px;
   height: 300px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 81.77%), url('./media/Digital\ Marketing\ Image.png');
+  background:  url('./media/Digital\ Marketing\ Image.png');
 }
 .grid-item-4{
   width: 268px;
   height: 300px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 81.77%), url('./media/Training\ Image.png');
+  background:  url('./media/Training\ Image.png');
 }
 .vectorbuld2{
   background: url('./media/Vectorbuld2.png');
@@ -331,6 +331,20 @@ button{
   height: 50px;
   background: #CC2031;
   color: #FFFAFA;
+}
+/* blogPages css */
+.blogPage{
+  background: rgb(245, 238, 230); 
+  height: 100vh;
+}
+.header{
+  height: 529px;
+  left: -1px;
+  top: 105px;
+  background:  url('./media/blogPageImages/Rectangle\ 56.png');
+}
+.header h1{
+
 }
 /* footer */
 footer{
