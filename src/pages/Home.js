@@ -4,7 +4,20 @@ import HeroImage from '../components/HeroImage';
 import rect2 from '../media/Rectangle 2.png';
 import articleImage1 from "../media/articleImage1.png";
 import articleImage2 from "../media/articleImage2.png";
-import history from '../media/historyImage.png'
+import history from '../media/historyImage.png';
+import leftArrowIcon from '../media/Vector (1).png';
+import rightArrowIcon from '../media/Vector.png';
+import image4 from '../media/image 4.png';
+import image5 from '../media/image 5.png';
+import image6 from '../media/image 6.png';
+import image7 from '../media/image 7.png';
+import image8 from '../media/image 8.png';
+import image9 from '../media/image 9.png';
+import image11 from '../media/image 11.png';
+import person from '../media/person.png';
+import network from '../media/network.png';
+import eye from '../media/eye.png';
+import plane from '../media/aeroplane.png';
 
 function Home(props) {
     return (
@@ -77,16 +90,36 @@ function Home(props) {
                     {/* percentage */}
                     <div className='grid-percentage'>
                         <div className='grid-percentage-1'>
-
+                             <img src={person} alt='...'/><h2>37+</h2>
+                            <p>Happy Clients</p>
                         </div>
                         <div className='grid-percentage-2'>
-
+                            <img src={network} alt='...'/><h2>98%</h2>
+                            <p>Positive Feedback</p>
                         </div>
                         <div className='grid-percentage-3'>
-
+                            <img src={eye} alt='...'/><h2>835+</h2>
+                            <p>Loyal Followers</p>
                         </div>
                         <div className='grid-percentage-4'>
+                            <img src={plane} alt='...'/><h2>50+</h2>
+                            <p>Projects Delivered</p>
+                        </div>
+                    </div>
 
+                    {/* worked with */}
+                    <div className='worked-with'>
+                        <h4>we’ve worked with</h4>
+                        <div className='company-image'>
+                            <img width='10' height='15' src={leftArrowIcon} style={{cursor:'pointer'}} alt='...'/>
+                                <img width='65' height='50' src={image4} alt='...'/>
+                                <img width='65' height='50' src={image5} alt='...'/>
+                                <img width='65' height='50' src={image6} alt='...'/>
+                                <img width='65' height='50' src={image7} alt='...'/>
+                                <img width='65' height='50' src={image8} alt='...'/>
+                                <img width='65' height='50' src={image9} alt='...'/>
+                                <img width='65' height='50' src={image11} alt='...'/>
+                            <img width='10' height='15' src={rightArrowIcon} style={{cursor:'pointer'}} alt='...'/>
                         </div>
                     </div>
                 </div>

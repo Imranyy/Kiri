@@ -165,6 +165,36 @@ button{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   max-width: 100%;
+  margin-bottom: 20px;
+}
+.grid-percentage img{
+  margin-left: 45px;
+  width: 20px;
+  height:15px;
+}
+.grid-percentage h2{
+  margin-top: -30px;
+  margin-left: 70px;
+  font-weight: 200;
+}
+.grid-percentage p{
+  letter-spacing: 0.02em;
+}
+/* worked-with */
+.worked-with{
+  text-align: center;
+}
+.worked-with h4{
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #1E1E1E;
+}
+.worked-with .company-image{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
 }
 /* history section */
 .history-section{
