@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Footer from '../components/Footer';
 import HeroImage from '../components/HeroImage';
 import rect2 from '../media/Rectangle 2.png';
@@ -24,6 +24,30 @@ import profile3 from '../media/Profile3.png';
 import profile4 from '../media/Profile4.png';
 
 function Home(props) {
+    const [name,setName]=useState('');
+    const [email,setEmail]=useState('');
+    const [number,setNumber]=useState(0);
+    const [text,setText]=useState('');
+    //send email
+    const sendMail=async(e)=>{
+        e.preventDefault();
+        try {
+            const url='http://localhost:5000/api/send';
+            const response=await fetch(url,{
+                method:'POST',
+                body:JSON.stringify({
+                    name,
+                    email,
+                    phone:number,
+                    message:text
+                })
+            })
+            const parseRes=await response.json();
+            console.log(parseRes);
+        } catch (error) {
+            console.log(error.message);
+        }
+    }
     return (
         <>
             <HeroImage/>
@@ -211,16 +235,16 @@ function Home(props) {
                         <h1>Let’s talk about building your reputation</h1>
                     </div>
                     <div className='grid-talk-2'>
-                        <form>
+                        <form onSubmit={sendMail}>
                             <h3 style={{marginBottom:"20px",width:"242px",height:"44px",fontSize:'40px',fontWeight:'bolder'}}>Get in touch</h3>
                             <label>Name</label><br/>
-                            <input type="text" required/><br/><br/>
+                            <input type="text" onChange={(e)=>setName(e.target.value)} required/><br/><br/>
                             <label>Email</label><br/>
-                            <input type='email' required/><br/><br/>
+                            <input type='email' onChange={(e)=>setEmail(e.target.value)} required/><br/><br/>
                             <label>Phone</label><br/>
-                            <input type="number" required/><br/><br/>
+                            <input type="number" onChange={(e)=>setNumber(e.target.value)} required/><br/><br/>
                             <label>Message</label><br/>
-                            <textarea required></textarea><br/>
+                            <textarea onChange={(e)=>setText(e.target.value)} required></textarea><br/>
                             <button>Send Message</button>
                         </form>
                     </div>
