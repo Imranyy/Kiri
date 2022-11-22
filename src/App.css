@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500&family=Nunito:wght@300;400;500;600&display=swap');
 *{
   padding: 0;
   margin: 0;
   font-family: 'Nunito', sans-serif;
 }
-/* .header{
-  font-family: 'League Spartan';
-} */
+.heading{
+  font-family: 'League Spartan', sans-serif;
+}
 nav{
   margin-left: 128px;
   display: flex;
@@ -55,6 +55,13 @@ nav ul a:hover{
 
 button{
   cursor: pointer;
+  margin: 30px 15px;
+  color:'white';
+  background: '#CC2031';
+  width:'130px';
+  height:'70px';
+  border:'none';
+  font-weight: bold;
 }
 
 /* about section */
@@ -214,6 +221,7 @@ button{
   color:white;
   height: 400px;
   background: #1E1E1E;
+  word-break: break-all;
 }
 .grid-history{
   background: url('./media/VectorHourGlass.png') no-repeat right top;
