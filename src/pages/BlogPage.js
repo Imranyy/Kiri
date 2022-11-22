@@ -31,19 +31,19 @@ function BlogPage(props) {
                                 <img src={articleImage1} alt='...'/>
                                 <h3>Some Other Article</h3>
                                 <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
-                                <button>Read Article</button>
+                                <Link to='/blog/article'><button>Read Article</button></Link>
                             </div>
                             <div className='card-blogs'>
                                 <img src={articleImage2} alt='...'/>
                                 <h3>Some Other Article</h3>
                                 <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
-                                <button>Read Article</button>
+                                <Link to='/blog/article'><button>Read Article</button></Link>
                             </div>
                             <div className='card-blogs'>
                                 <img src={articleImage3} alt='...'/>
                                 <h3>Some Other Article</h3>
                                 <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
-                                <button>Read Article</button>
+                                <Link to='/blog/article'><button>Read Article</button></Link>
                             </div>
                         </div>
                         {/* row2 */}
@@ -52,26 +52,26 @@ function BlogPage(props) {
                                 <img src={articleImage4} alt='...'/>
                                 <h3>Some Other Article</h3>
                                 <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
-                                <button>Read Article</button>
+                                <Link to='/blog/article'><button>Read Article</button></Link>
                             </div>
                             <div className='card-blogs'>
                                 <img src={articleImage5} alt='...'/>
                                 <h3>Some Other Article</h3>
                                 <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
-                                <button>Read Article</button>
+                                <Link to='/blog/article'><button>Read Article</button></Link>
                             </div>
                             <div className='extra'>
                                 <h3>Some Other Article</h3>
                                 <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
-                                <Link to='/'>Read Article</Link>
+                                <Link to='/blog/article'>Read Article</Link>
 
                                 <h3>Some Other Article</h3>
                                 <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
-                                <Link to='/'>Read Article</Link>
+                                <Link to='/blog/article'>Read Article</Link>
 
                                 <h3>Some Other Article</h3>
                                 <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
-                                <Link to='/'>Read Article</Link>
+                                <Link to='/blog/article'>Read Article</Link>
                             </div>
                         </div>
                         {/* row3 */}
@@ -79,27 +79,27 @@ function BlogPage(props) {
                             <div className='extra'>
                                 <h3>Some Other Article</h3>
                                 <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
-                                <Link to='/'>Read Article</Link>
+                                <Link to='/blog/article'>Read Article</Link>
                                     
                                 <h3>Some Other Article</h3>
                                 <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
-                                <Link to='/'>Read Article</Link>
+                                <Link to='/blog/article'>Read Article</Link>
 
                                 <h3>Some Other Article</h3>
                                 <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
-                                <Link to='/'>Read Article</Link>
+                                <Link to='/blog/article'>Read Article</Link>
                             </div>
                             <div className='card-blogs'>
                                 <img src={articleImage6} alt='...'/>
                                 <h3>Some Other Article</h3>
                                 <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
-                                <button>Read Article</button>
+                                <Link to='/blog/article'><button>Read Article</button></Link>
                             </div>
                             <div className='card-blogs'>
                                 <img src={articleImage7} alt='...'/>
                                 <h3>Some Other Article</h3>
                                 <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
-                                <button>Read Article</button>
+                                <Link to='/blog/article'><button>Read Article</button></Link>
                             </div>
                         </div>
                         {/* row4 */}
@@ -108,19 +108,19 @@ function BlogPage(props) {
                                 <img src={articleImage8} alt='...'/>
                                 <h3>Some Other Article</h3>
                                 <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
-                                <button>Read Article</button>
+                                <Link to='/blog/article'><button>Read Article</button></Link>
                             </div>
                             <div className='card-blogs'>
                                 <img src={articleImage9} alt='...'/>
                                 <h3>Some Other Article</h3>
                                 <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
-                                <button>Read Article</button>
+                                <Link to='/blog/article'><button>Read Article</button></Link>
                             </div>
                             <div className='card-blogs'>
                                 <img src={articleImage10} alt='...'/>
                                 <h3>Some Other Article</h3>
                                 <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
-                                <button>Read Article</button>
+                                <Link to='/blog/article'><button>Read Article</button></Link>
                             </div>
                         </div>
                     </div>
