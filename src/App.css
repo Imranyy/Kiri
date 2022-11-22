@@ -405,6 +405,25 @@ button{
     color:white;
     background: #CC2031;
   }
+  .card-blogs a{
+    padding-top:20px;
+    text-decoration: none;
+  }
+  .card-blogs a:hover{
+    color:#CC2031;
+  }
+  .grid-blogs .extra{
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    width: 300px;
+    height: 412px;
+    /* background: #FDF7EC; */
+  }
+  .grid-blogs .extra h3{
+    margin-top: 2px;
+  }
 /* footer */
 footer{
   color:#ffffff;

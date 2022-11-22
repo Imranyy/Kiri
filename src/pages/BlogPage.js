@@ -11,6 +11,7 @@ import articleImage7 from '../media/blogPageImages/articleImage7.png';
 import articleImage8 from '../media/blogPageImages/articleImage8.png';
 import articleImage9 from '../media/blogPageImages/articleImage9.png';
 import articleImage10 from '../media/blogPageImages/articleImage10.png';
+import {Link} from 'react-router-dom';
 function BlogPage(props) {
     return (
         <>
@@ -59,20 +60,34 @@ function BlogPage(props) {
                                 <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
                                 <button>Read Article</button>
                             </div>
-                            <div className='card-blogs'>
-                                <img src={articleImage3} alt='...'/>
+                            <div className='extra'>
                                 <h3>Some Other Article</h3>
                                 <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
-                                <button>Read Article</button>
+                                <Link to='/'>Read Article</Link>
+
+                                <h3>Some Other Article</h3>
+                                <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
+                                <Link to='/'>Read Article</Link>
+
+                                <h3>Some Other Article</h3>
+                                <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
+                                <Link to='/'>Read Article</Link>
                             </div>
                         </div>
                         {/* row3 */}
                         <div className='grid-blogs'>
-                            <div className='card-blogs'>
-                                <img src={articleImage3} alt='...'/>
+                            <div className='extra'>
                                 <h3>Some Other Article</h3>
                                 <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
-                                <button>Read Article</button>
+                                <Link to='/'>Read Article</Link>
+                                    
+                                <h3>Some Other Article</h3>
+                                <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
+                                <Link to='/'>Read Article</Link>
+
+                                <h3>Some Other Article</h3>
+                                <p>Kiri is a Swahili word meaning Acknowledge, we see and acknowledge the work you are doing to make the world.</p>
+                                <Link to='/'>Read Article</Link>
                             </div>
                             <div className='card-blogs'>
                                 <img src={articleImage6} alt='...'/>
