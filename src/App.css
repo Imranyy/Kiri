@@ -371,6 +371,8 @@ button{
   .grid-blogs{
    display:flex;
    justify-content: space-around;
+   /* flex-wrap: wrap;
+   max-width:500px; */
   }
   .grid-blogs .card-blogs{
     margin-top: 50px;
@@ -398,6 +400,10 @@ button{
     height: 50px;
     background: #FDF7EC;
     border: 1px solid #E9AF3F;
+  }
+  .card-blogs button:hover{
+    color:white;
+    background: #CC2031;
   }
 /* footer */
 footer{
