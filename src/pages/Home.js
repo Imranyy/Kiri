@@ -18,6 +18,10 @@ import person from '../media/person.png';
 import network from '../media/network.png';
 import eye from '../media/eye.png';
 import plane from '../media/aeroplane.png';
+import profile1 from '../media/Profile1.png';
+import profile2 from '../media/Profile2.png';
+import profile3 from '../media/Profile3.png';
+import profile4 from '../media/Profile4.png';
 
 function Home(props) {
     return (
@@ -78,14 +82,49 @@ function Home(props) {
                 {/* testimony cards */}
                 <div style={{paddingLeft:'100px',paddingRight:'100px',paddingBottom:'10px'}}>
                     <div className='card-grid-1'>
-                        <div className='grid-card-1'></div>
-                        <div className='grid-card-2'></div>
-                    </div>
-                    <div className='card-grid-2'>
-                        <div className='grid-card-3'>
+                        <div className='grid-card'>
                             <p className='heading'>Recreating Stories and Experiences for manufacturing Industries Recreating Stories and Experiences for manufacturing IndustriesRecreating Stories and Experiences for manufacturing Industries</p>
+                            <div className='card-footer'>
+                                <img width="50" height="50" src={profile1} alt="..."/>
+                                <p>
+                                    Mambo Jambo<br/>
+                                    CTA, kijijini NGO
+                                </p>
+                            </div>
                         </div>
-                        <div className='grid-card-4'></div>
+                        <div className='grid-card'>
+                            <p className='heading'>Recreating Stories and Experiences for manufacturing Industries Recreating Stories and Experiences for manufacturing IndustriesRecreating Stories and Experiences for manufacturing Industries</p>
+                            <div className='card-footer'>
+                            <img width="50" height="50" src={profile2} alt="..."/>
+                                <p>
+                                    Aisha Kesho<br/>
+                                    CEO, Mashinani Company Ltd
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='card-grid-2'>
+                        <div className='grid-card'>
+                            <p className='heading'>Recreating Stories and Experiences for manufacturing Industries Recreating Stories and Experiences for manufacturing IndustriesRecreating Stories and Experiences for manufacturing Industries</p>
+                            <div className='card-footer'>
+                            <img width="50" height="50" src={profile3} alt="..."/>
+                                <p>
+                                    Connie Brianna<br/>
+                                    Digital Marketing, RopeWeed
+                                </p>
+                            </div>
+                        </div>
+                        <div className='grid-card'>
+                            <p className='heading'>Recreating Stories and Experiences for manufacturing Industries Recreating Stories and Experiences for manufacturing IndustriesRecreating Stories and Experiences for manufacturing Industries</p>
+                            <div className='card-footer'>
+                            <img width="50" height="50" src={profile4} alt="..."/>
+                                <p>
+                                    Bryce Zeibu<br/>
+                                    CTA, Spify
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     {/* percentage */}
                     <div className='grid-percentage'>

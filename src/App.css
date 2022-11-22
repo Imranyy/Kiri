@@ -127,16 +127,6 @@ button{
   grid-template-columns: repeat(2,1fr);
   max-width: 100%;
 }
-.grid-card-1{
-  width: 557px;
-  height: 200px;
-  background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
-}
-.grid-card-2{
-  width: 557px;
-  height: 200px;
-  background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
-}
 /* grid-card-2 */
 .card-grid-2{
   margin-top: 42px;
@@ -144,21 +134,26 @@ button{
   grid-template-columns: repeat(2,1fr);
   max-width: 100%;
 }
-.grid-card-3{
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-  color: #1E1E1E;
-  width: 557px;
+/* card */
+.grid-card{
+  padding-top: 30px;
+  padding-left: 30px;
+  margin-left: 20px;
+  width: 500px;
   height: 200px;
   background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
 }
-.grid-card-4{
-  width: 557px;
-  height: 200px;
-  background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
+.card-footer{
+  margin-top: 20px;
+  display: flex;
 }
+.card-footer p{
+  line-height: 16px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+
 /* percentage */
 .grid-percentage{
   margin-top: 66px;
