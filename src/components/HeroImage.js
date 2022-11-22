@@ -19,6 +19,7 @@ function HeroImage(props) {
                     </div>
                 </div> 
         </div>
+
     );
 }
 

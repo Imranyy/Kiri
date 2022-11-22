@@ -13,7 +13,7 @@ function Home(props) {
             <div className='about'>
                 <div className='grid'>
                     <div className='grid-item'>
-                        <h2>ABOUT US</h2>
+                        <h2 className='heading' style={{fontWeight:'bold'}}>ABOUT US</h2>
                             <p>
                                 One thing that sets us apart from other digital marketing agencies is that we are mission-driven and deeply invested in our clients’ work. We believe that mission-driven companies and social enterprises play a significant role in supporting the economic development and sustainability of the country.<br/><br/>
                                 Because you focus on changing the world, you deserve the best digital marketing, branding, and PR team to help you achieve your goals and increase impact work. One that understands the importance of telling your brand story, how to say it, and where to direct it.
@@ -37,11 +37,12 @@ function Home(props) {
                 </div>
 
                 <div style={{display:'flex',justifyContent:'center',marginTop:'50px',lineHeight: '55px'}}>
-                    <h1 style={{color:'red',marginRight:'6px'}}>Recreating</h1> <h1 style={{fontWeight:'lighter'}}>Stories and Experiences for manufacturing Industries</h1>
+                    <h1 className= 'heading' style={{color:'red',marginRight:'6px'}}>Recreating</h1> 
+                    <h1 className= 'heading' style={{fontWeight:'normal'}}>Stories and Experiences for manufacturing Industries</h1>
                 </div>
 
                 <div style={{textAlign:'center',marginTop:'30px',lineHeight: '55px'}}>
-                    <h3>SERVICES</h3>
+                    <h3 className='heading' >SERVICES</h3>
                     <p style={{marginTop:'-25px'}}>
                         We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.
                     </p>
@@ -57,7 +58,7 @@ function Home(props) {
             {/* testimony section */}
             <div className='testimony'>
                 <div style={{textAlign:"center"}}>
-                    <h2>Testimonials</h2>
+                    <h2 className='heading'>TESTIMONIALS</h2>
                     <p>We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.</p>
                 </div>
                 {/* testimony cards */}
@@ -68,7 +69,7 @@ function Home(props) {
                     </div>
                     <div className='card-grid-2'>
                         <div className='grid-card-3'>
-                            <p>Recreating Stories and Experiences for manufacturing Industries Recreating Stories and Experiences for manufacturing IndustriesRecreating Stories and Experiences for manufacturing Industries</p>
+                            <p className='heading'>Recreating Stories and Experiences for manufacturing Industries Recreating Stories and Experiences for manufacturing IndustriesRecreating Stories and Experiences for manufacturing Industries</p>
                         </div>
                         <div className='grid-card-4'></div>
                     </div>
