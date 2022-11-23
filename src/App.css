@@ -13,16 +13,14 @@
   z-index: 2;
   display: none;
 }
-/* .header{
-  font-family: 'League Spartan';
-} */
+
 nav{
   margin-left: 128px;
   display: flex;
   justify-content: space-between;
-  /* box-shadow:0 2px 4px 0 rgba(0,0,0,0.2); */
 }
 nav .brand a{
+  font-family:'League Spartan';
   text-decoration: none;
   font-weight: 400;
   font-size: 36px;
@@ -39,12 +37,66 @@ nav ul{
   float: right;
 }
 nav ul a{
+  font-family:'League Spartan';
   font-weight: 400;
   font-size: 19px;
   line-height: 30px;
   margin-left: 32px;
   color: #1E1E1E;
   text-decoration: none;
+}
+nav ul button{
+  display: none;
+  font-family:'League Spartan';
+  background: #CC2031;
+  width: 120%;
+  height: 110%;
+  border: none;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  margin-left: 32px;
+  color: white;
+}
+.nav-menu{
+  top:0;
+  position:fixed;
+  display: none;
+  width: 95%;
+  height: 100%;
+  background: whitesmoke;
+  color:white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 10%;
+  z-index: 1;
+  transition: ease-out 2s;
+}
+.nav-menu ul{
+  list-style: none;
+}
+.nav-menu a{
+  color: grey;
+  text-decoration: none;
+}
+.nav-menu button{
+  position: fixed;
+  right: 10px;
+  font-size: small;
+  font-family:'League Spartan';
+  background: #CC2031;
+  width: 100px;
+  height: 50px;
+  border: none;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  margin-left: 32px;
+  color: white;
+}
+.nav-menu a:hover{
+  color:#CC2031;
+  border-bottom: solid 2px #CC2031;
 }
 
 nav ul a:hover{
@@ -441,7 +493,7 @@ button{
 }
 .blog-article-header{
   height: 500px;
-  background: url('./media/blogPageImages/Rectangle\ 43.png');
+  background: url('./media/Rectangle\ 43.png');
 }
 .article-content{
   padding-left: 250px;
@@ -567,4 +619,41 @@ footer .social-icons{
   margin-top: 50px;
   display: flex;
   justify-content: center;
+}
+
+
+
+/* media queries */
+@media screen and (max-width:700px){
+  
+  nav{
+    margin-left: 128px;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav .brand a{
+    font-family:'League Spartan';
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 30px;
+    color: #1E1E1E;
+  }
+  nav .brand a:hover{
+    color:#CC2031;
+  }
+  nav ul{
+    display: flex;
+    list-style: none;
+    margin-right: 100px;
+    float: right;
+  }
+  nav ul a{
+    display: none;
+  }
+  nav ul button{
+    display: block;
+  }
+  
+
 }
