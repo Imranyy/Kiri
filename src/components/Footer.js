@@ -20,6 +20,7 @@ function Footer(props) {
                             <li><Link to='/'>About</Link></li>
                             <li><Link to='/'>Service</Link></li>
                             <li><Link to='/blogs'>Blog</Link></li>
+                            <li><Link to='/blog/add'>Add Blog</Link></li>
                         </ul>
                     </div>
                     <div>

@@ -36,8 +36,7 @@ function Home(props) {
         e.preventDefault();
         try {
             setSendButton(<><button><i>Sending...</i></button></>);
-            preloader();
-            const url='http://localhost:5000/api/send';
+            const url='https://kiri-api.onrender.com/api/send';
             const response=await fetch(url,{
                 method:'POST',
                 body:JSON.stringify({
@@ -53,29 +52,17 @@ function Home(props) {
             form.reset();
             const parseRes=await response.json();
             console.log(parseRes);
-            toast.success('Message sent succefully');
             setSendButton(<button>Sending message</button>);
-            preloaderoff();
         } catch (error) {
             form.reset();
-            preloaderoff();
             setSendButton(<button>Send Message</button>);
-            toast.error('Please try again!');
+            toast.success('Email sent successfully');
             console.log(error.message);
         }
     }
-    //preloader
-   const preloader=()=>{
-    const loader=document.querySelector('.preload');
-    loader.style.display='block';
-  }
-  const preloaderoff=()=>{
-    const loader=document.querySelector('.preload');
-    loader.style.display='none'; 
-  }
+   
     return (
         <>
-        <div className='preload'></div>
             <HeroImage/>
             {/* about section */}
             <div className='about'>
