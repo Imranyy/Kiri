@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import logo from "../media/logo.jpg";
 function Navbar(props) {
     const showMenu=()=>{
         const navMenu=document.querySelector('.nav-menu')
@@ -13,7 +14,7 @@ function Navbar(props) {
         <>
             <nav className="navbar" >
                 <div className="brand">
-                    <Link to='/' className="navbar-brand">Kiri</Link>
+                    <Link to='/' className="navbar-brand"><img className='logo' src={logo} alt="Kiri"/></Link>
                 </div>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0" >

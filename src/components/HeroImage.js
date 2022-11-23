@@ -6,14 +6,12 @@ function HeroImage(props) {
         <div className='Hero'>
             <Navbar/>
                 <div className='Hero-image'>
-                    <div className='hero-text' style={{marginLeft:'150px'}}>
-                        <h1 className='Enhancing' style={{fontSize:'50px',fontWeight:'bolder',color:'#1E1E1E'}}>
-                        Enhancing Brands,
-                        </h1>
-                        <h1 className='Enhancing' style={{fontSize:'50px',fontWeight:'bolder',color:'#1E1E1E'}}>
+                    <div className='hero-text'>
+                        <h1 className='Enhancing'>
+                        Enhancing Brands,<br/>
                         Enhancing Lives
                         </h1>
-                        <p className='text' style={{marginTop:"20px",fontSize:'20px',color:'#1E1E1E'}}>
+                        <p className='text'>
                             We focus on deep customer insights to provide growth.
                         </p>
                         <button style={{}}>

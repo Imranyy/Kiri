@@ -53,7 +53,7 @@ function Footer(props) {
                 <a href='#' target='_blank'><img style={{marginLeft:'50px'}} src={linkedIn} alt="..."/></a>
                 <a href='#' target='_blank'><img style={{marginLeft:'50px'}} src={insta} alt="..."/></a>
             </div>
-            <p align='center'>©2022 Kiri Marketing and PR Consultants </p>
+            <p className='last' align='center'>©2022 Kiri Marketing and PR Consultants </p>
             </footer>
         </>
     );
