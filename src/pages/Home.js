@@ -22,16 +22,21 @@ import profile1 from '../media/Profile1.png';
 import profile2 from '../media/Profile2.png';
 import profile3 from '../media/Profile3.png';
 import profile4 from '../media/Profile4.png';
+import toast from "react-hot-toast";
 
 function Home(props) {
     const [name,setName]=useState('');
     const [email,setEmail]=useState('');
     const [number,setNumber]=useState(0);
     const [text,setText]=useState('');
+    const [sendButton,setSendButton]=useState(<button>Send Message</button>);
     //send email
     const sendMail=async(e)=>{
+        const form=document.querySelector('form');
         e.preventDefault();
         try {
+            setSendButton(<><button><i>Sending...</i></button></>);
+            preloader();
             const url='http://localhost:5000/api/send';
             const response=await fetch(url,{
                 method:'POST',
@@ -40,16 +45,37 @@ function Home(props) {
                     email,
                     phone:number,
                     message:text
-                })
+                }),
+                headers:{
+                    'content-type':'application/json'
+                }
             })
+            form.reset();
             const parseRes=await response.json();
             console.log(parseRes);
+            toast.success('Message sent succefully');
+            setSendButton(<button>Sending message</button>);
+            preloaderoff();
         } catch (error) {
+            form.reset();
+            preloaderoff();
+            setSendButton(<button>Send Message</button>);
+            toast.error('Please try again!');
             console.log(error.message);
         }
     }
+    //preloader
+   const preloader=()=>{
+    const loader=document.querySelector('.preload');
+    loader.style.display='block';
+  }
+  const preloaderoff=()=>{
+    const loader=document.querySelector('.preload');
+    loader.style.display='none'; 
+  }
     return (
         <>
+        <div className='preload'></div>
             <HeroImage/>
             {/* about section */}
             <div className='about'>
@@ -245,7 +271,7 @@ function Home(props) {
                             <input type="number" onChange={(e)=>setNumber(e.target.value)} required/><br/><br/>
                             <label>Message</label><br/>
                             <textarea onChange={(e)=>setText(e.target.value)} required></textarea><br/>
-                            <button>Send Message</button>
+                            {sendButton}
                         </form>
                     </div>
                 </div>
