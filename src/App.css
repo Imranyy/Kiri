@@ -2,7 +2,7 @@
 *{
   padding: 0;
   margin: 0;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'League Spartan', sans-serif;
 }
 .preload{
   background: rgb(255, 255, 255) url('./media/loader.gif') no-repeat center;
@@ -14,16 +14,14 @@
   display: none;
 }
 
-.heading{
-  font-family: 'League Spartan', sans-serif;
-}
+
 nav{
   margin-left: 128px;
   display: flex;
   justify-content: space-between;
 }
 nav .brand a{
-  font-family:'League Spartan';
+font-family: 'League Spartan', sans-serif;
   text-decoration: none;
   font-weight: 400;
   font-size: 36px;
@@ -40,7 +38,7 @@ nav ul{
   float: right;
 }
 nav ul a{
-  font-family:'League Spartan';
+  font-family: 'League Spartan', sans-serif;
   font-weight: 400;
   font-size: 19px;
   line-height: 30px;
@@ -50,13 +48,13 @@ nav ul a{
 }
 nav ul button{
   display: none;
-  font-family:'League Spartan';
+  font-family: 'League Spartan', sans-serif;
   background: #CC2031;
   width: 120%;
   height: 110%;
   border: none;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 15px;
   line-height: 30px;
   margin-left: 32px;
   color: white;
@@ -86,7 +84,7 @@ nav ul button{
   position: fixed;
   right: 10px;
   font-size: small;
-  font-family:'League Spartan';
+  font-family: 'League Spartan', sans-serif;
   background: #CC2031;
   width: 100px;
   height: 50px;
@@ -123,9 +121,9 @@ button{
    color:white;
     background: #CC2031;
     width: 120px;
-    height:70px;
+    height:60px;
     border:none;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /* about section */
@@ -149,16 +147,16 @@ button{
 /* Rectangle 2 and 3*/
 .rectangle2{
   position: absolute;
-  width: 430px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
   background: url('./media/Rectangle\ 3.png');
 }
 .rectangle3{
   position: absolute;
   margin-top: 20px;
   margin-left: -50px;
-  width: 430px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
 }
 
 /* picture section */
