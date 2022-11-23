@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500&family=Nunito:wght@300;400;500;600&display=swap');
 *{
   padding: 0;
   margin: 0;
@@ -14,6 +14,9 @@
   display: none;
 }
 
+.heading{
+  font-family: 'League Spartan', sans-serif;
+}
 nav{
   margin-left: 128px;
   display: flex;
@@ -110,12 +113,19 @@ nav ul a:hover{
 }
 .Hero-image{
   width: 100%;
-  padding-top: 150px;
-  min-height: 300px;
+  padding-top: 100px;
+  min-height: 350px;
 }
 
 button{
   cursor: pointer;
+  margin-top:20px;
+   color:white;
+    background: #CC2031;
+    width: 120px;
+    height:70px;
+    border:none;
+    font-size: 20px;
 }
 
 /* about section */
