@@ -10,6 +10,18 @@ function Navbar(props) {
         const navMenu=document.querySelector('.nav-menu')
         navMenu.style.display="none";
     }
+    const about=()=>{
+        document.querySelector('#about').scrollIntoView();
+    }
+    const contacts=()=>{
+        document.querySelector('#contacts').scrollIntoView();
+    }
+    const news=()=>{
+        document.querySelector('#news').scrollIntoView();
+    }
+    const services=()=>{
+        document.querySelector('#services').scrollIntoView();
+    }
     return (
         <>
             <nav className="navbar" >
@@ -22,16 +34,16 @@ function Navbar(props) {
                             <Link to='/' className="nav-link active" aria-current="page" >Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/about' className="nav-link" >About</Link>
+                            <Link onClick={about} className="nav-link" >About</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/services' className="nav-link" >Services</Link>
+                            <Link onClick={services} className="nav-link" >Services</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/news' className="nav-link" >News</Link>
+                            <Link onClick={news} className="nav-link" >News</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/contacts' className="nav-link">Contacts</Link>
+                            <Link onClick={contacts} className="nav-link">Contacts</Link>
                         </li> 
                         <li className="nav-item">
                             <button onClick={showMenu}>Menu</button>
