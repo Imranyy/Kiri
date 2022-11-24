@@ -88,7 +88,7 @@ function Home(props) {
                     <div className='grid-item2'>
                         <div className='rectangle2'></div>
                         <img className='rectangle3' src={rect2} alt="."/>
-                    </div>
+                    </div>cd desktop
                 </div>
 
                 <div className='vectorbuld2'>
@@ -98,7 +98,7 @@ function Home(props) {
                     </div>
 
                     <div style={{textAlign:'center',marginTop:'30px',lineHeight: '55px'}}>
-                        <h3 className='heading' >SERVICES</h3>
+                        <h3 className='heading' id='services'>SERVICES</h3>
                         <p style={{marginTop:'-25px'}}>
                             We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.
                         </p>
@@ -113,7 +113,7 @@ function Home(props) {
                 <div className='grid-item-4'></div>
             </div>
             {/* testimony section */}
-            <div className='testimony' id='services'>
+            <div className='testimony'>
                 <div style={{textAlign:"center"}}>
                     <h2 className='heading'>TESTIMONIALS</h2>
                     <p>We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.</p>
