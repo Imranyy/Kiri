@@ -92,9 +92,9 @@ function Home(props) {
                 </div>
 
                 <div className='vectorbuld2'>
-                    <div style={{display:'flex',justifyContent:'center',marginTop:'50px',lineHeight: '55px'}}>
-                        <h1 className= 'heading' style={{color:'red',marginRight:'6px'}}>Recreating</h1> 
-                        <h1 className= 'heading'>Stories and Experiences for manufacturing Industries</h1>
+                    <div className= 'heading1' >
+                        <h1 style={{color:'red',marginRight:'6px'}}>Recreating</h1> 
+                        <h1>Stories and Experiences for manufacturing Industries</h1>
                     </div>
 
                     <div style={{textAlign:'center',marginTop:'30px',lineHeight: '55px'}}>

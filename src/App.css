@@ -178,7 +178,13 @@ button{
   width: 400px;
   height: 400px;
 }
-
+.heading1{
+  padding-top: 80px;
+  display:flex;
+  justify-content:center;
+  margin-top:50px;
+  line-height:55px;
+}
 /* picture section */
 .pic-grid{
   display: grid;
@@ -527,8 +533,7 @@ button{
   background: url('./media/Rectangle\ 43.png');
 }
 .article-content{
-  margin-left: -17%;
-  padding-left: 250px;
+  margin-left: 4%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -546,14 +551,14 @@ button{
 }
 .article-content p{
   margin-top: 20px;
-  width: 746px;
+  width: 100%;
   height: 240px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.02em;
   color: #1E1E1E;
-
+  margin-bottom: 15%;
 }
 .article-content h3{
   font-weight: 400;
@@ -564,6 +569,8 @@ button{
   height: 44px;
 }
 .more-article{
+  width: 90%;
+  padding-left: 10%;
   padding-top: 39px;
   height: 546px;
   background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
@@ -581,7 +588,7 @@ button{
 }
 .more-article a{
   text-decoration: none;
-  padding-top: 426px;
+  padding-top: 456px;
   font-weight: 400;
   font-size: 20px;
   line-height: 16px;
@@ -1015,6 +1022,7 @@ footer .social-icons{
   padding-bottom: 50px;
 }
 }
+
 @media screen and (max-width:1000px){
  .logo{
   display: none;
@@ -1395,5 +1403,10 @@ footer .social-icons{
   margin-top: 2px;
 }
 
-
+/* article page css */
+.more-article a{
+  padding-top: 4%;
+  font-size: 15px;
+  line-height: 10px;
+}
 }
