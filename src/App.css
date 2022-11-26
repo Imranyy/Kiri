@@ -78,7 +78,7 @@ button{
   background: rgb(245, 238, 230);
   padding-left: 100px;
   padding-right: 100px;
-  padding-top: 30px;
+  padding-top: 60px;
   padding-bottom: 40px;
 }
 .grid{
@@ -88,22 +88,18 @@ button{
   grid-template-columns: repeat(2,1fr);
   max-width: 100%;
 }
-.grid-item2{
-  margin-left: 100px;
+
+.grid-item {
+  width: 600px;
+  font-size: 18px;
 }
+
 /* Rectangle 2 and 3*/
 .rectangle2{
   position: absolute;
-  width: 430px;
-  height: 450px;
-  background: url('./media/Rectangle\ 3.png');
-}
-.rectangle3{
-  position: absolute;
-  margin-top: 20px;
-  margin-left: -50px;
-  width: 430px;
-  height: 450px;
+  width: 500px;
+  height: 500px;
+  padding-left: 200px;
 }
 
 /* picture section */
@@ -448,7 +444,7 @@ button{
 }
 .blog-article-header{
   height: 500px;
-  background: url('./media/blogPageImages/Rectangle\ 43.png');
+  background: url('./media/Rectangle\ 56.png');
 }
 .article-content{
   padding-left: 250px;
