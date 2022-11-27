@@ -88,18 +88,21 @@ function Home(props) {
                     <div className='grid-item2'>
                         <div className='rectangle2'></div>
                         <img className='rectangle3' src={rect2} alt="."/>
-                    </div>cd desktop
+                    </div>
                 </div>
 
                 <div className='vectorbuld2'>
-                        <div className='heading'>
-                            <h1 style={{color:'red',marginRight:'6px'}}>Recreating </h1> 
-                            <h1>Stories and Experiences for manufacturing Industries</h1> 
-                            <h3 id='services'>SERVICES</h3>
-                        </div>     
+                    <div className= 'heading1' >
+                        <h1 style={{color:'red',marginRight:'6px'}}>Recreating</h1> 
+                        <h1>Stories and Experiences for manufacturing Industries</h1>
+                    </div>
+
+                    <div style={{textAlign:'center',marginTop:'30px',lineHeight: '55px'}}>
+                        <h3 className='heading' id='services'>SERVICES</h3>
                         <p style={{marginTop:'-25px'}}>
                             We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.
                         </p>
+                    </div>
                 </div>
             </div>
             {/* picture section */}
