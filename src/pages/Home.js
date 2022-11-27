@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Footer from '../components/Footer';
 import HeroImage from '../components/HeroImage';
-import rect2 from '../media/Rectangle 2.png';
+import rect2 from '../media/Rectangle 2.svg';
 import articleImage1 from "../media/articleImage1.png";
 import articleImage2 from "../media/articleImage2.png";
 import history from '../media/historyImage.png';
@@ -68,15 +68,15 @@ function Home(props) {
             <div className='about' id='about'>
                 <div className='grid'>
                     <div className='grid-item'>
-                        <h2 className='heading' style={{fontWeight:'bold'}}>ABOUT US</h2>
+                        <h2 className='heading' style={{fontWeight:'bold' ,paddingBottom: '20px', fontSize: '30px'}}>ABOUT US</h2>
                             <p>
                                 One thing that sets us apart from other digital marketing agencies is that we are mission-driven and deeply invested in our clients’ work. We believe that mission-driven companies and social enterprises play a significant role in supporting the economic development and sustainability of the country.<br/><br/>
                                 Because you focus on changing the world, you deserve the best digital marketing, branding, and PR team to help you achieve your goals and increase impact work. One that understands the importance of telling your brand story, how to say it, and where to direct it.
                             </p><br/>
-                        <h3>Mission Statement!</h3>
+                        <h3 style={{paddingBottom: '5px', fontSize: '25px', fontWeight:'normal'}}>Mission Statement!</h3>
                         To contribute to client’s business growth through result oriented, innovative and creative strategies that will deliver the WOW factor.<br/><br/>
 
-                        <h3>Core Values</h3>
+                        <h3 style={{fontSize: '25px', fontWeight:'normal'}}>Core Values</h3>
                         <ul>
                             <li>Professionalism</li>
                             <li>Integrity</li>
@@ -85,22 +85,21 @@ function Home(props) {
                         </ul>
                     </div>
 
-                    <div className='grid-item2'>
-                        <div className='rectangle2'></div>
-                        <img className='rectangle3' src={rect2} alt="."/>
+                    <div>
+                        <img className='rectangle2' src={rect2} alt="about us"/>
                     </div>
                 </div>
 
                 <div className='vectorbuld2'>
-                    <div className= 'heading1' >
-                        <h1 style={{color:'red',marginRight:'6px'}}>Recreating</h1> 
-                        <h1>Stories and Experiences for manufacturing Industries</h1>
+                    <div style={{display:'flex',justifyContent:'center',marginTop:'50px',lineHeight: '55px'}}>
+                        <h1 className= 'heading' style={{color:'#CC2031',marginRight:'6px'}}>Recreating</h1> 
+                        <h1 className= 'heading' style={{fontWeight:'normal'}}>Stories and Experiences for manufacturing Industries</h1>
                     </div>
 
                     <div style={{textAlign:'center',marginTop:'30px',lineHeight: '55px'}}>
-                        <h3 className='heading' id='services'>SERVICES</h3>
-                        <p style={{marginTop:'-25px'}}>
-                            We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.
+                        <h3 className='heading' style={{fontSize: '30px'}}>SERVICES</h3>
+                        <p style={{fontSize: '20px', textAlign: 'center'}}>
+                            We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, <br/>identity, innovation and inclusion and diversity.
                         </p>
                     </div>
                 </div>
@@ -122,22 +121,26 @@ function Home(props) {
                 <div style={{paddingLeft:'100px',paddingRight:'100px',paddingBottom:'10px'}}>
                     <div className='card-grid-1'>
                         <div className='grid-card'>
-                            <p className='heading'>Recreating Stories and Experiences for manufacturing Industries Recreating Stories and Experiences for manufacturing IndustriesRecreating Stories and Experiences for manufacturing Industries</p>
+                            <p className='heading'>
+                            Our brand has exponentially grown to explore social media avenues as it was operating offline. Choosing long term partnership with Kiri Marketing consultancy has broadened our relationship and sales growth experience. Her advice and expertise go a long way in enhancing brand needs & values.
+                            </p>
                             <div className='card-footer'>
                                 <img width="50" height="50" src={profile1} alt="..."/>
                                 <p>
-                                    Mambo Jambo<br/>
-                                    CTA, kijijini NGO
+                                Annet Obat &amp; Anita Lukelesia<br/>
+                                Co-Founders, Laette Closet
                                 </p>
                             </div>
                         </div>
                         <div className='grid-card'>
-                            <p className='heading'>Recreating Stories and Experiences for manufacturing Industries Recreating Stories and Experiences for manufacturing IndustriesRecreating Stories and Experiences for manufacturing Industries</p>
+                            <p className='heading'>
+                            Kiri marketing Consultants is a perfect balance between professionalism and personality. They take their time to dig in and find out what the company needs to expand their market. Their strategies have helped us in aligning our company goals which has seen us grow and sign-up new clients.
+                            </p>
                             <div className='card-footer'>
                             <img width="50" height="50" src={profile2} alt="..."/>
                                 <p>
-                                    Aisha Kesho<br/>
-                                    CEO, Mashinani Company Ltd
+                                Evelyne Wandanda<br/>
+                                Co-founder and managing partner, Innerblast Consultants
                                 </p>
                             </div>
                         </div>
@@ -145,12 +148,14 @@ function Home(props) {
 
                     <div className='card-grid-2'>
                         <div className='grid-card'>
-                            <p className='heading'>Recreating Stories and Experiences for manufacturing Industries Recreating Stories and Experiences for manufacturing IndustriesRecreating Stories and Experiences for manufacturing Industries</p>
+                            <p className='heading'>
+                            Talent Industry acknowledges the partnership offered by Kiri Marketing Consultants in the success of the 2022 East Africa Poetic Hour Battle on 20th May 2022. We would like to thank them for their outstanding service in event planning, marketing, branding and corporate ushering.
+                            </p>
                             <div className='card-footer'>
                             <img width="50" height="50" src={profile3} alt="..."/>
                                 <p>
-                                    Connie Brianna<br/>
-                                    Digital Marketing, RopeWeed
+                                Godfrey Emoja<br/>
+                                Managing Director, Talent Industry
                                 </p>
                             </div>
                         </div>

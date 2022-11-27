@@ -13,8 +13,6 @@
   z-index: 2;
   display: none;
 }
-
-
 nav{
   margin-left: 128px;
   display: flex;
@@ -139,7 +137,7 @@ button{
   background: rgb(245, 238, 230);
   padding-left: 100px;
   padding-right: 100px;
-  padding-top: 30px;
+  padding-top: 60px;
   padding-bottom: 40px;
 }
 .grid{
@@ -150,22 +148,25 @@ button{
   max-width: 100%;
   margin-bottom: 100px;
 }
-.grid-item2{
-  margin-left: 100px;
+
+.grid-item {
+  width: 600px;
+  font-size: 18px;
 }
+
 /* Rectangle 2 and 3*/
 .rectangle2{
   position: absolute;
-  width: 400px;
-  height: 400px;
+  width: 430px;
+  height: 450px;
   background: url('./media/Rectangle\ 3.png');
 }
 .rectangle3{
   position: absolute;
   margin-top: 20px;
   margin-left: -50px;
-  width: 400px;
-  height: 400px;
+  width: 430px;
+  height: 450px;
 }
 .vectorbuld2 .heading1{
   margin-top: 140px;
@@ -521,7 +522,7 @@ button{
 }
 .blog-article-header{
   height: 500px;
-  background: url('./media/Rectangle\ 43.png');
+  background: url('./media/blogPageImages/Rectangle\ 43.png');
 }
 .article-content{
   margin-left: 4%;
@@ -1891,8 +1892,5 @@ footer .social-icons{
   padding-top: 4%;
   font-size: 15px;
   line-height: 10px;
-}
-.more-article .card-blogs{
-  
 }
 }
