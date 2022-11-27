@@ -159,22 +159,14 @@ button{
   position: absolute;
   width: 430px;
   height: 450px;
-  background: url('./media/Rectangle\ 3.png');
 }
-.rectangle3{
-  position: absolute;
-  margin-top: 20px;
-  margin-left: -50px;
-  width: 430px;
-  height: 450px;
-}
-.vectorbuld2 .heading1{
-  margin-top: 140px;
+
+.vectorbuld2 h1{
   text-align: center;
   margin-bottom: 40px;
-  font-size: 12px;
+  font-size: 20px;
 }
-.vectorbuld2 .heading h3{
+.vectorbuld2 h3{
   margin-top: 20px;
 }
 /* picture section */
@@ -522,7 +514,7 @@ button{
 }
 .blog-article-header{
   height: 500px;
-  background: url('./media/blogPageImages/Rectangle\ 43.png');
+  background: url('./media/Rectangle\ 43.png');
 }
 .article-content{
   margin-left: 4%;
@@ -661,9 +653,7 @@ footer .social-icons{
   padding-right: 5%;
   padding-left: 5%;
 }
-.heading{
-  font-size: 20px;
-}
+
 .grid{
   background: url('./media/VectorBuld.png');
   background-repeat: no-repeat;
@@ -675,19 +665,9 @@ footer .social-icons{
 /* Rectangle 2 and 3*/
 .rectangle2{
   margin-top: 10px;
+}
 
-}
-.rectangle3{
-  margin-top: 30px;
-  margin-left: -50px;
-  
-}
-.vectorbuld2 .heading1{
-  margin-top: 540px;
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 12px;
-}
+
 .vectorbuld2 .heading h3{
   margin-top: 20px;
 }
@@ -1062,36 +1042,30 @@ footer .social-icons{
   padding-bottom: 50px;
   padding-left: 50px;
 }
-.heading{
-  font-size: 20px;
-}
+
 .grid{
   background: url('./media/VectorBuld.png');
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: repeat(1,1fr);
   max-width: 100%;
-  margin-bottom: -30px;
+  margin-bottom: -10px;
 }
 /* Rectangle 2 and 3*/
 .rectangle2{
   margin-top: 40px;
-  width: 400px;
+  width: 500px;
   height: 400px;
 }
-.rectangle3{
-  margin-top: 60px;
-  margin-left: -50px;
-  width: 400px;
-  height: 400px;
+
+.vectorbuld2 .heading{
+  text-align:left;
+  margin-bottom: -10px;
+  font-size: 14px;
 }
-.vectorbuld2 .heading1{
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 12px;
-}
-.vectorbuld2 .heading h3{
-  margin-top: 20px;
+.vectorbuld2 h3{
+  margin-top: 10px;
+  font-size: 15px;
 }
 /* picture section */
 .pic-grid{
@@ -1495,24 +1469,17 @@ footer .social-icons{
 /* Rectangle 2 and 3*/
 .rectangle2{
   margin-top: 50px;
-  margin-left: -40px;
-  width: 60%;
-  height: 35%;
+  width: 90%;
+  height: 40%;
 }
-.rectangle3{
-  margin-top: 70px;
-  margin-left: -70px;
-  width: 60%;
-  height: 35%;
-}
-.vectorbuld2 .heading1{
-  margin-top: -100px;
+.vectorbuld2 .heading{
   text-align: center;
-  margin-bottom: 40px;
-  font-size: 12px;
+  margin-top: -80px;
+  font-size: 14px;
 }
-.vectorbuld2 .heading h3{
-  margin-top: 20px;
+.vectorbuld2 h3{
+  margin-top: -70px;
+  font-size: 15px;
 }
 
 /* picture section */

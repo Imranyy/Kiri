@@ -97,7 +97,7 @@ function Home(props) {
                     </div>
 
                     <div style={{textAlign:'center',marginTop:'30px',lineHeight: '55px'}}>
-                        <h3 className='heading' style={{fontSize: '30px'}}>SERVICES</h3>
+                        <h3>SERVICES</h3>
                         <p style={{fontSize: '20px', textAlign: 'center'}}>
                             We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, <br/>identity, innovation and inclusion and diversity.
                         </p>
