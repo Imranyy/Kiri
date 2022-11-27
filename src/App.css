@@ -660,15 +660,17 @@ footer .social-icons{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   max-width: 100%;
-  margin-bottom: -400px;
+  margin-bottom: -350px;
 }
 /* Rectangle 2 and 3*/
 .rectangle2{
   margin-top: 10px;
+  margin-bottom: 50px;
 }
-
-
-.vectorbuld2 .heading h3{
+.vectorbuld2 h1{
+  font-size: 20px;
+}
+.vectorbuld2 h3{
   margin-top: 20px;
 }
 /* picture section */
@@ -1050,6 +1052,9 @@ footer .social-icons{
   grid-template-columns: repeat(1,1fr);
   max-width: 100%;
   margin-bottom: -10px;
+}
+.grid-item{
+  width: 100%;
 }
 /* Rectangle 2 and 3*/
 .rectangle2{
@@ -1465,6 +1470,9 @@ footer .social-icons{
   grid-template-columns: repeat(1,1fr);
   max-width: 100%;
   margin-bottom: 200px;
+}
+.grid-item {
+  width: 100%;
 }
 /* Rectangle 2 and 3*/
 .rectangle2{
