@@ -92,17 +92,14 @@ function Home(props) {
                 </div>
 
                 <div className='vectorbuld2'>
-                    <div className= 'heading1' >
-                        <h1 style={{color:'red',marginRight:'6px'}}>Recreating</h1> 
-                        <h1>Stories and Experiences for manufacturing Industries</h1>
-                    </div>
-
-                    <div style={{textAlign:'center',marginTop:'30px',lineHeight: '55px'}}>
-                        <h3 className='heading' id='services'>SERVICES</h3>
+                        <div className='heading'>
+                            <h1 style={{color:'red',marginRight:'6px'}}>Recreating </h1> 
+                            <h1>Stories and Experiences for manufacturing Industries</h1> 
+                            <h3 id='services'>SERVICES</h3>
+                        </div>     
                         <p style={{marginTop:'-25px'}}>
                             We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.
                         </p>
-                    </div>
                 </div>
             </div>
             {/* picture section */}

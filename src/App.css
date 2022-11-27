@@ -166,12 +166,14 @@ button{
   width: 400px;
   height: 400px;
 }
-.heading1{
-  padding-top: 80px;
-  display:flex;
-  justify-content:center;
-  margin-top:50px;
-  line-height:55px;
+.vectorbuld2 .heading{
+  margin-top: 90px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 12px;
+}
+.vectorbuld2 .heading h3{
+  margin-top: 20px;
 }
 /* picture section */
 .pic-grid{
@@ -652,8 +654,6 @@ footer .social-icons{
 
 /* media queries */
 @media screen and (max-width:1200px){
- 
-  
  /* about section */
 .about{
   padding-right: 5%;
@@ -679,6 +679,15 @@ footer .social-icons{
   margin-top: 30px;
   margin-left: -50px;
   
+}
+.vectorbuld2 .heading{
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 12px;
+}
+.vectorbuld2 .heading h3{
+  margin-top: 20px;
 }
 /* picture section */
 .pic-grid{
@@ -1058,19 +1067,27 @@ footer .social-icons{
   display: grid;
   grid-template-columns: repeat(1,1fr);
   max-width: 100%;
-  margin-bottom: 300px;
+  margin-bottom: -30px;
 }
 /* Rectangle 2 and 3*/
 .rectangle2{
-  margin-top: 10px;
+  margin-top: 40px;
   width: 60%;
   height: 50%;
 }
 .rectangle3{
-  margin-top: 30px;
+  margin-top: 60px;
   margin-left: -50px;
   width: 60%;
   height: 50%;
+}
+.vectorbuld2 .heading{
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 12px;
+}
+.vectorbuld2 .heading h3{
+  margin-top: 20px;
 }
 /* picture section */
 .pic-grid{
@@ -1398,8 +1415,8 @@ footer .social-icons{
   line-height: 10px;
 }
 }
+
 @media screen and (max-width:500px){
- 
 .nav-menu{
   top:0;
   position:fixed;
@@ -1469,25 +1486,31 @@ footer .social-icons{
   display: grid;
   grid-template-columns: repeat(1,1fr);
   max-width: 100%;
-  margin-bottom: 300px;
+  margin-bottom: 200px;
 }
 /* Rectangle 2 and 3*/
 .rectangle2{
-  margin-top: 10px;
+  margin-top: 50px;
   margin-left: -40px;
   width: 60%;
   height: 35%;
 }
 .rectangle3{
-  margin-top: 30px;
+  margin-top: 70px;
   margin-left: -70px;
   width: 60%;
   height: 35%;
 }
-.vectorbuld2 .heading1{
-  margin-top: -150px;
-  font-size: 10px;
+.vectorbuld2 .heading{
+  margin-top: -120px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 12px;
 }
+.vectorbuld2 .heading h3{
+  margin-top: 20px;
+}
+
 /* picture section */
 .pic-grid{
   margin-left: 10%;
