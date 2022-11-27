@@ -52,19 +52,14 @@ nav ul a{
   color: #1E1E1E;
   text-decoration: none;
 }
-nav ul button{
-  margin-top: -5px;
+nav ul img{
   display: none;
-  font-family: 'League Spartan', sans-serif;
-  background: #CC2031;
-  width: 120%;
-  height: 110%;
-  border: none;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 30px;
-  margin-left: 32px;
-  color: white;
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin-right: -80px;
+  margin-top:-30px;
+  cursor: pointer;
 }
 .nav-menu{
   top:0;
@@ -87,20 +82,13 @@ nav ul button{
   color: grey;
   text-decoration: none;
 }
-.nav-menu button{
+.nav-menu img{
   position: fixed;
   right: 10px;
-  font-size: small;
-  font-family: 'League Spartan', sans-serif;
-  background: #CC2031;
-  width: 80px;
-  height: 30px;
-  border: none;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 30px;
+  width: 45px;
+  height: 35px;
   margin-left: 32px;
-  color: white;
+  cursor: pointer;
 }
 .nav-menu a:hover{
   color:#CC2031;
@@ -1030,7 +1018,7 @@ footer .social-icons{
   nav ul a{
     display: none;
   }
-  nav ul button{
+  nav ul img{
     display: block;
   }
   .Hero-image{
@@ -1412,14 +1400,6 @@ footer .social-icons{
 }
 @media screen and (max-width:500px){
  
-nav ul button{
-  width: 60px;
-  height: 35px;
-  border-radius: 5px;
-  font-size: 12px;
-  margin-left: 60%;
-  margin-right: 10px;
-}
 .nav-menu{
   top:0;
   position:fixed;

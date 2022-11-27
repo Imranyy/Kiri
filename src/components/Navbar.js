@@ -1,6 +1,9 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import logo from "../media/logo.jpg";
+import menu from "../media/hamburger icon.png";
+import Close from "../media/close icon.png";
+
 function Navbar(props) {
     const showMenu=()=>{
         const navMenu=document.querySelector('.nav-menu')
@@ -50,14 +53,14 @@ function Navbar(props) {
                             <Link onClick={contacts} className="nav-link">Contacts</Link>
                         </li> 
                         <li className="nav-item">
-                            <button onClick={showMenu}>Menu</button>
+                            <img src={menu} alt='menu' onClick={showMenu}/>
                         </li> 
                     </ul>
                 </div>
             </nav>
 
             <div className='nav-menu'>
-                <button onClick={close}>Close</button><br/><br/>
+                <img src={Close} alt='close' onClick={close}/><br/><br/>
                 <ul>
                     <li><Link to='/' onClick={close} className="nav-link active" aria-current="page" >Home</Link></li><br/>
                     <li><Link onClick={about} className="nav-link" >About</Link></li><br/>
