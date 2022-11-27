@@ -167,12 +167,7 @@ button{
   width: 400px;
   height: 400px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-.vectorbuld2{
-  margin-top: 50px;
-}
-.vectorbuld2 .heading{
+.vectorbuld2 .heading1{
   margin-top: 90px;
   text-align: center;
   margin-bottom: 40px;
@@ -180,19 +175,6 @@ button{
 }
 .vectorbuld2 .heading h3{
   margin-top: 20px;
-=======
-=======
->>>>>>> parent of 8ee7604 (fixed the spacing around the service section)
-.heading1{
-  padding-top: 80px;
-  display:flex;
-  justify-content:center;
-  margin-top:50px;
-  line-height:55px;
-<<<<<<< HEAD
->>>>>>> parent of 8ee7604 (fixed the spacing around the service section)
-=======
->>>>>>> parent of 8ee7604 (fixed the spacing around the service section)
 }
 /* picture section */
 .pic-grid{
@@ -673,8 +655,6 @@ footer .social-icons{
 
 /* media queries */
 @media screen and (max-width:1200px){
- 
-  
  /* about section */
 .about{
   padding-right: 5%;
@@ -700,6 +680,15 @@ footer .social-icons{
   margin-top: 30px;
   margin-left: -50px;
   
+}
+.vectorbuld2 .heading1{
+  margin-top: 500px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 12px;
+}
+.vectorbuld2 .heading h3{
+  margin-top: 20px;
 }
 /* picture section */
 .pic-grid{
@@ -1081,42 +1070,21 @@ footer .social-icons{
   display: grid;
   grid-template-columns: repeat(1,1fr);
   max-width: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
+  margin-bottom: -30px;
 }
 /* Rectangle 2 and 3*/
 .rectangle2{
   margin-top: 40px;
-  width: 50%;
-  height: 30%;
-=======
-  margin-bottom: 300px;
-}
-/* Rectangle 2 and 3*/
-.rectangle2{
-=======
-  margin-bottom: 300px;
-}
-/* Rectangle 2 and 3*/
-.rectangle2{
->>>>>>> parent of 8ee7604 (fixed the spacing around the service section)
-  margin-top: 10px;
-  width: 60%;
-  height: 50%;
->>>>>>> parent of 8ee7604 (fixed the spacing around the service section)
+  width: 400px;
+  height: 400px;
 }
 .rectangle3{
-  margin-top: 30px;
+  margin-top: 60px;
   margin-left: -50px;
-  width: 50%;
-  height: 30%;
+  width: 400px;
+  height: 400px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
- .vectorbuld2{
-  padding-top: 380px;
- }
-.vectorbuld2 .heading{
+.vectorbuld2 .heading1{
   text-align: center;
   margin-bottom: 40px;
   font-size: 12px;
@@ -1124,10 +1092,6 @@ footer .social-icons{
 .vectorbuld2 .heading h3{
   margin-top: 20px;
 }
-=======
->>>>>>> parent of 8ee7604 (fixed the spacing around the service section)
-=======
->>>>>>> parent of 8ee7604 (fixed the spacing around the service section)
 /* picture section */
 .pic-grid{
   margin-left: 25%;
@@ -1454,8 +1418,8 @@ footer .social-icons{
   line-height: 10px;
 }
 }
+
 @media screen and (max-width:500px){
- 
 .nav-menu{
   top:0;
   position:fixed;
@@ -1525,49 +1489,31 @@ footer .social-icons{
   display: grid;
   grid-template-columns: repeat(1,1fr);
   max-width: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  margin-bottom: -100px;
-=======
-  margin-bottom: 300px;
->>>>>>> parent of 8ee7604 (fixed the spacing around the service section)
-=======
-  margin-bottom: 300px;
->>>>>>> parent of 8ee7604 (fixed the spacing around the service section)
+  margin-bottom: 200px;
 }
 /* Rectangle 2 and 3*/
 .rectangle2{
-  margin-top: 10px;
+  margin-top: 50px;
   margin-left: -40px;
   width: 60%;
   height: 35%;
 }
 .rectangle3{
-  margin-top: 30px;
+  margin-top: 70px;
   margin-left: -70px;
   width: 60%;
   height: 35%;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-.vectorbuld2{
-  padding-top: 0px;
- }
-.vectorbuld2 .heading{
+.vectorbuld2 .heading1{
+  margin-top: -100px;
   text-align: center;
   margin-bottom: 40px;
   font-size: 12px;
-=======
-.vectorbuld2 .heading1{
-  margin-top: -150px;
-  font-size: 10px;
->>>>>>> parent of 8ee7604 (fixed the spacing around the service section)
-=======
-.vectorbuld2 .heading1{
-  margin-top: -150px;
-  font-size: 10px;
->>>>>>> parent of 8ee7604 (fixed the spacing around the service section)
 }
+.vectorbuld2 .heading h3{
+  margin-top: 20px;
+}
+
 /* picture section */
 .pic-grid{
   margin-left: 10%;
