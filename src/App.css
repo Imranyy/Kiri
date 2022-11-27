@@ -168,6 +168,7 @@ button{
   height: 400px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .vectorbuld2{
   margin-top: 50px;
 }
@@ -180,12 +181,17 @@ button{
 .vectorbuld2 .heading h3{
   margin-top: 20px;
 =======
+=======
+>>>>>>> parent of 8ee7604 (fixed the spacing around the service section)
 .heading1{
   padding-top: 80px;
   display:flex;
   justify-content:center;
   margin-top:50px;
   line-height:55px;
+<<<<<<< HEAD
+>>>>>>> parent of 8ee7604 (fixed the spacing around the service section)
+=======
 >>>>>>> parent of 8ee7604 (fixed the spacing around the service section)
 }
 /* picture section */
@@ -1076,6 +1082,7 @@ footer .social-icons{
   grid-template-columns: repeat(1,1fr);
   max-width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 /* Rectangle 2 and 3*/
 .rectangle2{
@@ -1087,6 +1094,12 @@ footer .social-icons{
 }
 /* Rectangle 2 and 3*/
 .rectangle2{
+=======
+  margin-bottom: 300px;
+}
+/* Rectangle 2 and 3*/
+.rectangle2{
+>>>>>>> parent of 8ee7604 (fixed the spacing around the service section)
   margin-top: 10px;
   width: 60%;
   height: 50%;
@@ -1099,6 +1112,7 @@ footer .social-icons{
   height: 30%;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
  .vectorbuld2{
   padding-top: 380px;
  }
@@ -1110,6 +1124,8 @@ footer .social-icons{
 .vectorbuld2 .heading h3{
   margin-top: 20px;
 }
+=======
+>>>>>>> parent of 8ee7604 (fixed the spacing around the service section)
 =======
 >>>>>>> parent of 8ee7604 (fixed the spacing around the service section)
 /* picture section */
@@ -1510,7 +1526,11 @@ footer .social-icons{
   grid-template-columns: repeat(1,1fr);
   max-width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin-bottom: -100px;
+=======
+  margin-bottom: 300px;
+>>>>>>> parent of 8ee7604 (fixed the spacing around the service section)
 =======
   margin-bottom: 300px;
 >>>>>>> parent of 8ee7604 (fixed the spacing around the service section)
@@ -1529,6 +1549,7 @@ footer .social-icons{
   height: 35%;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .vectorbuld2{
   padding-top: 0px;
  }
@@ -1536,6 +1557,11 @@ footer .social-icons{
   text-align: center;
   margin-bottom: 40px;
   font-size: 12px;
+=======
+.vectorbuld2 .heading1{
+  margin-top: -150px;
+  font-size: 10px;
+>>>>>>> parent of 8ee7604 (fixed the spacing around the service section)
 =======
 .vectorbuld2 .heading1{
   margin-top: -150px;
