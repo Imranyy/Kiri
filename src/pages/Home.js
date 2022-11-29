@@ -23,6 +23,10 @@ import profile2 from '../media/Profile2.png';
 import profile3 from '../media/Profile3.png';
 import profile4 from '../media/Profile4.png';
 import toast from "react-hot-toast";
+import Image1 from '../media/Public\ relations.png';
+import Image2 from '../media/Brand\ Management.png';
+import Image3 from '../media/Digital\ Marketing.png';
+import Image4 from "../media/Training.png";
 
 function Home(props) {
     const [name,setName]=useState('');
@@ -91,26 +95,43 @@ function Home(props) {
                 </div>
 
                 <div className='vectorbuld2'>
-                    <div style={{display:'flex',justifyContent:'center',marginTop:'50px',lineHeight: '55px'}}>
+                    <div style={{display:'flex',justifyContent:'center',marginTop:'50px',fontSize: '20px'}}>
                         <h1 className= 'heading' style={{color:'#CC2031',marginRight:'6px'}}>Recreating</h1> 
                         <h1 className= 'heading' style={{fontWeight:'normal'}}>Stories and Experiences for manufacturing Industries</h1>
                     </div>
 
-                    <div style={{textAlign:'center',marginTop:'30px',lineHeight: '55px'}}>
-                        <h3 className='heading' style={{fontSize: '30px'}}>SERVICES</h3>
-                        <p style={{fontSize: '20px', textAlign: 'center'}}>
+                    <div style={{textAlign:'center',marginTop:'30px'}}>
+                        <h3 className='heading' style={{fontSize: '30px', paddingBottom: '10px', paddingTop: '40px'}}>SERVICES</h3>
+                        <span style={{fontSize: '20px', textAlign: 'center'}}>
                             We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, <br/>identity, innovation and inclusion and diversity.
-                        </p>
+                        </span>
                     </div>
                 </div>
             </div>
             {/* picture section */}
-            <div className='pic-grid'>
+            {/* <div className='grid-container'>
                 <div className='grid-item-1'></div>
                 <div className='grid-item-2'></div>
                 <div className='grid-item-3'></div>
                 <div className='grid-item-4'></div>
+            </div> */}
+            <div>
+                <div className='gallery'>
+                    <figure className='gallery__item grid-item-1'>
+                        <img src={Image1} className="gallery__img" alt="Image 1"/>
+                    </figure>
+                    <figure className='gallery__item grid-item-2'>
+                        <img src={Image2} className="gallery__img" alt="Image 2"/>
+                    </figure>
+                    <figure className='gallery__item grid-item-3'>
+                        <img src={Image3} className="gallery__img" alt="Image 3"/>
+                    </figure>
+                    <figure className='gallery__item grid-item-4'>
+                        <img src={Image4} className="gallery__img" alt="Image 4"/>
+                    </figure>
+                </div>
             </div>
+
             {/* testimony section */}
             <div className='testimony'>
                 <div style={{textAlign:"center"}}>
