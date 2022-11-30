@@ -135,8 +135,8 @@ function Home(props) {
             {/* testimony section */}
             <div className='testimony'>
                 <div style={{textAlign:"center"}}>
-                    <h2 className='heading'>TESTIMONIALS</h2>
-                    <p>We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.</p>
+                    <h2 className='heading' style={{fontSize: '30px'}}>TESTIMONIALS</h2>
+                    <p style={{fontSize: '20px', paddingTop: '10px'}}>Think we’re bluffing? See what people we’ve worked with think about us.</p>
                 </div>
                 {/* testimony cards */}
                 <div style={{paddingLeft:'100px',paddingRight:'100px',paddingBottom:'10px'}}>
