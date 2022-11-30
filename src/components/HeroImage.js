@@ -2,6 +2,9 @@ import React from 'react';
 import Navbar from "./Navbar";
 
 function HeroImage(props) {
+    const contacts=()=>{
+        document.querySelector('#contacts').scrollIntoView();
+    }
     return (
         <div className='Hero'>
             <Navbar/>
@@ -14,7 +17,7 @@ function HeroImage(props) {
                         <p className='text'>
                             We focus on deep customer insights to provide growth.
                         </p>
-                        <button style={{}}>
+                        <button onClick={contacts}>
                             Contact Us
                         </button>
                     </div>
