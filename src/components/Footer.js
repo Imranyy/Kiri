@@ -9,6 +9,13 @@ import twitter from '../media/twitter.png';
 import linkedIn from '../media/linkdin.png';
 
 function Footer(props) {
+    const about=()=>{
+        document.querySelector('#about').scrollIntoView();
+    }
+    
+    const services=()=>{
+        document.querySelector('#services').scrollIntoView();
+    }
     return (
         <>
             <footer>
@@ -17,8 +24,8 @@ function Footer(props) {
                         <h2>Service</h2>
                         <ul style={{listStyle:'none'}}>
                             <li><Link to='/'>Home</Link></li>
-                            <li><Link to='/'>About</Link></li>
-                            <li><Link to='/'>Service</Link></li>
+                            <li><Link onClick={about}>About</Link></li>
+                            <li><Link onClick={services}>Service</Link></li>
                             <li><Link to='/blogs'>Blog</Link></li>
                             <li><Link to='/blog/add'>Add Blog</Link></li>
                         </ul>
@@ -53,7 +60,7 @@ function Footer(props) {
                 <a href='#' target='_blank'><img style={{marginLeft:'50px'}} src={linkedIn} alt="..."/></a>
                 <a href='#' target='_blank'><img style={{marginLeft:'50px'}} src={insta} alt="..."/></a>
             </div>
-            <p align='center'>©2022 Kiri Marketing and PR Consultants </p>
+            <p className='last' align='center'>©2022 Kiri Marketing and PR Consultants </p>
             </footer>
         </>
     );

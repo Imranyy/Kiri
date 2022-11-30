@@ -13,7 +13,7 @@ function HeroImage(props) {
                         <h1 className='heading' style={{fontSize:'50px',fontWeight:'lighter',color:'#1E1E1E'}}>
                         Enhancing Lives
                         </h1>
-                        <p className='text' style={{marginTop:"20px",fontSize:'20px',color:'#1E1E1E'}}>
+                        <p className='text'>
                             We focus on deep customer insights to provide growth.
                         </p>
                         <button style={{}}>

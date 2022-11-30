@@ -69,7 +69,7 @@ function Home(props) {
         <>
             <HeroImage/>
             {/* about section */}
-            <div className='about'>
+            <div className='about' id='about'>
                 <div className='grid'>
                     <div className='grid-item'>
                         <h2 className='heading' style={{fontWeight:'bold' ,paddingBottom: '20px', fontSize: '30px'}}>ABOUT US</h2>
@@ -249,7 +249,7 @@ function Home(props) {
                 </div>
             </div>
             {/* recent article section */}
-            <div className='recent-articles'>
+            <div className='recent-articles' id='news'>
                 <h4>RECENT ARTICLES</h4>
                 <h2>Get Updated on the latest trends</h2>
                 <div className='grid-article'>
@@ -268,7 +268,7 @@ function Home(props) {
 
 
             {/* talk more section */}
-            <div className='talk-more'>
+            <div className='talk-more' id='contacts'>
                 <div className='grid-talk-more'>
                     <div className='grid-talk-1'>
                         <h1>Let’s talk about building your reputation</h1>
