@@ -29,16 +29,28 @@ function Navbar(props) {
         close();
         document.querySelector('#services').scrollIntoView();
     }
+    const top=()=>{
+        close();
+        document.querySelector('.Hero').scrollIntoView();
+    }
+    const add=()=>{
+        const nav=document.querySelector('nav');
+        if(window.scrollY>0){
+            nav.classList.add('add-shadow');
+        } else{
+            nav.classList.remove('add-shadow');
+        }
+    }
     return (
         <>
-            <nav className="navbar" >
+            <nav className="navbar" onMouseOver={add}>
                 <div className="brand">
                     <Link to='/' className="navbar-brand"><img className='logo' src={logo} alt="Kiri"/></Link>
                 </div>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0" >
                         <li className="nav-item">
-                            <Link to='/' className="nav-link active" aria-current="page" >Home</Link>
+                            <Link onClick={top} className="nav-link active" aria-current="page" >Home</Link>
                         </li>
                         <li className="nav-item">
                             <Link onClick={about} className="nav-link" >About</Link>
@@ -52,10 +64,8 @@ function Navbar(props) {
                         <li className="nav-item">
                             <Link onClick={contacts} className="nav-link">Contacts</Link>
                         </li> 
-                        <li className="nav-item">
-                            <img src={menu} alt='menu' onClick={showMenu}/>
-                        </li> 
                     </ul>
+                    <img src={menu} alt='menu' className='ham' onClick={showMenu}/>
                 </div>
             </nav>
 

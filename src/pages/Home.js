@@ -62,19 +62,31 @@ function Home(props) {
     }
     const showPublic=()=>{
         document.querySelector('.public-h3').style.display="none";
-        document.querySelector('.public').style.display="block"
+        document.querySelector('.public').style.display="block";
+        dontShowBrand();
+        dontShowDigital();
+        dontShowTraining();
     }
    const showBrand=()=>{
     document.querySelector('.brand-h3').style.display="none";
-    document.querySelector('.bran').style.display="block"
+    document.querySelector('.bran').style.display="block";
+    dontShowDigital();
+    dontShowTraining();
+    dontShowPublic();
    }
    const showDigital=()=>{
     document.querySelector('.digital-h3').style.display="none";
-    document.querySelector('.digital').style.display="block"
+    document.querySelector('.digital').style.display="block";
+    dontShowPublic();
+    dontShowBrand();
+    dontShowTraining();
    }
    const showTraining=()=>{
     document.querySelector('.training-h3').style.display="none";
-    document.querySelector('.training').style.display="block"
+    document.querySelector('.training').style.display="block";
+    dontShowBrand();
+    dontShowPublic();
+    dontShowDigital();
    }
    const dontShowPublic=()=>{
     document.querySelector('.public-h3').style.display="block";
@@ -86,13 +98,14 @@ function Home(props) {
    }
    const dontShowDigital=()=>{
     document.querySelector('.digital-h3').style.display="block";
-    document.querySelector('digital').style.display="none"
+    document.querySelector('.digital').style.display="none"
    }
    const dontShowTraining=()=>{
     document.querySelector('.training-h3').style.display="block";
     document.querySelector('.training').style.display="none"
    }
-
+   
+   
     return (
         <>
             <HeroImage/>
@@ -138,7 +151,7 @@ function Home(props) {
             </div>
             {/* picture section */}
             <div className='pic-grid'>
-                <div className='grid-item-1' onMouseOver={showPublic} onMouseLeave={dontShowPublic}>
+                <div className='grid-item-1' onClick={showPublic} onMouseOver={showPublic} onMouseLeave={dontShowPublic}>
                     <h3 className='public-h3'>Public Relations</h3>
                     <div className='public' style={{marginTop:'50px',display:'none'}}>
                         <h2>Public Relations</h2>
@@ -151,16 +164,16 @@ function Home(props) {
                         </p>
                     </div>
                 </div>
-                <div className='grid-item-2' onMouseOver={showBrand} onMouseLeave={dontShowBrand}>
+                <div className='grid-item-2' onClick={showBrand} onMouseOver={showBrand} onMouseLeave={dontShowBrand}>
                     <h3 className='brand-h3'>Brand Management</h3>
-                    <div className='bran' style={{marginTop:'50px',display:'none'}}>
+                    <div className='bran' style={{marginTop:'40px',display:'none'}}>
                         <h2>Brand Management</h2>
                         <p>
                         Tell your story! We understand the importance of purpose- driven brand activation, we want you to sustain your brand visibility by showcasing it and telling your impact stories to the world and to the people that matter. Our brand activation strategies will drive results as they will be uniquely customized to exhibit the alignment of your company values and missions.
                         </p>
                     </div>
                 </div>
-                <div className='grid-item-3' onMouseOver={showDigital} onMouseLeave={dontShowDigital}>
+                <div className='grid-item-3' onClick={showDigital} onMouseOver={showDigital} onMouseLeave={dontShowDigital}>
                     <h3 className='digital-h3'>Digital Marketing</h3>
                     <div className='digital' style={{marginTop:'50px',display:'none'}}>
                         <h2>Digital Marketing</h2>
@@ -169,7 +182,7 @@ function Home(props) {
                         </p>
                     </div>
                 </div>
-                <div className='grid-item-4' onMouseOver={showTraining} onMouseLeave={dontShowTraining}>
+                <div className='grid-item-4' onClick={showTraining} onMouseOver={showTraining} onMouseLeave={dontShowTraining}>
                     <h3 className='training-h3'>Training</h3>
                     <div className='training' style={{marginTop:'50px',display:'none'}}>
                         <h2>Training</h2>
