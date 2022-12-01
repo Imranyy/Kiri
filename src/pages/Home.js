@@ -149,7 +149,7 @@ function Home(props) {
                         <h3 id='services'>SERVICES</h3>
                         <p style={{fontSize: '20px', textAlign: 'center'}}>
                             We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, <br/>identity, innovation and inclusion and diversity.
-                        </span>
+                        </p>
                     </div>
                 </div>
             </div>
