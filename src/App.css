@@ -1049,7 +1049,7 @@ footer .social-icons{
 @media screen and (max-width:350px) {
   nav .ham{
     display: block;
-    margin-left: -520px;
+    margin-left: -521px;
   }
 }
 @media screen and (max-width:300px) {
