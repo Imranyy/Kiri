@@ -429,6 +429,7 @@ button{
   }
   .header{
     padding-left: 125px;
+    margin-top: -50px;
     height: 529px;
     left: -1px;
     top: 105px;
@@ -522,8 +523,9 @@ button{
   height: 100%;
 }
 .blog-article-header{
-  height: 500px;
-  background: url('./media/Rectangle\ 43.png');
+    margin-top: -50px;
+    height: 500px;
+    background: url('./media/Rectangle\ 43.png');
 }
 .article-content{
   margin-left: 4%;
@@ -598,6 +600,7 @@ button{
   box-shadow:0 2px 4px 0 rgba(0,0,0,0.2);
 }
 .form-container{
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1035,19 +1038,25 @@ footer .social-icons{
 @media screen and (max-width:530px) {
   nav .ham{
     display: block;
-    margin-left: -350px;
+    margin-left: -400px;
   }
 }
 @media screen and (max-width:430px) {
   nav .ham{
     display: block;
-    margin-left: -400px;
+    margin-left: -480px;
   }
 }
-@media screen and (max-width:330px) {
+@media screen and (max-width:350px) {
   nav .ham{
     display: block;
-    margin-left: -450px;
+    margin-left: -520px;
+  }
+}
+@media screen and (max-width:300px) {
+  nav .ham{
+    display: block;
+    margin-left: -550px;
   }
 }
 
@@ -1604,7 +1613,7 @@ footer .social-icons{
 }
 /* grid-card-1 */
 .card-grid-1{
-  margin-left: -100px;
+  margin-left: -110px;
   margin-top: 42px;
   display: grid;
   grid-template-columns: repeat(1,1fr);
@@ -1612,9 +1621,9 @@ footer .social-icons{
 
 /* card */
 .grid-card{
-  margin-left: -10px;
+  padding-left: 10px;
+  width: 300px;
   margin-top: 17%;
-  width: 170%;
   height: 85%;
   font-size: 14px;
   background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
@@ -1633,6 +1642,7 @@ footer .social-icons{
 }
 .company-image{
   display: flex;
+  padding-left: 2px;
   margin-left: -80px;
   width: 290px;
   overflow:scroll;
@@ -1640,6 +1650,8 @@ footer .social-icons{
 }
 /* history section */
 .history-section{
+  text-align: center;
+  align-content: center;
   padding-top: 50px;
   padding-bottom: 30px;
   color:white;
@@ -1730,7 +1742,7 @@ footer .social-icons{
 .grid-talk-2 form{
   padding-top: 26px;
   padding-left: 30px;
-  width: 290px;
+  width: 100%;
   height: 490px;
   background: rgba(233, 175, 63, 0.2);
 }
