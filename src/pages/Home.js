@@ -23,10 +23,10 @@ import profile2 from '../media/Profile2.png';
 import profile3 from '../media/Profile3.png';
 import profile4 from '../media/Profile4.png';
 import toast from "react-hot-toast";
-import Image1 from '../media/Public\ relations.png';
-import Image2 from '../media/Brand\ Management.png';
-import Image3 from '../media/Digital\ Marketing.png';
-import Image4 from "../media/Training.png";
+import Image1 from '../media/Public relations image.png';
+import Image2 from '../media/Brand management image.png';
+import Image3 from '../media/Digital Marketing Image.png';
+import Image4 from "../media/Training Image.png";
 
 function Home(props) {
     const [name,setName]=useState('');
