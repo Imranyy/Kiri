@@ -64,6 +64,51 @@ function Home(props) {
             console.log(error.message);
         }
     }
+    const showPublic=()=>{
+        document.querySelector('.public-h3').style.display="none";
+        document.querySelector('.public').style.display="block";
+        dontShowBrand();
+        dontShowDigital();
+        dontShowTraining();
+    }
+   const showBrand=()=>{
+    document.querySelector('.brand-h3').style.display="none";
+    document.querySelector('.bran').style.display="block";
+    dontShowDigital();
+    dontShowTraining();
+    dontShowPublic();
+   }
+   const showDigital=()=>{
+    document.querySelector('.digital-h3').style.display="none";
+    document.querySelector('.digital').style.display="block";
+    dontShowPublic();
+    dontShowBrand();
+    dontShowTraining();
+   }
+   const showTraining=()=>{
+    document.querySelector('.training-h3').style.display="none";
+    document.querySelector('.training').style.display="block";
+    dontShowBrand();
+    dontShowPublic();
+    dontShowDigital();
+   }
+   const dontShowPublic=()=>{
+    document.querySelector('.public-h3').style.display="block";
+    document.querySelector('.public').style.display="none"
+   }
+   const dontShowBrand=()=>{
+    document.querySelector('.brand-h3').style.display="block";
+    document.querySelector('.bran').style.display="none"
+   }
+   const dontShowDigital=()=>{
+    document.querySelector('.digital-h3').style.display="block";
+    document.querySelector('.digital').style.display="none"
+   }
+   const dontShowTraining=()=>{
+    document.querySelector('.training-h3').style.display="block";
+    document.querySelector('.training').style.display="none"
+   }
+   
    
     return (
         <>
@@ -95,40 +140,60 @@ function Home(props) {
                 </div>
 
                 <div className='vectorbuld2'>
-                    <div style={{display:'flex',justifyContent:'center',marginTop:'50px',fontSize: '20px'}}>
-                        <h1 className= 'heading' style={{color:'#CC2031',marginRight:'6px'}}>Recreating</h1> 
+                    <div style={{display:'flex',justifyContent:'center',marginTop:'50px'}}>
+                        <h1 className= 'heading' style={{color:'#CC2031',marginRight:'5px'}}>Recreating</h1> 
                         <h1 className= 'heading' style={{fontWeight:'normal'}}>Stories and Experiences for manufacturing Industries</h1>
                     </div>
 
-                    <div style={{textAlign:'center',marginTop:'30px'}}>
-                        <h3 className='heading' style={{fontSize: '30px', paddingBottom: '10px', paddingTop: '40px'}}>SERVICES</h3>
-                        <span style={{fontSize: '20px', textAlign: 'center'}}>
+                    <div style={{textAlign:'center',marginTop:'30px',lineHeight: '55px'}}>
+                        <h3 id='services'>SERVICES</h3>
+                        <p style={{fontSize: '20px', textAlign: 'center'}}>
                             We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, <br/>identity, innovation and inclusion and diversity.
                         </span>
                     </div>
                 </div>
             </div>
             {/* picture section */}
-            {/* <div className='grid-container'>
-                <div className='grid-item-1'></div>
-                <div className='grid-item-2'></div>
-                <div className='grid-item-3'></div>
-                <div className='grid-item-4'></div>
-            </div> */}
-            <div>
-                <div className='gallery'>
-                    <figure className='gallery__item grid-item-1'>
-                        <img src={Image1} className="gallery__img" alt="Image 1"/>
-                    </figure>
-                    <figure className='gallery__item grid-item-2'>
-                        <img src={Image2} className="gallery__img" alt="Image 2"/>
-                    </figure>
-                    <figure className='gallery__item grid-item-3'>
-                        <img src={Image3} className="gallery__img" alt="Image 3"/>
-                    </figure>
-                    <figure className='gallery__item grid-item-4'>
-                        <img src={Image4} className="gallery__img" alt="Image 4"/>
-                    </figure>
+            <div className='pic-grid'>
+                <div className='grid-item-1' onClick={showPublic} onMouseOver={showPublic} onMouseLeave={dontShowPublic}>
+                    <h3 className='public-h3'>Public Relations</h3>
+                    <div className='public' style={{marginTop:'50px',display:'none'}}>
+                        <h2>Public Relations</h2>
+                        <p>
+                            You know you’re awesome. We know you’re awesome. Let us tell the world just how awesome you are. Because that’s what great PR is all about.
+                            Connect with us!
+                            Corporate communication
+                            Social Media communication
+                            PR events and engagements
+                        </p>
+                    </div>
+                </div>
+                <div className='grid-item-2' onClick={showBrand} onMouseOver={showBrand} onMouseLeave={dontShowBrand}>
+                    <h3 className='brand-h3'>Brand Management</h3>
+                    <div className='bran' style={{marginTop:'40px',display:'none'}}>
+                        <h2>Brand Management</h2>
+                        <p>
+                        Tell your story! We understand the importance of purpose- driven brand activation, we want you to sustain your brand visibility by showcasing it and telling your impact stories to the world and to the people that matter. Our brand activation strategies will drive results as they will be uniquely customized to exhibit the alignment of your company values and missions.
+                        </p>
+                    </div>
+                </div>
+                <div className='grid-item-3' onClick={showDigital} onMouseOver={showDigital} onMouseLeave={dontShowDigital}>
+                    <h3 className='digital-h3'>Digital Marketing</h3>
+                    <div className='digital' style={{marginTop:'50px',display:'none'}}>
+                        <h2>Digital Marketing</h2>
+                        <p>
+                        Yes, we get you. We fully understand that you’re not just doing business, You’re in the business of changing lives. You’re passionate about solving problems in your community and driving positive change. We are also passionate about helping you change the world. To succeed, you need to engage people online, your customers, partners, and supporters.
+                        </p>
+                    </div>
+                </div>
+                <div className='grid-item-4' onClick={showTraining} onMouseOver={showTraining} onMouseLeave={dontShowTraining}>
+                    <h3 className='training-h3'>Training</h3>
+                    <div className='training' style={{marginTop:'50px',display:'none'}}>
+                        <h2>Training</h2>
+                        <p>
+                        Yes, we get you. We fully understand that you’re not just doing business, You’re in the business of changing lives. You’re passionate about solving problems in your community and driving positive change. We are also passionate about helping you change the world. To succeed, you need to engage people online, your customers, partners, and supporters.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -165,9 +230,7 @@ function Home(props) {
                                 </p>
                             </div>
                         </div>
-                    </div>
 
-                    <div className='card-grid-2'>
                         <div className='grid-card'>
                             <p className='heading'>
                             Talent Industry acknowledges the partnership offered by Kiri Marketing Consultants in the success of the 2022 East Africa Poetic Hour Battle on 20th May 2022. We would like to thank them for their outstanding service in event planning, marketing, branding and corporate ushering.
@@ -191,22 +254,24 @@ function Home(props) {
                             </div>
                         </div>
                     </div>
+
+                
                     {/* percentage */}
                     <div className='grid-percentage'>
                         <div className='grid-percentage-1'>
-                             <img src={person} alt='...'/><h2>37+</h2>
+                             <img src={person} alt='...'/><h2>37+</h2><br/>
                             <p>Happy Clients</p>
                         </div>
                         <div className='grid-percentage-2'>
-                            <img src={network} alt='...'/><h2>98%</h2>
+                            <img src={network} alt='...'/><h2>98%</h2><br/>
                             <p>Positive Feedback</p>
                         </div>
                         <div className='grid-percentage-3'>
-                            <img src={eye} alt='...'/><h2>835+</h2>
+                            <img src={eye} alt='...'/><h2>835+</h2><br/>
                             <p>Loyal Followers</p>
                         </div>
                         <div className='grid-percentage-4'>
-                            <img src={plane} alt='...'/><h2>50+</h2>
+                            <img src={plane} alt='...'/><h2>50+</h2><br/>
                             <p>Projects Delivered</p>
                         </div>
                     </div>
@@ -230,13 +295,13 @@ function Home(props) {
             </div>
             {/* history section */}
             <div className='history-section'>
+                <h1>Our history</h1>
                 <div className='grid-history'>
                     <div className='grid-history-1'>
                         <div className='reflection'></div>
                         <img src={history} alt='...'/>
                     </div>
                     <div className='grid-history-2'>
-                        <h4>Our history</h4>
                         <p>Kiri Marketing Consultants is a Private Limited company founded in 2020 during the Covid 19 pandemic.
 
                             Our Founder has been a beneficiary of many missions driven projects especially ones that support women entrepreneurs for sustainable impact. She also has professional experience working for a Non-Profit organization. Her experiences and such initiatives have enabled her to harness her skills as a team leader and helped her gain a better perspective when it comes to mission-driven companies.
