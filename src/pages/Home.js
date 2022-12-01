@@ -153,7 +153,7 @@ function Home(props) {
             <div className='pic-grid'>
                 <div className='grid-item-1' onClick={showPublic} onMouseOver={showPublic} onMouseLeave={dontShowPublic}>
                     <h3 className='public-h3'>Public Relations</h3>
-                    <div className='public' style={{marginTop:'50px',display:'none'}}>
+                    <div className='public' style={{marginTop:'45px',display:'none'}}>
                         <h2>Public Relations</h2>
                         <p>
                             You know you’re awesome. We know you’re awesome. Let us tell the world just how awesome you are. Because that’s what great PR is all about.
@@ -166,7 +166,7 @@ function Home(props) {
                 </div>
                 <div className='grid-item-2' onClick={showBrand} onMouseOver={showBrand} onMouseLeave={dontShowBrand}>
                     <h3 className='brand-h3'>Brand Management</h3>
-                    <div className='bran' style={{marginTop:'40px',display:'none'}}>
+                    <div className='bran' style={{marginTop:'25px',display:'none'}}>
                         <h2>Brand Management</h2>
                         <p>
                         Tell your story! We understand the importance of purpose- driven brand activation, we want you to sustain your brand visibility by showcasing it and telling your impact stories to the world and to the people that matter. Our brand activation strategies will drive results as they will be uniquely customized to exhibit the alignment of your company values and missions.
@@ -175,7 +175,7 @@ function Home(props) {
                 </div>
                 <div className='grid-item-3' onClick={showDigital} onMouseOver={showDigital} onMouseLeave={dontShowDigital}>
                     <h3 className='digital-h3'>Digital Marketing</h3>
-                    <div className='digital' style={{marginTop:'50px',display:'none'}}>
+                    <div className='digital' style={{marginTop:'25px',display:'none'}}>
                         <h2>Digital Marketing</h2>
                         <p>
                         Yes, we get you. We fully understand that you’re not just doing business, You’re in the business of changing lives. You’re passionate about solving problems in your community and driving positive change. We are also passionate about helping you change the world. To succeed, you need to engage people online, your customers, partners, and supporters.
@@ -184,7 +184,7 @@ function Home(props) {
                 </div>
                 <div className='grid-item-4' onClick={showTraining} onMouseOver={showTraining} onMouseLeave={dontShowTraining}>
                     <h3 className='training-h3'>Training</h3>
-                    <div className='training' style={{marginTop:'50px',display:'none'}}>
+                    <div className='training' style={{marginTop:'25px',display:'none'}}>
                         <h2>Training</h2>
                         <p>
                         Yes, we get you. We fully understand that you’re not just doing business, You’re in the business of changing lives. You’re passionate about solving problems in your community and driving positive change. We are also passionate about helping you change the world. To succeed, you need to engage people online, your customers, partners, and supporters.
