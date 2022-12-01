@@ -428,6 +428,7 @@ button{
   }
   .header{
     padding-left: 125px;
+    margin-top: -50px;
     height: 529px;
     left: -1px;
     top: 105px;
@@ -521,8 +522,9 @@ button{
   height: 100%;
 }
 .blog-article-header{
-  height: 500px;
-  background: url('./media/Rectangle\ 43.png');
+    margin-top: -50px;
+    height: 500px;
+    background: url('./media/Rectangle\ 43.png');
 }
 .article-content{
   margin-left: 4%;
@@ -597,6 +599,7 @@ button{
   box-shadow:0 2px 4px 0 rgba(0,0,0,0.2);
 }
 .form-container{
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
