@@ -1927,6 +1927,60 @@ footer .social-icons{
   height: 181px;
 }
 /* article page css */
+/* blog article page css */
+
+.blog-article-header{
+    margin-top: -50px;
+    height: 300px;
+    background: url('./media/Rectangle\ 43.png');
+}
+.article-content{
+  margin-left: 4%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.article-content h1{
+  width:100%;
+  height: 132px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+}
+.article-content p{
+  margin-top: -30px;
+  width: fit-content;
+  padding-right: 10px;
+  height: fit-content;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #1E1E1E;
+  margin-bottom: 15%;
+}
+.more-article{
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 10px;
+  height: 546px;
+  background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
+}
+.more-article .card-blogs{
+  width: 70%;
+  padding-left: 10%;
+}
+
+.more-article h2{
+  margin-left: 5%;
+  margin-bottom: -50px;
+  width: 100%;
+  height: 55px;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  color: #1E1E1E;
+}
 .more-article a{
   padding-top: 4%;
   font-size: 15px;
@@ -1993,6 +2047,14 @@ footer .social-icons{
     height: 85%;
     background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
   }
+  .more-article .card-blogs{
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 17%;
+  }
+  .more-article .card-blogs img{
+    width: 200px;
+  }
 }
 @media screen and (max-width:300px) {
   nav .ham{
@@ -2006,6 +2068,16 @@ footer .social-icons{
     width: 250px;
     height: 85%;
     background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
+  }
+  .more-article .card-blogs{
+    width: 50%;
+    height: max-content;
+    padding-left: 15px;
+    padding-right: 17%;
+    padding-bottom: 20px;
+  }
+  .more-article .card-blogs img{
+    width: 150px;
   }
 }
 @media screen and (max-width:280px) {
