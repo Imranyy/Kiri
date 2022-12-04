@@ -24,6 +24,7 @@ nav{
   top:0;
   padding-top: 70px;
   height: 60px;
+  z-index: 99;
 }
 .add-shadow{
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -41,6 +42,7 @@ nav ul{
   width: fit-content;
   list-style: none;
   justify-content: flex-end;
+
 }
 nav ul a{
   font-family: 'League Spartan', sans-serif;
@@ -65,7 +67,7 @@ nav .ham{
   display: none;
   background: whitesmoke;
   padding: min(10vh,2rem) 2em;
-  z-index: 1;
+  z-index: 1000;
   transition: ease-out 2s;
 }
 .nav-menu ul{
