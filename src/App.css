@@ -24,7 +24,6 @@ nav{
   top:0;
   padding-top: 70px;
   height: 60px;
-  z-index: 99;
 }
 .add-shadow{
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -64,6 +63,7 @@ nav .ham{
 .nav-menu{
   inset :0 0 0 30%;
   position:fixed;
+  height: 100%;
   display: none;
   background: whitesmoke;
   padding: min(10vh,2rem) 2em;
