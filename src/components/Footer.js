@@ -16,6 +16,9 @@ function Footer(props) {
     const services=()=>{
         document.querySelector('#services').scrollIntoView();
     }
+    const top=()=>{
+        document.querySelector('.Hero').scrollIntoView();
+    }
     return (
         <>
             <footer>
@@ -23,9 +26,9 @@ function Footer(props) {
                     <div>
                         <h2>Service</h2>
                         <ul style={{listStyle:'none'}}>
-                            <li><Link to='/'>Home</Link></li>
-                            <li><Link onClick={about}>About</Link></li>
-                            <li><Link onClick={services}>Service</Link></li>
+                            <li><Link to='/' onClick={top}>Home</Link></li>
+                            <li><Link to='/' onClick={about}>About</Link></li>
+                            <li><Link to='/' onClick={services}>Service</Link></li>
                             <li><Link to='/blogs'>Blog</Link></li>
                             <li><Link to='/blog/add'>Add Blog</Link></li>
                         </ul>

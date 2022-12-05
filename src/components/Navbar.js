@@ -50,19 +50,19 @@ function Navbar(props) {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0" >
                         <li className="nav-item">
-                            <Link onClick={top} className="nav-link active" aria-current="page" >Home</Link>
+                            <Link to='/' onClick={top} className="nav-link active" aria-current="page" >Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link onClick={about} className="nav-link" >About</Link>
+                            <Link to='/' onClick={about} className="nav-link" >About</Link>
                         </li>
                         <li className="nav-item">
-                            <Link onClick={services} className="nav-link" >Services</Link>
+                            <Link to='/' onClick={services} className="nav-link" >Services</Link>
                         </li>
                         <li className="nav-item">
-                            <Link onClick={news} className="nav-link" >News</Link>
+                            <Link to='/' onClick={news} className="nav-link" >News</Link>
                         </li>
                         <li className="nav-item">
-                            <Link onClick={contacts} className="nav-link">Contacts</Link>
+                            <Link to='/' onClick={contacts} className="nav-link">Contacts</Link>
                         </li> 
                     </ul>
                     <img src={menu} alt='menu' className='ham' onClick={showMenu}/>
@@ -73,10 +73,10 @@ function Navbar(props) {
                 <img src={Close} alt='close' onClick={close}/><br/><br/>
                 <ul>
                     <li><Link to='/' onClick={close} className="nav-link active" aria-current="page" >Home</Link></li><br/>
-                    <li><Link onClick={about} className="nav-link" >About</Link></li><br/>
-                    <li><Link onClick={services} className="nav-link" >Services</Link></li><br/>
-                    <li> <Link onClick={news} className="nav-link" >News</Link></li><br/>
-                    <li><Link onClick={contacts} className="nav-link">Contacts</Link></li><br/>
+                    <li><Link to='/' onClick={about} className="nav-link" >About</Link></li><br/>
+                    <li><Link to='/' onClick={services} className="nav-link" >Services</Link></li><br/>
+                    <li> <Link to='/' onClick={news} className="nav-link" >News</Link></li><br/>
+                    <li><Link to='/' onClick={contacts} className="nav-link">Contacts</Link></li><br/>
                 </ul>
             </div>
         </>
