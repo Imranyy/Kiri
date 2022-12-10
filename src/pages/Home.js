@@ -5,8 +5,6 @@ import rect2 from '../media/Rectangle 2.svg';
 import articleImage1 from "../media/articleImage1.png";
 import articleImage2 from "../media/articleImage2.png";
 import history from '../media/historyImage.png';
-import leftArrowIcon from '../media/Vector (1).png';
-import rightArrowIcon from '../media/Vector.png';
 import image4 from '../media/image 4.png';
 import image5 from '../media/image 5.png';
 import image6 from '../media/image 6.png';
@@ -275,7 +273,6 @@ function Home(props) {
                     <div className='worked-with'>
                         <h4>we’ve worked with</h4>
                         <div className='company-image'>
-                            <img width='10' height='15' src={leftArrowIcon} style={{cursor:'pointer'}} alt='...'/>
                                 <img width='65' height='50' src={image4} alt='...'/>
                                 <img width='65' height='50' src={image5} alt='...'/>
                                 <img width='65' height='50' src={image6} alt='...'/>
@@ -283,7 +280,6 @@ function Home(props) {
                                 <img width='65' height='50' src={image8} alt='...'/>
                                 <img width='65' height='50' src={image9} alt='...'/>
                                 <img width='65' height='50' src={image11} alt='...'/>
-                            <img width='10' height='15' src={rightArrowIcon} style={{cursor:'pointer'}} alt='...'/>
                         </div>
                     </div>
                 </div>

@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   font-family: 'League Spartan', sans-serif;
+  font-size: medium;
 }
 .preload{
   background: rgb(255, 255, 255) url('./media/loader.gif') no-repeat center;
@@ -15,15 +16,13 @@
 }
 nav{
   position: fixed;
-  padding-left: 128px;
-  display: flex;
-  flex-grow: 1;
-  background:  linear-gradient(180deg, #FBEFD9 3.13%, rgba(255, 250, 250, 0) 100%), linear-gradient(90.51deg, rgba(250, 233, 234, 0.6) 51.15%, rgba(255, 250, 250, 0) 96.81%);
-  width: 100%;
-  backdrop-filter: blur(3rem);
   top:0;
-  padding-top: 70px;
-  height: 60px;
+  left: 0;
+  right: 0;
+  padding:  40px 0 10px 128px;
+  display: flex;
+  background:  linear-gradient(180deg, #FBEFD9 3.13%, rgba(255, 250, 250, 0) 100%), linear-gradient(90.51deg, rgba(250, 233, 234, 0.6) 51.15%, rgba(255, 250, 250, 0) 96.81%);
+  backdrop-filter: blur(3rem);
 }
 .add-shadow{
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -37,15 +36,13 @@ nav{
 
 nav ul{
   display: flex;
-  margin-left:600px;
-  width: fit-content;
   list-style: none;
-  justify-content: flex-end;
-
+  position: fixed;
+  right: 20px;
 }
 nav ul a{
   font-family: 'League Spartan', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 19px;
   line-height: 30px;
   margin-left: 32px;
@@ -61,7 +58,6 @@ nav .ham{
   cursor: pointer;
 }
 .nav-menu{
-  /* inset :0 0 0 30%; */
   top: 0;
   left: 30%;
   right: 0;
@@ -103,7 +99,8 @@ nav ul a:hover{
 /* Hero Image */
 .Hero{
   padding-top: 50px;
-  background:  url('./media/Hero\ Image.png');
+  background:  url('./media/Hero\ Image.png') no-repeat;
+  background-size:cover;
 }
 .Hero-image{
   width: 100%;
@@ -144,8 +141,7 @@ button{
   padding-bottom: 40px;
 }
 .grid{
-  background: url('./media/VectorBuld.png');
-  background-repeat: no-repeat;
+  background: url('./media/VectorBuld.png') no-repeat;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   max-width: 100%;
@@ -186,28 +182,37 @@ button{
   width: 100%;
   cursor: pointer;
   height: 260px;
-  background: url('./media/Public\ relations\ image.png');
+  background: url('./media/Public\ relations\ image.png') no-repeat;
+  background-size: cover;
 }
 .grid-item-1:hover{
-  background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Public\ relations\ image.png');
-}
+  background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Public\ relations\ image.png') no-repeat;
+  background-size: cover;
+} 
+
 .grid-item-2{
-  background:  linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 76.04%),url('./media/Brand\ management\ image.png');
+  background:  linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 76.04%),url('./media/Brand\ management\ image.png') no-repeat;
+  background-size: cover;
 }
 .grid-item-2:hover{
-  background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Brand\ management\ image.png');
+  background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Brand\ management\ image.png') no-repeat;
+  background-size: cover;
 }
 .grid-item-3{
-  background:  linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 76.04%),url('./media/Digital\ Marketing\ Image.png');
+  background:  linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 76.04%),url('./media/Digital\ Marketing\ Image.png') no-repeat;
+  background-size: cover;
 }
 .grid-item-3:hover{
-  background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Digital\ Marketing\ Image.png');
+  background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Digital\ Marketing\ Image.png') no-repeat;
+  background-size: cover;
 }
 .grid-item-4{
- background:  linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 76.04%),url('./media/Training\ Image.png');
+ background:  linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 76.04%),url('./media/Training\ Image.png') no-repeat;
+ background-size: cover;
 }
 .grid-item-4:hover{
- background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Training\ Image.png');
+ background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Training\ Image.png') no-repeat;
+ background-size: cover;
 }
 .vectorbuld2{
   background: url('./media/Vectorbuld2.png');
@@ -220,25 +225,24 @@ button{
 .testimony{
   background: rgb(245, 238, 230);
   padding-top: 40px;
-  background: url('./media/vectorQuote1.png');
-  background-repeat: no-repeat;
-  background-position: left top;
+  background: url('./media/vectorQuote1.png') no-repeat left top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 /* grid-card-1 */
 .card-grid-1{
-  margin-left: -1%;
-  margin-top: 42px;
+  margin-top: 42px; 
   display: grid;
   grid-template-columns: repeat(2,1fr);
+  column-gap: 20px;
+  row-gap: 20px;
   max-width: 100%;
 }
 
 /* card */
 .grid-card{
-  margin-bottom: 20px;
-  padding-top: 30px;
-  padding-left: 30px;
-  margin-left: 20px;
+  padding: 30px 20px 0 30px;
   width: 500px;
   height: 200px;
   background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
@@ -293,13 +297,12 @@ button{
 }
 /* history section */
 .history-section{
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 100px 30px 100px;
+  display: flex;
+  flex-direction: column;
   color:white;
   height: 500px;
-  background: #1E1E1E;
+  background: #e4cece;
 }
 .grid-history{
   background: url('./media/VectorHourGlass.png') no-repeat right top;
@@ -332,10 +335,10 @@ button{
 }
 /* recent article */
 .recent-articles{
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding: 30px 0 40px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color:white;
   height: 550px;
   background: linear-gradient(90deg, #CC2031 31.98%, #E9AF3F 100%);
@@ -747,15 +750,14 @@ footer .social-icons{
 }
 /* percentage */
 .grid-percentage{
-  margin-left: 20%;
+  padding-left: 20%;
   display: grid;
   grid-template-columns: repeat(2,1fr);
 }
 .grid-percentage img{
-  margin-top: 30%;
-  margin-left: 45px;
-  width: 20px;
-  height:15px;
+  margin: 50px 0 0 10px;
+  width: 40px;
+  height:25px;
 }
 .grid-percentage h2{
   margin-top: 30px;
@@ -775,7 +777,7 @@ footer .social-icons{
   padding-top: 50px;
   padding-bottom: 30px;
   color:white;
-  height: 400px;
+  height: 450px;
   background: #1E1E1E;
 }
 .grid-history{
@@ -1077,8 +1079,8 @@ footer .social-icons{
   }
  /* about section */
 .about{
-  padding-bottom: 50px;
-  padding-left: 50px;
+  padding: 50px 5px;
+  width: fit-content;
 }
 
 .grid{
@@ -1136,47 +1138,27 @@ footer .social-icons{
 /* testimony */
 .testimony{
   background: rgb(245, 238, 230);
-  padding-top: 40px;
-  background: url('./media/vectorQuote1.png');
-  background-repeat: no-repeat;
-  background-position: left top;
+  background: url('./media/vectorQuote1.png')no-repeat left top;
 }
 /* grid-card-1 */
 .card-grid-1, .card-grid-2{
-  margin-left: -10%;
-  margin-top: 42px;
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* card */
 .grid-card{
-  margin-top: 17%;
+  margin: 0;
+  padding-bottom: 20px;
   width: 100%;
-  height: 85%;
+  height: 200px;
   background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
 }
 /* percentage */
 .grid-percentage{
-  margin-left: 20%;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-}
-.grid-percentage img{
-  margin-top: 30%;
-  margin-left: 35px;
-  width: 20px;
-  height:15px;
-}
-.grid-percentage h2{
-  margin-top: 30px;
-  margin-top: -30px;
-  margin-left: 80px;
-  font-weight: 200;
-}
-.grid-percentage p{
-  letter-spacing: 0.02em;
 }
 /* worked-with */
 .worked-with h4{
@@ -1187,7 +1169,7 @@ footer .social-icons{
   padding-top: 50px;
   padding-bottom: 30px;
   color:white;
-  height: 800px;
+  height:600px;
   background: #1E1E1E;
 }
 .grid-history{
@@ -1437,7 +1419,9 @@ footer .social-icons{
 }
 }
 
-@media screen and (max-width:500px){
+
+@media screen and (max-width:560px){
+ 
 .nav-menu{
   padding: min(10vh,2rem) 2em;
   z-index: 1;
@@ -1554,42 +1538,18 @@ footer .social-icons{
  margin-top: 450px;
 }
 /* testimony */
-.testimony{
-  background: rgb(245, 238, 230);
-  padding-top: 40px;
-  background: url('./media/vectorQuote1.png');
-  background-repeat: no-repeat;
-  background-position: left top;
-}
-/* grid-card-1 */
-.card-grid-1{
-  margin-left: -25%;
-  margin-top: 40px;
-  margin-right: 20px;
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  max-width: 100%;
-}
-
 /* card */
 .grid-card{
-  margin-top: 20%;
-  width: 120%;
-  height: 85%;
-  background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
+ height: max-content;
+ margin:0;
 }
 
 /* percentage */
 .grid-percentage{
-  margin-left: 5%;
+  margin-left: -50px;
+  width: max-content;
   display: grid;
-  grid-template-columns: repeat(1,1fr);
-  font-size: 15px;
-}
-.grid-percentage img{
-  margin-left: 20px;
-  width: 30px;
-  height:15px;
+  grid-template-columns: repeat(2,1fr);
 }
 .grid-percentage h1{
   margin-top: -30px;
@@ -1598,16 +1558,26 @@ footer .social-icons{
 }
 
 /* worked-with */
+.worked-with{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .worked-with h4{
-  font-size: 14px;
+  margin-top: 70px;
+  font-size: 24px;
 }
 .company-image{
+  width: fit-content;
+  margin-left: -90px;
   display: flex;
-  padding-left: 2px;
-  margin-left: -80px;
-  width: 290px;
-  overflow:scroll;
+  overflow-x:scroll;
   overflow-y: hidden;
+}
+.company-image img{
+  width: 40px;
+  padding-right: 5px;
+  height: 40px;
 }
 /* history section */
 .history-section{
@@ -1664,8 +1634,7 @@ footer .social-icons{
 }
 .grid-article{
   margin-left: -50px;
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
+  
 }
 .grid-article-1 h3{
   font-size: 20px;
@@ -2025,6 +1994,16 @@ footer .social-icons{
 .grid-card p{
   font-size: small;
 }
+.talk-more{
+  margin-bottom: 10px;
+}
+.grid-talk-2 form{
+  padding: 26px 0 0 10px;
+  width: 100%;
+  height: 490px;
+  background: rgba(233, 175, 63, 0.2);
+}
+
 }
 
 @media screen and (max-width:350px) {
@@ -2032,13 +2011,7 @@ footer .social-icons{
     display: block;
     margin-left: -510px;
   }
-  /* card */
-  .grid-card{
-    margin:17% 20px 0 -25%;
-    padding-right: 20px;
-    height: 85%;
-    background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
-  }
+  
   .more-article .card-blogs{
     width: 50%;
     padding-left: 15px;
@@ -2053,14 +2026,7 @@ footer .social-icons{
     display: block;
     margin-left: -550px;
   }
-  /* card */
-  .grid-card{
-    margin:17% 20px 0 -35%;
-    padding-right: 10px;
-    width: 250px;
-    height: 85%;
-    background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
-  }
+ 
   .more-article .card-blogs{
     width: 50%;
     height: max-content;
@@ -2071,19 +2037,18 @@ footer .social-icons{
   .more-article .card-blogs img{
     width: 150px;
   }
+  .company-image{
+    width: 250px;
+  }
 }
 @media screen and (max-width:280px) {
   nav .ham{
     display: block;
     margin-left: -600px;
   }
-  /* card */
-  .grid-card{
-    margin:17% 20px 0 -45%;
-    padding-right: 0px;
-    width: 250px;
-    height: 85%;
-    background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
+  
+  .company-image{
+    width: 200px;
   }
 }
 
