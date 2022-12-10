@@ -1542,6 +1542,7 @@ footer .social-icons{
 .grid-card{
  height: max-content;
  margin:0;
+  margin-left: -30px;
 }
 
 /* percentage */
@@ -1977,23 +1978,7 @@ footer .social-icons{
     display: block;
     margin-left: -480px;
   }
-  /* grid-card-1 */
-.card-grid-1{
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  width: 100%;
-}
 
-/* card */
-.grid-card{
-  margin:17% 20px 0 -15%;
-  padding-right: 30px;
-  height: 85%;
-  background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
-}
-.grid-card p{
-  font-size: small;
-}
 .talk-more{
   margin-bottom: 10px;
 }
