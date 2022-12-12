@@ -1960,6 +1960,9 @@ footer .social-icons{
 }
 
 @media screen and (max-width:350px) {
+  .recent-articles .grid-article{
+    margin-left: -10px;
+  }
   .more-article .card-blogs{
     width: 50%;
     padding-left: 15px;
@@ -1968,9 +1971,12 @@ footer .social-icons{
   .more-article .card-blogs img{
     width: 200px;
   }
+  footer{
+    padding: 20px 10px 0 30px;
+    font-size: 1px;
+  }
 }
 @media screen and (max-width:300px) {
- 
   .more-article .card-blogs{
     width: 50%;
     height: max-content;
