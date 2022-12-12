@@ -1438,9 +1438,6 @@ footer .social-icons{
  }
 }
 @media screen and (max-width:560px){
-  nav{
-    background-color: black;
-  }
 .nav-menu{
   padding: min(10vh,2rem) 2em;
   z-index: 1;
@@ -1484,10 +1481,10 @@ footer .social-icons{
  /* about section */
 .about{
   padding-left: 15px;
-  width: 100vw;
+  width: 100%;
 }
 .rectangle2{
-  width: 90vw;
+  width: 85vw;
 }
 .heading{
   font-size: 20px;
@@ -1698,7 +1695,9 @@ footer .social-icons{
   color: #FFFAFA;
 }
 /* footer */
-
+footer{
+  padding: 20px 10px 0 20px;
+}
 .content{
   display: flex;
   justify-content: space-around;
