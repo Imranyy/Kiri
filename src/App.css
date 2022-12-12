@@ -5,6 +5,9 @@
   font-family: 'League Spartan', sans-serif;
   font-size: medium;
 }
+html{
+  scroll-behavior:smooth;
+}
 .preload{
   background: rgb(255, 255, 255) url('./media/loader.gif') no-repeat center;
   background-size: 50%;
@@ -53,8 +56,8 @@ nav .ham{
   display: none;
   width: 40px;
   height: 40px;
-  margin-right: 800px;
-  margin-top:-30px;
+  position: fixed;
+  right: 20px;
   cursor: pointer;
 }
 .nav-menu{
@@ -76,6 +79,7 @@ nav .ham{
 }
 .nav-menu a{
   color: black;
+  line-height: 25px;
   font-weight: 700;
   text-decoration: none;
 }
@@ -135,15 +139,16 @@ button{
 /* about section */
 .about{
   background: rgb(245, 238, 230);
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 60px;
+  padding-top:60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   padding-bottom: 40px;
 }
 .grid{
   background: url('./media/VectorBuld.png') no-repeat;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns:auto 500px;
   max-width: 100%;
   margin-bottom: 100px;
 }
@@ -230,6 +235,11 @@ button{
   flex-direction: column;
   justify-content: center;
 }
+.testimony-cards{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 /* grid-card-1 */
 .card-grid-1{
   margin-top: 42px; 
@@ -263,20 +273,22 @@ button{
   margin-top: 66px;
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  max-width: 100%;
+  column-gap: 50px;
   margin-bottom: 20px;
 }
 .grid-percentage img{
   margin-left: 20px;
   width: 30px;
-  height:15px;
+  height:25px;
 }
 .grid-percentage h1{
   margin-top: -30px;
   margin-left: 60px;
-  font-weight: 400;
+  font-weight: 700;
+  font-size: large;
 }
 .grid-percentage p{
+  font-weight: 500;
   letter-spacing: 0.02em;
 }
 /* worked-with */
@@ -291,6 +303,7 @@ button{
   color: #1E1E1E;
 }
 .worked-with .company-image{
+  width: 90vw;
   margin-top: 50px;
   display: flex;
   justify-content: space-around;
@@ -302,7 +315,7 @@ button{
   flex-direction: column;
   color:white;
   height: 500px;
-  background: #e4cece;
+  background: #1E1E1E;
 }
 .grid-history{
   background: url('./media/VectorHourGlass.png') no-repeat right top;
@@ -664,24 +677,14 @@ footer .social-icons{
 }
 
 
-
-@media screen and (max-width:1300px) {
-  nav ul{
-    margin-left:550px;
-  }
-}
-
 /* media queries */
-@media screen and (max-width:1200px){
-  nav ul{
-    margin-left:350px;
+ @media screen and (max-width:1200px){
+  body{
+    overflow-x: hidden;
   }
- /* about section */
-.about{
-  padding-right: 5%;
-  padding-left: 5%;
-}
-
+  .about{
+    padding-left: 50px;
+  }
 .grid{
   background: url('./media/VectorBuld.png');
   background-repeat: no-repeat;
@@ -733,44 +736,23 @@ footer .social-icons{
   background-repeat: no-repeat;
   background-position: left top;
 }
-/* grid-card-1 */
-.card-grid-1, .card-grid-2{
-  margin-top: 42px;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  max-width: 100%;
+.testimony-cards{
+  display: flex;
+  align-items: center;
 }
-
-/* card */
 .grid-card{
-  margin-top: 17%;
-  width: 90%;
-  height: 85%;
-  background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
-}
-/* percentage */
-.grid-percentage{
-  padding-left: 20%;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-}
-.grid-percentage img{
-  margin: 50px 0 0 10px;
-  width: 40px;
-  height:25px;
-}
-.grid-percentage h2{
-  margin-top: 30px;
-  margin-top: -30px;
-  margin-left: 70px;
-  font-weight: 200;
-}
-.grid-percentage p{
-  letter-spacing: 0.02em;
+  width: 400px;
+  height: 200px;
 }
 /* worked-with */
 .worked-with h4{
   font-size: 20px;
+}
+.worked-with .company-image{
+  width: 80vw;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
 }
 /* history section */
 .history-section{
@@ -1036,24 +1018,28 @@ footer .social-icons{
     padding-top: 60px;
     height: 30px;
   }
-  .nav-item img{
-    padding-left: 600px;    
-  }
+  
  .logo{
-  margin-top: -90px;
-  margin-left: -150%;
-  width: 50px;
-  height: 50px;
+  position: fixed;
+  top: 50px;
+  left: 45px;
+  width: 60px;
+  height: 60px;
  }
   nav ul a{
     display: none;
   }
   nav .ham{
-    padding-left: 600px;
     display: block;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 35px;
+    right: 150px;
+    cursor: pointer;
   }
   .Hero-image{
-    padding-top: 50px;
+    padding-top: 70px;
     min-height: 250px;
     padding-bottom: 20px;
   }
@@ -1078,16 +1064,18 @@ footer .social-icons{
   }
  /* about section */
 .about{
-  padding: 50px 5px 0 20px;
   width: fit-content;
+  padding-left: 40px;
+}
+.about .grid-item{
+  width: 90vw;
 }
 
 .grid{
   background: url('./media/VectorBuld.png');
   background-repeat: no-repeat;
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  max-width: 100%;
+  display: flex;
+  flex-direction: column;
   margin-bottom: -10px;
 }
 .grid-item{
@@ -1096,18 +1084,30 @@ footer .social-icons{
 /* Rectangle 2 and 3*/
 .rectangle2{
   margin-top: 40px;
-  width: 500px;
-  height: 400px;
+  width: 100vw;
 }
-
+.vectorbuld2{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 0 -100px;
+}
 .vectorbuld2 .heading{
-  text-align:left;
   margin-bottom: -10px;
   font-size: 20px;
+  width: 70vw;
 }
 .vectorbuld2 h3{
+  text-align: center;
   margin-top: 10px;
   font-size: 15px;
+}
+.vectorbuld2 p{
+  margin: 0 20px 0 -10px;
+  line-height: 25px;
+  text-align: center;
+  width: 70vw;
 }
 /* picture section */
 .pic-grid{
@@ -1121,15 +1121,19 @@ footer .social-icons{
   width: 70%;
   height: 300px;
   background: url('./media/Public\ relations\ image.png');
+  background-size: cover;
 }
 .grid-item-2{
   background:  url('./media/Brand\ management\ image.png');
+  background-size: cover;
 }
 .grid-item-3{
   background:  url('./media/Digital\ Marketing\ Image.png');
+  background-size: cover;
 }
 .grid-item-4{
- background:  url('./media/Training\ Image.png');
+  background:  url('./media/Training\ Image.png');
+  background-size: cover;
 }
 .vectorbuld2{
  margin-top: 450px;
@@ -1143,22 +1147,14 @@ footer .social-icons{
 .card-grid-1, .card-grid-2{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 /* card */
 .grid-card{
-  margin-top: 20px;
-  margin-left: -30px;
-  padding-bottom: 20px;
-  width: 100%;
+  width: 500px;
   height: 200px;
   background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
-}
-/* percentage */
-.grid-percentage{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
 }
 /* worked-with */
 .worked-with h4{
@@ -1420,8 +1416,31 @@ footer .social-icons{
 }
 
 
+@media screen and (max-width:700px){
+  .grid-card{
+    width: 70vw;
+    height: 200px;
+  }
+ .grid-percentage{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+ }
+ .worked-with .company-image{
+  width: 100vw;
+ }
+ .history-section{
+  height: max-content;
+ }
+ .recent-articles{
+  display: flex;
+  padding-left: 0;
+ }
+}
 @media screen and (max-width:560px){
- 
+  nav{
+    background-color: black;
+  }
 .nav-menu{
   padding: min(10vh,2rem) 2em;
   z-index: 1;
@@ -1464,27 +1483,14 @@ footer .social-icons{
   }
  /* about section */
 .about{
-  padding-left: 20px;
+  padding-left: 15px;
+  width: 100vw;
+}
+.rectangle2{
+  width: 90vw;
 }
 .heading{
   font-size: 20px;
-}
-.grid{
-  background: url('./media/VectorBuld.png');
-  background-repeat: no-repeat;
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  max-width: 100%;
-  margin-bottom: 200px;
-}
-.grid-item {
-  width: 100%;
-}
-/* Rectangle 2 and 3*/
-.rectangle2{
-  margin-top: 30px;
-  margin-left: 10px;
-  width: 80%;
 }
 .vectorbuld2 .heading{
   display: none;
@@ -1512,26 +1518,34 @@ footer .social-icons{
   width: 90%;
   height: 250px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 76.04%),url('./media/Public\ relations\ image.png');
+  background-size: cover;
 }
 .grid-item-1:hover{
   background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Public\ relations\ image.png');
+  background-size: cover;
 }
 .grid-item-2{
   background:  linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 76.04%),url('./media/Brand\ management\ image.png');
+  background-size: cover;
 }
 .grid-item-2:hover{
   background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Brand\ management\ image.png');
+  background-size: cover;
 }
 .grid-item-3{
+  background-size: cover;
   background:  linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 76.04%),url('./media/Digital\ Marketing\ Image.png');
 }
 .grid-item-3:hover{
+  background-size: cover;
   background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Digital\ Marketing\ Image.png');
 }
 .grid-item-4{
- background:  linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 76.04%),url('./media/Training\ Image.png');
+  background-size: cover;
+  background:  linear-gradient(180deg, rgba(0, 0, 0, 0) 34.01%, rgba(0, 0, 0, 0.8) 76.04%),url('./media/Training\ Image.png');
 }
 .grid-item-4:hover{
+  background-size: cover;
  background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Training\ Image.png');
 }
 .vectorbuld2{
@@ -1541,21 +1555,16 @@ footer .social-icons{
 /* card */
 .grid-card{
  height: max-content;
- margin:0;
-  margin-left: -30px;
+ width: 70vw;
+ padding-bottom: 20px;
 }
 
 /* percentage */
 .grid-percentage{
-  margin-left: -50px;
-  width: max-content;
+  width: 70vw;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-}
-.grid-percentage h1{
-  margin-top: -30px;
-  margin-left: 60px;
-  font-weight: 400;
+  row-gap: 50px;
 }
 
 /* worked-with */
@@ -1569,11 +1578,7 @@ footer .social-icons{
   font-size: 24px;
 }
 .company-image{
-  width: fit-content;
-  margin-left: -90px;
-  display: flex;
-  overflow-x:scroll;
-  overflow-y: hidden;
+ justify-content: space-around;
 }
 .company-image img{
   width: 40px;
@@ -1593,9 +1598,7 @@ footer .social-icons{
 .grid-history{
   margin-left: -80px;
   background: url('./media/VectorHourGlass.png') no-repeat right top;
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  max-width: 100%;
+  
 }
 .grid-history-1 .reflection{
   width: 250px;
@@ -1620,11 +1623,9 @@ footer .social-icons{
 }
 /* recent article */
 .recent-articles{
-  padding-right: 100px;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding: 0 0 40px 20px;
   color:white;
-  height: 100%;
+  height: max-content;
   background: linear-gradient(90deg, #CC2031 31.98%, #E9AF3F 100%);
 }
 .recent-articles h4{
@@ -1642,7 +1643,7 @@ footer .social-icons{
 }
 .grid-article-1 img{
   margin-top: 50px;
-  width:280px;
+  width:80vw;
   height: 250px;
 }
 .grid-article-1 p{
@@ -1829,10 +1830,6 @@ footer .social-icons{
 .grid-blogs .extra h3{
   margin-top: 2px;
 }
-/*add blog page*/
-/* .add-blog-nav {
-  padding-left: 80px;
-} */
 .form-container{
   display: flex;
   justify-content: center;
@@ -1949,36 +1946,8 @@ footer .social-icons{
   line-height: 10px;
 }
 }
-@media screen and (max-width:850px) {
-  nav .ham{
-    display: block;
-    margin-left: -100px;
-  }
-}
-@media screen and (max-width:750px) {
-  nav .ham{
-    display: block;
-    margin-left: -200px;
-  }
-}
-@media screen and (max-width:630px) {
-  nav .ham{
-    display: block;
-    margin-left: -300px;
-  }
-}
-@media screen and (max-width:530px) {
-  nav .ham{
-    display: block;
-    margin-left: -400px;
-  }
-}
-@media screen and (max-width:430px) {
-  nav .ham{
-    display: block;
-    margin-left: -480px;
-  }
 
+@media screen and (max-width:430px) {
 .talk-more{
   margin-bottom: 10px;
 }
@@ -1992,11 +1961,6 @@ footer .social-icons{
 }
 
 @media screen and (max-width:350px) {
-  nav .ham{
-    display: block;
-    margin-left: -510px;
-  }
-  
   .more-article .card-blogs{
     width: 50%;
     padding-left: 15px;
@@ -2007,10 +1971,6 @@ footer .social-icons{
   }
 }
 @media screen and (max-width:300px) {
-  nav .ham{
-    display: block;
-    margin-left: -550px;
-  }
  
   .more-article .card-blogs{
     width: 50%;
@@ -2027,11 +1987,6 @@ footer .social-icons{
   }
 }
 @media screen and (max-width:280px) {
-  nav .ham{
-    display: block;
-    margin-left: -600px;
-  }
-  
   .company-image{
     width: 200px;
   }

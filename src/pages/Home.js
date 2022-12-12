@@ -134,15 +134,14 @@ function Home(props) {
                 </div>
 
                 <div className='vectorbuld2'>
-                    <div style={{display:'flex',justifyContent:'center',marginTop:'50px'}}>
-                        <h1 className= 'heading' style={{color:'#CC2031',marginRight:'5px'}}>Recreating</h1> 
-                        <h1 className= 'heading' style={{fontWeight:'normal'}}>Stories and Experiences for manufacturing Industries</h1>
+                    <div style={{display:'flex',marginTop:'50px'}}>
+                        <h1 className= 'heading' style={{fontWeight:'normal'}}><span style={{color:'#CC2031',fontWeight:'700', fontSize:'20px'}}>Recreating</span> Stories and Experiences for manufacturing Industries</h1>
                     </div>
 
-                    <div style={{textAlign:'center',marginTop:'30px',lineHeight: '55px'}}>
+                    <div style={{marginTop:'30px',lineHeight: '55px'}}>
                         <h3 id='services'>SERVICES</h3>
-                        <p style={{fontSize: '20px',lineHeight:'25px', textAlign: 'center'}}>
-                            We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, <br/>identity, innovation and inclusion and diversity.
+                        <p>
+                            We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.
                         </p>
                     </div>
                 </div>
@@ -197,7 +196,7 @@ function Home(props) {
                     <p>We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.</p>
                 </div>
                 {/* testimony cards */}
-                <div style={{paddingLeft:'100px',paddingRight:'100px',paddingBottom:'10px'}}>
+                <div className='testimony-cards'>
                     <div className='card-grid-1'>
                         <div className='grid-card'>
                             <p className='heading'>
