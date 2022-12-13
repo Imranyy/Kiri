@@ -5,8 +5,6 @@ import rect2 from '../media/Rectangle 2.svg';
 import articleImage1 from "../media/articleImage1.png";
 import articleImage2 from "../media/articleImage2.png";
 import history from '../media/historyImage.png';
-import leftArrowIcon from '../media/Vector (1).png';
-import rightArrowIcon from '../media/Vector.png';
 import image4 from '../media/image 4.png';
 import image5 from '../media/image 5.png';
 import image6 from '../media/image 6.png';
@@ -129,22 +127,21 @@ function Home(props) {
                             <li>Authenticity</li>
                         </ul>
                     </div>
-
                     <div>
                         <img className='rectangle2' src={rect2} alt="about us"/>
                     </div>
+
                 </div>
 
                 <div className='vectorbuld2'>
-                    <div style={{display:'flex',justifyContent:'center',marginTop:'50px'}}>
-                        <h1 className= 'heading' style={{color:'#CC2031',marginRight:'5px'}}>Recreating</h1> 
-                        <h1 className= 'heading' style={{fontWeight:'normal'}}>Stories and Experiences for manufacturing Industries</h1>
+                    <div style={{display:'flex',marginTop:'50px'}}>
+                        <h1 className= 'heading' style={{fontWeight:'normal'}}><span style={{color:'#CC2031',fontWeight:'700', fontSize:'20px'}}>Recreating</span> Stories and Experiences for manufacturing Industries</h1>
                     </div>
 
-                    <div style={{textAlign:'center',marginTop:'30px',lineHeight: '55px'}}>
+                    <div style={{marginTop:'10px',lineHeight: '55px'}}>
                         <h3 id='services'>SERVICES</h3>
-                        <p style={{fontSize: '20px', textAlign: 'center'}}>
-                            We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, <br/>identity, innovation and inclusion and diversity.
+                        <p>
+                            We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.
                         </p>
                     </div>
                 </div>
@@ -153,7 +150,7 @@ function Home(props) {
             <div className='pic-grid'>
                 <div className='grid-item-1' onClick={showPublic} onMouseOver={showPublic} onMouseLeave={dontShowPublic}>
                     <h3 className='public-h3'>Public Relations</h3>
-                    <div className='public' style={{marginTop:'45px',display:'none'}}>
+                    <div className='public' style={{marginTop:'45px',fontSize:'15px',display:'none'}}>
                         <h2>Public Relations</h2>
                         <p>
                             You know you’re awesome. We know you’re awesome. Let us tell the world just how awesome you are. Because that’s what great PR is all about.
@@ -166,7 +163,7 @@ function Home(props) {
                 </div>
                 <div className='grid-item-2' onClick={showBrand} onMouseOver={showBrand} onMouseLeave={dontShowBrand}>
                     <h3 className='brand-h3'>Brand Management</h3>
-                    <div className='bran' style={{marginTop:'25px',display:'none'}}>
+                    <div className='bran' style={{marginTop:'25px',fontSize:'15px',display:'none'}}>
                         <h2>Brand Management</h2>
                         <p>
                         Tell your story! We understand the importance of purpose- driven brand activation, we want you to sustain your brand visibility by showcasing it and telling your impact stories to the world and to the people that matter. Our brand activation strategies will drive results as they will be uniquely customized to exhibit the alignment of your company values and missions.
@@ -175,7 +172,7 @@ function Home(props) {
                 </div>
                 <div className='grid-item-3' onClick={showDigital} onMouseOver={showDigital} onMouseLeave={dontShowDigital}>
                     <h3 className='digital-h3'>Digital Marketing</h3>
-                    <div className='digital' style={{marginTop:'25px',display:'none'}}>
+                    <div className='digital' style={{marginTop:'25px',fontSize:'15px',display:'none'}}>
                         <h2>Digital Marketing</h2>
                         <p>
                         Yes, we get you. We fully understand that you’re not just doing business, You’re in the business of changing lives. You’re passionate about solving problems in your community and driving positive change. We are also passionate about helping you change the world. To succeed, you need to engage people online, your customers, partners, and supporters.
@@ -184,7 +181,7 @@ function Home(props) {
                 </div>
                 <div className='grid-item-4' onClick={showTraining} onMouseOver={showTraining} onMouseLeave={dontShowTraining}>
                     <h3 className='training-h3'>Training</h3>
-                    <div className='training' style={{marginTop:'25px',display:'none'}}>
+                    <div className='training' style={{marginTop:'25px',fontSize:'15px',display:'none'}}>
                         <h2>Training</h2>
                         <p>
                         Yes, we get you. We fully understand that you’re not just doing business, You’re in the business of changing lives. You’re passionate about solving problems in your community and driving positive change. We are also passionate about helping you change the world. To succeed, you need to engage people online, your customers, partners, and supporters.
@@ -199,7 +196,7 @@ function Home(props) {
                     <p>We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.</p>
                 </div>
                 {/* testimony cards */}
-                <div style={{paddingLeft:'100px',paddingRight:'100px',paddingBottom:'10px'}}>
+                <div className='testimony-cards'>
                     <div className='card-grid-1'>
                         <div className='grid-card'>
                             <p className='heading'>
@@ -254,19 +251,19 @@ function Home(props) {
                     {/* percentage */}
                     <div className='grid-percentage'>
                         <div className='grid-percentage-1'>
-                             <img src={person} alt='...'/><h2>37+</h2><br/>
+                             <img src={person} alt='...'/><h1>37+</h1><br/>
                             <p>Happy Clients</p>
                         </div>
                         <div className='grid-percentage-2'>
-                            <img src={network} alt='...'/><h2>98%</h2><br/>
+                            <img src={network} alt='...'/><h1>98%</h1><br/>
                             <p>Positive Feedback</p>
                         </div>
                         <div className='grid-percentage-3'>
-                            <img src={eye} alt='...'/><h2>835+</h2><br/>
+                            <img src={eye} alt='...'/><h1>835+</h1><br/>
                             <p>Loyal Followers</p>
                         </div>
                         <div className='grid-percentage-4'>
-                            <img src={plane} alt='...'/><h2>50+</h2><br/>
+                            <img src={plane} alt='...'/><h1>50+</h1><br/>
                             <p>Projects Delivered</p>
                         </div>
                     </div>
@@ -275,7 +272,6 @@ function Home(props) {
                     <div className='worked-with'>
                         <h4>we’ve worked with</h4>
                         <div className='company-image'>
-                            <img width='10' height='15' src={leftArrowIcon} style={{cursor:'pointer'}} alt='...'/>
                                 <img width='65' height='50' src={image4} alt='...'/>
                                 <img width='65' height='50' src={image5} alt='...'/>
                                 <img width='65' height='50' src={image6} alt='...'/>
@@ -283,7 +279,6 @@ function Home(props) {
                                 <img width='65' height='50' src={image8} alt='...'/>
                                 <img width='65' height='50' src={image9} alt='...'/>
                                 <img width='65' height='50' src={image11} alt='...'/>
-                            <img width='10' height='15' src={rightArrowIcon} style={{cursor:'pointer'}} alt='...'/>
                         </div>
                     </div>
                 </div>
