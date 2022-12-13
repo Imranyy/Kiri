@@ -5,8 +5,6 @@ import rect2 from '../media/Rectangle 2.svg';
 import articleImage1 from "../media/articleImage1.png";
 import articleImage2 from "../media/articleImage2.png";
 import history from '../media/historyImage.png';
-import leftArrowIcon from '../media/Vector (1).png';
-import rightArrowIcon from '../media/Vector.png';
 import image4 from '../media/image 4.png';
 import image5 from '../media/image 5.png';
 import image6 from '../media/image 6.png';
@@ -140,15 +138,14 @@ function Home(props) {
                 </div>
 
                 <div className='vectorbuld2'>
-                    <div style={{display:'flex',justifyContent:'center',marginTop:'50px'}}>
-                        <h1 className= 'heading' style={{color:'#CC2031',marginRight:'5px'}}>Recreating</h1> 
-                        <h1 className= 'heading' style={{fontWeight:'normal'}}>Stories and Experiences for manufacturing Industries</h1>
+                    <div style={{display:'flex',marginTop:'50px'}}>
+                        <h1 className= 'heading' style={{fontWeight:'normal'}}><span style={{color:'#CC2031',fontWeight:'700', fontSize:'20px'}}>Recreating</span> Stories and Experiences for manufacturing Industries</h1>
                     </div>
 
-                    <div style={{textAlign:'center',marginTop:'30px',lineHeight: '55px'}}>
+                    <div style={{marginTop:'30px',lineHeight: '55px'}}>
                         <h3 id='services'>SERVICES</h3>
-                        <p style={{fontSize: '20px',lineHeight:'25px', textAlign: 'center'}}>
-                            We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, <br/>identity, innovation and inclusion and diversity.
+                        <p>
+                            We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.
                         </p>
                     </div>
                 </div>
@@ -204,7 +201,7 @@ function Home(props) {
                     <p style={{fontSize: '20px', paddingTop: '10px'}}>Think we’re bluffing? See what people we’ve worked with think about us.</p>
                 </div>
                 {/* testimony cards */}
-                <div style={{paddingLeft:'100px',paddingRight:'100px',paddingBottom:'10px'}}>
+                <div className='testimony-cards'>
                     <div className='card-grid-1'>
                         <div className='grid-card'>
                             <p className='heading'>
@@ -280,7 +277,6 @@ function Home(props) {
                     <div className='worked-with'>
                         <h4>we’ve worked with</h4>
                         <div className='company-image'>
-                            <img width='10' height='15' src={leftArrowIcon} style={{cursor:'pointer'}} alt='...'/>
                                 <img width='65' height='50' src={image4} alt='...'/>
                                 <img width='65' height='50' src={image5} alt='...'/>
                                 <img width='65' height='50' src={image6} alt='...'/>
@@ -288,7 +284,6 @@ function Home(props) {
                                 <img width='65' height='50' src={image8} alt='...'/>
                                 <img width='65' height='50' src={image9} alt='...'/>
                                 <img width='65' height='50' src={image11} alt='...'/>
-                            <img width='10' height='15' src={rightArrowIcon} style={{cursor:'pointer'}} alt='...'/>
                         </div>
                     </div>
                 </div>
