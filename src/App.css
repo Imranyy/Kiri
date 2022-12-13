@@ -5,6 +5,7 @@
   font-family: 'League Spartan', sans-serif;
   font-size: medium;
 }
+
 html{
   scroll-behavior:smooth;
 }
@@ -163,14 +164,21 @@ button{
   width: 430px;
   height: 450px;
 }
-
+.vectorbuld2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .vectorbuld2 h1{
-  text-align: center;
   margin-bottom: 40px;
   font-size: 20px;
 }
 .vectorbuld2 h3{
+  text-align: center;
   margin-top: 20px;
+}
+.vectorbuld2 p{
+  text-align: center;
 }
 /* picture section */
 .pic-grid{
@@ -348,10 +356,9 @@ button{
 }
 /* recent article */
 .recent-articles{
-  padding: 30px 0 40px 100px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   color:white;
   height: 550px;
   background: linear-gradient(90deg, #CC2031 31.98%, #E9AF3F 100%);
@@ -679,9 +686,7 @@ footer .social-icons{
 
 /* media queries */
  @media screen and (max-width:1200px){
-  body{
-    overflow-x: hidden;
-  }
+  
   .about{
     padding-left: 50px;
   }
@@ -694,7 +699,7 @@ footer .social-icons{
   margin-bottom: -350px;
 }
 .grid .grid-item{
-  width: fit-content;
+  width: 100%;
 }
 /* Rectangle 2 and 3*/
 .rectangle2{
@@ -784,12 +789,10 @@ footer .social-icons{
 
 /* recent article */
 .recent-articles{
-  padding-left: 50px;
-  padding-right: 100px;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  width: 100%;
+  padding-bottom: 20px;
   color:white;
-  height: 100%;
+  height: max-content;
   background: linear-gradient(90deg, #CC2031 31.98%, #E9AF3F 100%);
 }
 .recent-articles h4{
@@ -1064,7 +1067,6 @@ footer .social-icons{
   }
  /* about section */
 .about{
-  width: fit-content;
   padding-left: 40px;
 }
 .about .grid-item{
@@ -1084,7 +1086,7 @@ footer .social-icons{
 /* Rectangle 2 and 3*/
 .rectangle2{
   margin-top: 40px;
-  width: 100vw;
+  width: 100%;
 }
 .vectorbuld2{
   width: 100vw;
@@ -1144,7 +1146,7 @@ footer .social-icons{
   background: url('./media/vectorQuote1.png')no-repeat left top;
 }
 /* grid-card-1 */
-.card-grid-1, .card-grid-2{
+.card-grid-1{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1152,6 +1154,8 @@ footer .social-icons{
 
 /* card */
 .grid-card{
+  padding-bottom: 10px;
+  margin-top: 20px;
   width: 500px;
   height: 200px;
   background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
@@ -1198,9 +1202,7 @@ footer .social-icons{
 }
 /* recent article */
 .recent-articles{
-  padding-right: 100px;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding: 0 0 40px 0;
   color:white;
   height: 100%;
   background: linear-gradient(90deg, #CC2031 31.98%, #E9AF3F 100%);
@@ -1212,6 +1214,7 @@ footer .social-icons{
   font-size: 25px;
 }
 .grid-article{
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(1,1fr);
 }
@@ -1337,7 +1340,6 @@ footer .social-icons{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  /* text-fill-color: transparent; */
 }
 .header button{
   margin-top: 10px;
@@ -1427,7 +1429,7 @@ footer .social-icons{
   margin-bottom: 50px;
  }
  .worked-with .company-image{
-  width: 100vw;
+  width: 90vw;
  }
  .history-section{
   height: max-content;
@@ -1481,10 +1483,9 @@ footer .social-icons{
  /* about section */
 .about{
   padding-left: 15px;
-  width: 100%;
 }
 .rectangle2{
-  width: 85vw;
+  width:100%;
 }
 .heading{
   font-size: 20px;
@@ -1546,7 +1547,7 @@ footer .social-icons{
  background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Training\ Image.png');
 }
 .vectorbuld2{
- margin-top: 450px;
+  margin-top: 450px;
 }
 /* testimony */
 /* card */
@@ -1558,9 +1559,10 @@ footer .social-icons{
 
 /* percentage */
 .grid-percentage{
-  width: 70vw;
+  width: 80vw;
   display: grid;
   grid-template-columns: repeat(2,1fr);
+  column-gap: 20px;
   row-gap: 50px;
 }
 
@@ -1620,7 +1622,8 @@ footer .social-icons{
 }
 /* recent article */
 .recent-articles{
-  padding: 0 0 40px 20px;
+  width: 100%;
+  padding: 0 0 40px 0;
   color:white;
   height: max-content;
   background: linear-gradient(90deg, #CC2031 31.98%, #E9AF3F 100%);
@@ -1632,8 +1635,7 @@ footer .social-icons{
   font-size: 18px;
 }
 .grid-article{
-  margin-left: -50px;
-  
+  width: 80vw;
 }
 .grid-article-1 h3{
   font-size: 20px;
@@ -1947,6 +1949,16 @@ footer .social-icons{
 }
 
 @media screen and (max-width:430px) {
+  .about{
+    height: 280vh;
+  }
+  .rectangle2{
+    width: 80vw;
+  }
+  .vectorbuld2{
+    width: 100%;
+    margin: 400px 0;
+  }
 .talk-more{
   margin-bottom: 10px;
 }
@@ -1956,7 +1968,15 @@ footer .social-icons{
   height: 490px;
   background: rgba(233, 175, 63, 0.2);
 }
-
+.content{
+  padding-left: 10px;
+}
+footer .content ul li a, footer .content ul li p, footer .content ul li h3{
+  font-size: 14px;
+}
+footer .content ul li img{
+  width: 20px;
+}
 }
 
 @media screen and (max-width:350px) {
@@ -1971,9 +1991,12 @@ footer .social-icons{
   .more-article .card-blogs img{
     width: 200px;
   }
-  footer{
-    padding: 20px 10px 0 30px;
-    font-size: 1px;
+  
+  footer .content ul li a, footer .content ul li p, footer .content ul li h3{
+    font-size: 12px;
+  }
+  footer .content ul li img{
+    width: 20px;
   }
 }
 @media screen and (max-width:300px) {
@@ -1990,11 +2013,21 @@ footer .social-icons{
   .company-image{
     width: 250px;
   }
+  .content{
+    padding-left: 10px;
+  }
+  footer .content ul li a, footer .content ul li p, footer .content ul li h3{
+    font-size: 10px;
+  }
+  footer .content ul li img{
+    width: 20px;
+  }
 }
 @media screen and (max-width:280px) {
   .company-image{
     width: 200px;
   }
+
 }
 
 @supports(backdrop-filter: blur(2rem)){

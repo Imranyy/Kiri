@@ -22,7 +22,7 @@ function Footer(props) {
     return (
         <>
             <footer>
-               <div className='content'>
+               <div className='content' style={{width:'80vw'}}>
                     <div>
                         <h2>Service</h2>
                         <ul style={{listStyle:'none'}}>
