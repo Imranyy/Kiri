@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import logo from "../media/logo.jpg";
+import logo from "../media/logo.png";
 import menu from "../media/hamburger icon.png";
 import Close from "../media/close icon.png";
 
