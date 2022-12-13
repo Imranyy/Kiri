@@ -234,6 +234,11 @@ button{
   background-position: right top;
 
 }
+.vectorbuld2 .header{
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 55px;
+}
 /* testimony */
 .testimony{
   background: rgb(245, 238, 230);

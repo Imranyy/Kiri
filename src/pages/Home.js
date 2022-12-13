@@ -138,7 +138,7 @@ function Home(props) {
                         <h1 className= 'heading' style={{fontWeight:'normal'}}><span style={{color:'#CC2031',fontWeight:'700', fontSize:'20px'}}>Recreating</span> Stories and Experiences for manufacturing Industries</h1>
                     </div>
 
-                    <div style={{marginTop:'30px',lineHeight: '55px'}}>
+                    <div style={{marginTop:'10px',lineHeight: '55px'}}>
                         <h3 id='services'>SERVICES</h3>
                         <p>
                             We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.
