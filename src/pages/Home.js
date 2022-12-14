@@ -7,7 +7,6 @@ import articleImage2 from "../media/articleImage2.png";
 import history from '../media/historyImage.png';
 import image4 from '../media/image 4.png';
 import image5 from '../media/image 5.png';
-import image6 from '../media/image 6.png';
 import image7 from '../media/image 7.png';
 import image8 from '../media/image 8.png';
 import image9 from '../media/image 9.png';
@@ -274,7 +273,6 @@ function Home(props) {
                         <div className='company-image'>
                                 <img width='65' height='50' src={image4} alt='...'/>
                                 <img width='65' height='50' src={image5} alt='...'/>
-                                <img width='65' height='50' src={image6} alt='...'/>
                                 <img width='65' height='50' src={image7} alt='...'/>
                                 <img width='65' height='50' src={image8} alt='...'/>
                                 <img width='65' height='50' src={image9} alt='...'/>
