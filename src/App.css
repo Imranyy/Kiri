@@ -107,7 +107,7 @@ nav ul a:hover{
 .Hero-image{
   width: 100%;
   padding-top: 100px;
-  height: 45vh;
+  height: 40vh;
 }
 .hero-text{
   margin-left: 150px;
@@ -1482,6 +1482,7 @@ footer .social-icons{
  /* about section */
 .about{
   padding-left: 15px;
+  height: fit-content;
 }
 .about .grid-item{
   margin-bottom: -300px;
@@ -1951,19 +1952,7 @@ footer .social-icons{
 }
 
 @media screen and (max-width:430px) {
-  .about{
-    height: 50vh;
-  }
-  .about .grid-item{
-    margin-bottom: -250px;
-  }
-  .rectangle2{
-    width: 80vw;
-  }
-  .vectorbuld2{
-    width: 100%;
-    margin: 400px 0;
-  }
+  
 .talk-more{
   margin-bottom: 10px;
 }
@@ -2005,9 +1994,7 @@ footer .content ul li img{
   }
 }
 @media screen and (max-width:300px) {
-  .about{
-    height: 70vh;
-  }
+  
   .more-article .card-blogs{
     width: 50%;
     height: max-content;
