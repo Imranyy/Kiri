@@ -33,9 +33,6 @@ nav{
 }
 .logo{
   margin-top: -25px;
-  width:80px;
-  height: 80px;
-  /* border-radius: 50px; */
 }
 
 nav ul{
@@ -87,8 +84,8 @@ nav .ham{
 .nav-menu img{
   position: fixed;
   right: 10px;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height:50px;
   margin-left: 32px;
   cursor: pointer;
 }
@@ -103,14 +100,14 @@ nav ul a:hover{
 }
 /* Hero Image */
 .Hero{
-  padding-top: 50px;
+  padding-top: 100px;
   background: linear-gradient(90deg, rgba(172, 27, 41, 0.86) 23.32%, rgba(233, 175, 63, 0.81) 59.86%),url('./media/Hero\ Image.png') no-repeat;
   background-size:cover;
 }
 .Hero-image{
   width: 100%;
   padding-top: 100px;
-  min-height: 350px;
+  height: 45vh;
 }
 .hero-text{
   margin-left: 150px;
@@ -149,20 +146,20 @@ button{
 .grid{
   background: url('./media/VectorBuld.png') no-repeat;
   display: grid;
-  grid-template-columns:auto 500px;
-  max-width: 100%;
+  grid-template-columns:repeat(2,1fr);
+  column-gap: 50px;
+  width: 80vw;
   margin-bottom: 100px;
 }
 
 .grid-item {
-  width: 600px;
   font-size: 18px;
 }
 
 /* Rectangle 2 and 3*/
 .rectangle2{
-  width: 430px;
-  height: 450px;
+  /* width: 430px; */
+  height: 500px;
 }
 .vectorbuld2{
   display: flex;
@@ -1032,8 +1029,6 @@ footer .social-icons{
   position: fixed;
   top: 50px;
   left: 45px;
-  width: 60px;
-  height: 60px;
  }
   nav ul a{
     display: none;
@@ -1073,31 +1068,29 @@ footer .social-icons{
 .about{
   padding-left: 40px;
 }
-.about .grid-item{
-  width: 90vw;
-}
 
 .grid{
-  background: url('./media/VectorBuld.png');
-  background-repeat: no-repeat;
+  background: url('./media/VectorBuld.png') no-repeat;
   display: flex;
   flex-direction: column;
+  width: 100%;
   margin-bottom: -10px;
 }
 .grid-item{
   width: 100%;
+  margin-bottom: -450px;
 }
 /* Rectangle 2 and 3*/
 .rectangle2{
+  display:none;
   margin-top: 40px;
   width: 100%;
 }
 .vectorbuld2{
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 0 -100px;
 }
 .vectorbuld2 .heading{
   margin-bottom: -10px;
@@ -1423,6 +1416,12 @@ footer .social-icons{
 
 
 @media screen and (max-width:700px){
+  .about{
+    padding-left: 15px;
+  }
+  .about .grid-item{
+    margin-bottom: -300px;
+  }
   .grid-card{
     width: 70vw;
     height: 200px;
@@ -1451,14 +1450,12 @@ footer .social-icons{
 }
 
 
-.nav-menu img{
+ .nav-menu img{
   position: relative;
   margin-left: 85%;
-  width: 50px;
+  width: 50px; 
   height: 50px;
-  border-radius: 5px;
-  height: 35px;
-}
+} 
   .Hero-image{
     padding-top: 50px;
     min-height: 250px;
@@ -1486,7 +1483,11 @@ footer .social-icons{
 .about{
   padding-left: 15px;
 }
+.about .grid-item{
+  margin-bottom: -300px;
+}
 .rectangle2{
+  display:none;
   width:100%;
 }
 .heading{
@@ -1764,7 +1765,6 @@ footer .social-icons{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  /* text-fill-color: transparent; */
 }
 .header button{
   margin-top: 10px;
@@ -1952,7 +1952,10 @@ footer .social-icons{
 
 @media screen and (max-width:430px) {
   .about{
-    height: 170vh;
+    height: 50vh;
+  }
+  .about .grid-item{
+    margin-bottom: -250px;
   }
   .rectangle2{
     width: 80vw;
@@ -2002,6 +2005,9 @@ footer .content ul li img{
   }
 }
 @media screen and (max-width:300px) {
+  .about{
+    height: 70vh;
+  }
   .more-article .card-blogs{
     width: 50%;
     height: max-content;
