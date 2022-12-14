@@ -23,7 +23,7 @@ nav{
   top:0;
   left: 0;
   right: 0;
-  padding:  40px 0 10px 128px;
+  padding:  30px 0 0px 150px;
   display: flex;
   background:  linear-gradient(90deg, rgba(172, 27, 41, 0.86) 23.32%, rgba(233, 175, 63, 0.81) 59.86%);
   backdrop-filter: blur(3rem);
@@ -32,10 +32,7 @@ nav{
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .logo{
-  margin-top: -25px;
-  width:80px;
-  height: 80px;
-  /* border-radius: 50px; */
+  margin-top: -35px;
 }
 
 nav ul{
@@ -48,7 +45,6 @@ nav ul a{
   font-family: 'League Spartan', sans-serif;
   font-weight: 500;
   font-size: 19px;
-  line-height: 30px;
   margin-left: 32px;
   color: #1E1E1E;
   text-decoration: none;
@@ -110,19 +106,20 @@ nav ul a:hover{
 .Hero-image{
   width: 100%;
   padding-top: 100px;
-  min-height: 350px;
+  min-height: 600px;
 }
 .hero-text{
   margin-left: 150px;
+  margin-top: 100px;
 }
 .hero-text .Enhancing{
-  font-size:50px;
-  font-weight:'bolder';
+  font-size: 60px;
+  font-weight: 'normal';
   color:#fff;
 }
 .hero-text .text{
   margin-top:20px;
-  font-size:20px;
+  font-size:25px;
   color:#fff;
 }
 
