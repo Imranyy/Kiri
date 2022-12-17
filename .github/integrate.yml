@@ -12,5 +12,5 @@ name: Kiri Continuous Integration
                 with:
                    node-version: 16
               -run: npm ci
-              -run: npm text
+              # -run: npm text
               -run: npm run build
