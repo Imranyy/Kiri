@@ -110,20 +110,23 @@ function Home(props) {
             <div className='about' id='about'>
                 <div className='grid'>
                     <div className='grid-item'>
-                        <h2 className='heading' style={{fontWeight:'bold' ,paddingBottom: '20px', fontSize: '30px'}}>ABOUT US</h2>
-                            <p>
+                        <h2 className='heading' style={{fontSize: '50px', lineHeight: 2, fontWeight: 500}}>ABOUT US</h2>
+                            <p style={{fontWeight: 400 ,lineHeight: 1.2, fontSize: '20px'}}>
                                 One thing that sets us apart from other digital marketing agencies is that we are mission-driven and deeply invested in our clients’ work. We believe that mission-driven companies and social enterprises play a significant role in supporting the economic development and sustainability of the country.<br/><br/>
                                 Because you focus on changing the world, you deserve the best digital marketing, branding, and PR team to help you achieve your goals and increase impact work. One that understands the importance of telling your brand story, how to say it, and where to direct it.
                             </p><br/>
-                        <h3 style={{paddingBottom: '5px', fontSize: '25px', fontWeight:'normal'}}>Mission Statement!</h3>
+                        <h3 className="heading" style={{fontSize: '30px', fontWeight: 400}}>Mission Statement!</h3>
+                        <h4 style={{fontWeight: 400 ,lineHeight: 1.2, fontSize: '20px'}}>
                         To contribute to client’s business growth through result oriented, innovative and creative strategies that will deliver the WOW factor.<br/><br/>
+                        </h4>
+                       
 
-                        <h3 style={{fontSize: '25px', fontWeight:'normal'}}>Core Values</h3>
+                        <h3 className='heading' style={{fontSize: '30px', fontWeight: 400}}>Core Values</h3>
                         <ul>
-                            <li>Professionalism</li>
-                            <li>Integrity</li>
-                            <li>Passion driven</li>
-                            <li>Authenticity</li>
+                            <li style={{fontWeight: 400 ,lineHeight: 1, fontSize: '20px'}}>Professionalism</li>
+                            <li style={{fontWeight: 400 ,lineHeight: 1, fontSize: '20px'}}>Integrity</li>
+                            <li style={{fontWeight: 400 ,lineHeight: 1, fontSize: '20px'}}>Passion driven</li>
+                            <li style={{fontWeight: 400 ,lineHeight: 1, fontSize: '20px'}}>Authenticity</li>
                         </ul>
                     </div>
                     <div>
@@ -131,16 +134,17 @@ function Home(props) {
                     </div>
 
                 </div>
-
-                <div className='vectorbuld2'>
-                    <div style={{display:'flex',marginTop:'50px'}}>
-                        <h1 className= 'heading' style={{fontWeight:'normal'}}><span style={{color:'#CC2031',fontWeight:'700', fontSize:'20px'}}>Recreating</span> Stories and Experiences for manufacturing Industries</h1>
+                <div style={{display:'flex',marginTop:'50px'}}>
+                        <h1 className= 'heading' style={{fontSize: '60px', fontWeight: 100}}><span style={{color:'#CC2031',fontWeight: 500, fontSize:'60px'}}>Recreating</span> Stories and Experiences for manufacturing Industries</h1>
                     </div>
 
+                <div className='vectorbuld2'>
+
+
                     <div style={{marginTop:'10px',lineHeight: '55px'}}>
-                        <h3 id='services'>SERVICES</h3>
-                        <p>
-                            We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.
+                        <h3 className='heading' id='services'>SERVICES</h3>
+                        <p style={{fontWeight: 400 ,lineHeight: 1.2, fontSize: '20px'}}>
+                            We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, <br/> identity, innovation and inclusion and diversity.
                         </p>
                     </div>
                 </div>

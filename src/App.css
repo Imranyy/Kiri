@@ -2,7 +2,7 @@
 *{
   padding: 0;
   margin: 0;
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: medium;
 }
 
@@ -17,6 +17,14 @@ html{
   position: fixed;
   z-index: 2;
   display: none;
+}
+.heading{
+  font-family: 'League Spartan', sans-serif;
+}
+.sub-heading {
+  font-weight: 500;
+  line-height: '2';
+  font-size: 60px;
 }
 nav{
   position: fixed;
@@ -100,7 +108,7 @@ nav ul a:hover{
 /* Hero Image */
 .Hero{
   padding-top: 100px;
-  background: linear-gradient(90deg, rgba(172, 27, 41, 0.86) 23.32%, rgba(233, 175, 63, 0.81) 59.86%),url('./media/Hero\ Image.png') no-repeat;
+  background: linear-gradient(90deg, rgba(172, 27, 41, 0.86) 23.32%, rgba(233, 175, 63, 0.81) 59.86%),url('./media/Hero\ Image.jpg') no-repeat;
   background-size:cover;
 }
 .Hero-image{
@@ -113,25 +121,27 @@ nav ul a:hover{
   margin-top: 100px;
 }
 .hero-text .Enhancing{
-  font-size: 60px;
-  font-weight: 'normal';
+  font-size: 70px;
+  font-weight: lighter;
   color:#fff;
 }
 .hero-text .text{
   margin-top:20px;
   font-size:25px;
+  font-weight: 400;
+  line-height: 30px;
   color:#fff;
 }
 
 button{
   cursor: pointer;
-  margin-top:20px;
-   color:white;
-    background: #CC2031;
-    width: 120px;
-    height:60px;
-    border:none;
-    font-size: 18px;
+  margin-top:80px;
+  color:white;
+  background: #CC2031;
+  width: 140px;
+  height:70px;
+  border:none;
+  font-size: 18px;
 }
 
 /* about section */
@@ -153,12 +163,12 @@ button{
 }
 
 .grid-item {
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 /* Rectangle 2 and 3*/
 .rectangle2{
-  /* width: 430px; */
+  margin-left: 12rem;
   height: 500px;
 }
 .vectorbuld2{
@@ -173,6 +183,8 @@ button{
 .vectorbuld2 h3{
   text-align: center;
   margin-top: 20px;
+  font-size: 50px;
+  font-weight: 500;
 }
 .vectorbuld2 p{
   text-align: center;

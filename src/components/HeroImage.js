@@ -10,7 +10,7 @@ function HeroImage(props) {
             <Navbar/>
                 <div className='Hero-image'>
                     <div className='hero-text'>
-                        <h1 className='Enhancing'>
+                        <h1 className='Enhancing heading'>
                         Enhancing Brands,<br/>
                         Enhancing Lives
                         </h1>
