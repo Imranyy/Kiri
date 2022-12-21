@@ -15,7 +15,7 @@ function BlogPage(props) {
                 method:'GET'
             })
             preloaderOff();
-            const parseRes=await response.json()
+            const parseRes=await response.json();
             console.log(parseRes);
             setBlogs(parseRes);
 
