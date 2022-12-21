@@ -1,0 +1,19 @@
+name: Firebase Continuous Deployment
+on:
+    push:
+     branches: [develop]
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+steps:
+            -uses: actions/checkout@develop
+-uses: actions/setup-node@develop
+with:
+                node-version: 16
+                -run: npm ci
+-run: npm run build
+            -uses:  w9jds/firebase-action@develop
+              with:
+                args: deploy --only hosting
+              env:
+                FIREBASE_TOKEN: ${{secrets.FIREBASE_TOKEN}}
