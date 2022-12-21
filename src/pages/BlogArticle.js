@@ -51,7 +51,7 @@ function BlogArticle(props) {
   }
   const preloaderOff=()=>{
     const loader=document.querySelector('.preload');
-    loader.style.display='none';
+    loader.style.display='none'
   }
     return (
         <>
