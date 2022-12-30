@@ -152,10 +152,10 @@ function Home(props) {
             {/* picture section */}
             <div className='pic-grid'>
                 <div className='grid-item-1' onClick={showPublic} onMouseOver={showPublic} onMouseLeave={dontShowPublic}>
-                    <h3 className='public-h3'>Public Relations</h3>
+                    <h3 className='public-h3 heading'>Public Relations</h3>
                     <div className='public' style={{marginTop:'45px',fontSize:'15px',display:'none'}}>
-                        <h2>Public Relations</h2>
-                        <p>
+                        <h2 className='heading' style={{fontSize:'20px'}}>Public Relations</h2>
+                        <p style={{padding:'25px', fontSize: '16px'}}>
                             You know you’re awesome. We know you’re awesome. Let us tell the world just how awesome you are. Because that’s what great PR is all about.
                             Connect with us!
                             Corporate communication
@@ -165,28 +165,28 @@ function Home(props) {
                     </div>
                 </div>
                 <div className='grid-item-2' onClick={showBrand} onMouseOver={showBrand} onMouseLeave={dontShowBrand}>
-                    <h3 className='brand-h3'>Brand Management</h3>
+                    <h3 className='brand-h3 heading'>Brand Management</h3>
                     <div className='bran' style={{marginTop:'25px',fontSize:'15px',display:'none'}}>
-                        <h2>Brand Management</h2>
-                        <p>
+                        <h2 className='heading' style={{fontSize:'20px'}}>Brand Management</h2>
+                        <p style={{padding:'25px', fontSize: '16px'}}>
                         Tell your story! We understand the importance of purpose- driven brand activation, we want you to sustain your brand visibility by showcasing it and telling your impact stories to the world and to the people that matter. Our brand activation strategies will drive results as they will be uniquely customized to exhibit the alignment of your company values and missions.
                         </p>
                     </div>
                 </div>
                 <div className='grid-item-3' onClick={showDigital} onMouseOver={showDigital} onMouseLeave={dontShowDigital}>
-                    <h3 className='digital-h3'>Digital Marketing</h3>
+                    <h3 className='digital-h3 heading'>Digital Marketing</h3>
                     <div className='digital' style={{marginTop:'25px',fontSize:'15px',display:'none'}}>
-                        <h2>Digital Marketing</h2>
-                        <p>
+                        <h2 className='heading' style={{fontSize:'20px'}}>Digital Marketing</h2>
+                        <p style={{padding:'25px', fontSize: '16px'}}>
                         Yes, we get you. We fully understand that you’re not just doing business, You’re in the business of changing lives. You’re passionate about solving problems in your community and driving positive change. We are also passionate about helping you change the world. To succeed, you need to engage people online, your customers, partners, and supporters.
                         </p>
                     </div>
                 </div>
                 <div className='grid-item-4' onClick={showTraining} onMouseOver={showTraining} onMouseLeave={dontShowTraining}>
-                    <h3 className='training-h3'>Training</h3>
+                    <h3 className='training-h3 heading'>Training</h3>
                     <div className='training' style={{marginTop:'25px',fontSize:'15px',display:'none'}}>
-                        <h2>Training</h2>
-                        <p>
+                        <h2 className='heading' style={{fontSize:'20px'}}>Training</h2>
+                        <p style={{padding:'25px', fontSize: '16px'}}>
                         Yes, we get you. We fully understand that you’re not just doing business, You’re in the business of changing lives. You’re passionate about solving problems in your community and driving positive change. We are also passionate about helping you change the world. To succeed, you need to engage people online, your customers, partners, and supporters.
                         </p>
                     </div>
@@ -195,31 +195,31 @@ function Home(props) {
             {/* testimony section */}
             <div className='testimony'>
                 <div style={{textAlign:"center"}}>
-                    <h2 className='heading'>TESTIMONIALS</h2>
-                    <p>We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.</p>
+                    <h2 className='heading' style={{fontSize: '50px',fontWeight: 500}}>TESTIMONIALS</h2>
+                    <p style={{fontSize: '20px',fontWeight: 400}}>Think we’re bluffing? See what people we’ve worked with think about us.</p>
                 </div>
                 {/* testimony cards */}
                 <div className='testimony-cards'>
                     <div className='card-grid-1'>
                         <div className='grid-card'>
-                            <p className='heading'>
+                            <p style={{fontWeight: 400, fontSize: '16px', lineHeight: 1}}>
                             Our brand has exponentially grown to explore social media avenues as it was operating offline. Choosing long term partnership with Kiri Marketing consultancy has broadened our relationship and sales growth experience. Her advice and expertise go a long way in enhancing brand needs & values.
                             </p>
                             <div className='card-footer'>
                                 <img width="50" height="50" src={profile1} alt="..."/>
-                                <p>
+                                <p style={{fontSize: '17px', lineHeight: 1}}>
                                 Annet Obat &amp; Anita Lukelesia<br/>
                                 Co-Founders, Laette Closet
                                 </p>
                             </div>
                         </div>
                         <div className='grid-card'>
-                            <p className='heading'>
+                            <p style={{fontWeight: 400, fontSize: '16px', lineHeight: 1}}>
                             Kiri marketing Consultants is a perfect balance between professionalism and personality. They take their time to dig in and find out what the company needs to expand their market. Their strategies have helped us in aligning our company goals which has seen us grow and sign-up new clients.
                             </p>
                             <div className='card-footer'>
                             <img width="50" height="50" src={profile2} alt="..."/>
-                                <p>
+                                <p style={{fontSize: '17px', lineHeight: 1}}>
                                 Evelyne Wandanda<br/>
                                 Co-founder and managing partner, Innerblast Consultants
                                 </p>
@@ -227,22 +227,22 @@ function Home(props) {
                         </div>
 
                         <div className='grid-card'>
-                            <p className='heading'>
+                            <p style={{fontWeight: 400, fontSize: '16px', lineHeight: 1}}>
                             Talent Industry acknowledges the partnership offered by Kiri Marketing Consultants in the success of the 2022 East Africa Poetic Hour Battle on 20th May 2022. We would like to thank them for their outstanding service in event planning, marketing, branding and corporate ushering.
                             </p>
                             <div className='card-footer'>
                             <img width="50" height="50" src={profile3} alt="..."/>
-                                <p>
+                                <p style={{fontSize: '17px', lineHeight: 1}}> 
                                 Godfrey Emoja<br/>
                                 Managing Director, Talent Industry
                                 </p>
                             </div>
                         </div>
                         <div className='grid-card'>
-                            <p className='heading'>Recreating Stories and Experiences for manufacturing Industries Recreating Stories and Experiences for manufacturing IndustriesRecreating Stories and Experiences for manufacturing Industries</p>
+                            <p style={{fontWeight: 400, fontSize: '16px', lineHeight: 1}}>Recreating Stories and Experiences for manufacturing Industries Recreating Stories and Experiences for manufacturing IndustriesRecreating Stories and Experiences for manufacturing Industries</p>
                             <div className='card-footer'>
                             <img width="50" height="50" src={profile4} alt="..."/>
-                                <p>
+                                <p style={{fontSize: '17px', lineHeight: 1}}>
                                     Bryce Zeibu<br/>
                                     CTA, Spify
                                 </p>

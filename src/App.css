@@ -199,6 +199,7 @@ button{
 }
 .pic-grid h3{
   margin-top: 200px;
+  font-size: 20px;
 }
 .grid-item-1,.grid-item-2,.grid-item-3,.grid-item-4{
   width: 100%;
@@ -206,6 +207,7 @@ button{
   height: 260px;
   background: url('./media/Public\ relations\ image.png') no-repeat;
   background-size: cover;
+  
 }
 .grid-item-1:hover{
   background:  linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./media/Public\ relations\ image.png') no-repeat;
@@ -274,9 +276,10 @@ button{
 
 /* card */
 .grid-card{
-  padding: 30px 20px 0 30px;
-  width: 500px;
-  height: 200px;
+  padding: 50px;
+  width: 600px;
+  height: 150px;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
   background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
 }
 .card-footer{
