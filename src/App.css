@@ -283,7 +283,7 @@ button{
   background: linear-gradient(90deg, rgba(204, 32, 49, 0.2) 31.98%, rgba(233, 175, 63, 0.2) 100%);
 }
 .card-footer{
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
 }
 .card-footer p{
@@ -303,15 +303,15 @@ button{
   width: 90vw;
 }
 .grid-percentage img{
-  margin:0 0 -5px 30px;
-  width: 15px;
-  height:15px;
+  margin:24 -8 -5px 30px;
+  width: 32px;
+  height:32px;
 }
 .grid-percentage h1{
-  margin-top: -30px;
+  margin-top: -56px;
   margin-left: 50px;
   font-weight: 100;
-  font-size: 30px;
+  font-size: 50px;
 }
 .grid-percentage p{
   font-weight: 500;
@@ -327,10 +327,12 @@ button{
   line-height: 33px;
   text-transform: uppercase;
   color: #1E1E1E;
+  margin-top: 14vh;
 }
 .worked-with .company-image{
   width: 90vw;
-  margin-top: 50px;
+  margin-top: 16px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-around;
 }
@@ -355,10 +357,10 @@ button{
   background: url('./media/reflectionImage.png');
 }
 .grid-history-1 img{
-  margin-top: -360px;
   height: 380px;
   width: 380px;
   margin-left: 30px;
+  margin-top: 10vh;
 }
 .grid-history-2{
   margin-top: 20px;
@@ -394,10 +396,11 @@ button{
   line-height: 55px;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .grid-article{
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 700px);
   max-width: 100%;
 }
 .grid-article-1 h3{
@@ -407,7 +410,7 @@ button{
   margin-bottom: 5px;
 }
 .grid-article-1 img{
-  margin-top: 50px;
+  margin-top: 20px;
   width:80%;
   height: 60%;
 }
@@ -419,7 +422,7 @@ button{
   padding-right: 100px;
   padding-top: 30px;
   padding-bottom: 40px;
-  height: 500px;
+  height: 600px;
 }
 .grid-talk-more{
   background: url('./media/Vectorchat.png') no-repeat top left;
@@ -432,7 +435,7 @@ button{
   font-weight: 400;
   font-size: 72px;
   line-height: 66px;
-
+  margin-top: 120px;
   color: #1E1E1E;
 }
 .grid-talk-2{
@@ -444,7 +447,7 @@ button{
   padding-top: 26px;
   padding-left: 50px;
   width: 369px;
-  height: 490px;
+  height: 580px;
   background: rgba(233, 175, 63, 0.2);
 }
 .grid-talk-2 form input,.grid-talk-2 form textarea,.add-blog-form input,.add-blog-form textarea{
@@ -686,6 +689,7 @@ footer ul li{
   line-height: 30px;
   letter-spacing: 0.02em;
   color: #FFFAFA;
+  
 }
 footer ul li img{
   width: 32px;
@@ -694,6 +698,8 @@ footer ul li img{
 footer ul li a{
   text-decoration: none;
   color: white;
+  font-size: 20px;
+  font-weight: 600;
 }
 footer .social-icons{
   margin-top: 50px;
