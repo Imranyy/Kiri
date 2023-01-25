@@ -4,7 +4,7 @@ import HeroImage from '../components/HeroImage';
 import rect2 from '../media/Rectangle 2.svg';
 import articleImage1 from "../media/articleImage1.png";
 import articleImage2 from "../media/articleImage2.png";
-import history from '../media/historyImage.png';
+import history from '../media/Our history background.svg';
 import image4 from '../media/image 4.png';
 import image5 from '../media/image 5.png';
 import image7 from '../media/image 7.png';
@@ -118,29 +118,32 @@ function Home(props) {
                                 Because you focus on changing the world, you deserve the best digital marketing, branding, and PR team to help you achieve your goals and increase impact work. One that understands the importance of telling your brand story, how to say it, and where to direct it.
                             </p><br/>
                         <h3 style={{paddingBottom: '5px', fontSize: '25px', fontWeight:'normal'}}>Mission Statement!</h3>
-                        To contribute to client’s business growth through result oriented, innovative and creative strategies that will deliver the WOW factor.<br/><br/>
+                        <p>
+                            To contribute to client’s business growth through result oriented, innovative and creative strategies that will deliver the WOW factor.
+                        </p>
+                        <br />
+                        <br />
 
                         <h3 style={{fontSize: '25px', fontWeight:'normal'}}>Core Values</h3>
-                        <ul className='core-values'>
-                            <li>Professionalism</li>
-                            <li>Integrity</li>
-                            <li>Passion driven</li>
-                            <li>Authenticity</li>
+                        <ul className='core-values' >
+                            <li style={{fontSize: "20px"}}>Professionalism</li>
+                            <li style={{fontSize: "20px"}}>Integrity</li>
+                            <li style={{fontSize: "20px"}}>Passion driven</li>
+                            <li style={{fontSize: "20px"}}>Authenticity</li>
                         </ul>
                     </div>
                     <div>
                         <img className='rectangle2' src={rect2} alt="about us"/>
                     </div>
-
                 </div>
 
                 <div className='vectorbuld2'>
                     <div style={{display:'flex',marginTop:'50px'}}>
-                        <h1 className= 'heading' style={{fontWeight:'normal'}}><span style={{color:'#CC2031',fontWeight:'700', fontSize:'20px'}}>Recreating</span> Stories and Experiences for manufacturing Industries</h1>
+                        <h1 className= 'heading' style={{fontWeight:'normal', fontSize:'40px'}}><span style={{color:'#CC2031',fontWeight:'700', fontSize:'40px'}}>Recreating</span> Stories and Experiences for manufacturing Industries</h1>
                     </div>
 
-                    <div style={{marginTop:'10px',lineHeight: '55px'}}>
-                        <h3 id='services'>SERVICES</h3>
+                    <div style={{marginTop:'50px',lineHeight: '55px'}}>
+                        <h3 id='services' style={{fontSize: '50px'}}>SERVICES</h3>
                         <p>
                             We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.
                         </p>
@@ -193,7 +196,7 @@ function Home(props) {
             {/* testimony section */}
             <div className='testimony'>
                 <div style={{textAlign:"center"}}>
-                    <h2 className='heading'>TESTIMONIALS</h2>
+                    <h2 className='heading' style={{fontSize: '50px'}}>TESTIMONIALS</h2>
                     <p>We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.</p>
                 </div>
                 {/* testimony cards */}
@@ -270,8 +273,8 @@ function Home(props) {
                     </div>
 
                     {/* worked with */}
-                    <div className='worked-with'>
-                        <h4>we’ve worked with</h4>
+                    <div className='worked-with' style={{marginTop: "20px", marginBottom: "20px"}}>
+                        <h4 style={{marginBottom: "-50px"}}>we've worked with</h4>
                         <div className='company-image'>
                                 <img width='65' height='50' src={image4} alt='...'/>
                                 <img width='65' height='50' src={image5} alt='...'/>
@@ -285,20 +288,19 @@ function Home(props) {
             </div>
             {/* history section */}
             <div className='history-section'>
-                <h1>Our history</h1>
-                <div className='grid-history'>
-                    <div className='grid-history-1'>
-                        <div className='reflection'></div>
+                <div className="grid-history">
+                    <div className="grid-history-1">
                         <img src={history} alt='...'/>
                     </div>
-                    <div className='grid-history-2'>
-                        <p>Kiri Marketing Consultants is a Private Limited company founded in 2020 during the Covid 19 pandemic.
+                    <div className="grid-history-2">
+                        <h1 className='heading' style={{fontSize: '50px',fontWeight: 500}}>Our history</h1>
+                        <p style={{fontSize: '18px',fontWeight: 400}}>Kiri Marketing Consultants is a Private Limited company founded in 2020 during the Covid 19 pandemic.<br/><br/>
 
-                            Our Founder has been a beneficiary of many missions driven projects especially ones that support women entrepreneurs for sustainable impact. She also has professional experience working for a Non-Profit organization. Her experiences and such initiatives have enabled her to harness her skills as a team leader and helped her gain a better perspective when it comes to mission-driven companies.
+                            Our Founder has been a beneficiary of many missions driven projects especially ones that support women entrepreneurs for sustainable impact. She also has professional experience working for a Non-Profit organization. Her experiences and initiatives have enabled her to harness her skills as a team leader and helped her gain a better perspective when it comes to mission-driven companies.<br/><br/>
 
-                            “The company was initially a Social Media Management company for small entrepreneurs and start-up companies and was birthed out of passion. With time and through more experience and realization of the gap in the market, there was a need to re-strategize and rebrand to full Digital Marketing, Branding and PR Agency for mission driven companies, social enterprises and nonprofit organizations.”
+                            “The company was initially a Social Media Management company for small entrepreneurs and start-up companies and was birthed out of passion. With time and through more experience and realization of the gap in the market, there was a need to re-strategize and rebrand.”<br/>
 
-                            Eileen, Founder/ CEO.
+                            <em>Eileen, Founder/ CEO.</em>
                         </p>
                     </div>
                 </div>

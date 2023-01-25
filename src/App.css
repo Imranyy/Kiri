@@ -9,6 +9,9 @@
 html{
   scroll-behavior:smooth;
 }
+p{
+  font-size: 20px;
+}
 .preload{
   background: rgb(255, 255, 255) url('./media/loader.gif') no-repeat center;
   background-size: 50%;
@@ -346,10 +349,10 @@ button{
   background: url('./media/reflectionImage.png');
 }
 .grid-history-1 img{
-  margin-top: -360px;
   height: 380px;
   width: 380px;
   margin-left: 30px;
+  margin-top: 10vh;
 }
 .grid-history-2{
   margin-top: 20px;
@@ -770,32 +773,21 @@ footer .social-icons{
 }
 /* history section */
 .history-section{
-  padding-top: 50px;
-  padding-bottom: 30px;
-  color:white;
-  height: 450px;
-  background: #1E1E1E;
+  display: flex;
+  flex-direction: column;
 }
 .grid-history{
-  margin-left: 5%;
-  background: url('./media/VectorHourGlass.png') no-repeat right top;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  max-width: 100%;
+  margin-top: 200px;
 }
-.grid-history-1 .reflection{
-  width: 300px;
-  height: 300px;
-  background: url('./media/reflectionImage.png');
-}
-.grid-history-1 img{
-  margin-top: -360px;
-  height: 300px;
-  width: 300px;
+.grid-history-2{
   margin-left: 30px;
 }
-
-
+.grid-history-2 .heading{
+  margin-left: 40px;
+}
+.grid-history-2 em{
+  margin-top: 2px;
+}
 /* recent article */
 .recent-articles{
   width: 100%;
@@ -1049,13 +1041,13 @@ footer .social-icons{
     cursor: pointer;
   }
   .Hero-image{
-    padding-top: 70px;
-    min-height: 250px;
-    padding-bottom: 20px;
+    width: 100%;
+    padding-top: 100px;
+    height: 50vh;
   }
   .hero-text{
     margin-left: 50px;
-    margin-top: 50%;
+    margin-top: 30%;
   }
   .hero-text .Enhancing{
     font-size:30px;
