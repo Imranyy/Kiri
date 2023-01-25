@@ -101,16 +101,17 @@ nav ul a:hover{
 /* Hero Image */
 .Hero{
   padding-top: 100px;
-  background: linear-gradient(90deg, rgba(172, 27, 41, 0.86) 23.32%, rgba(233, 175, 63, 0.81) 59.86%),url('./media/Hero\ Image.png') no-repeat;
+  background: linear-gradient(90deg, rgba(172, 27, 41, 0.86) 23.32%, rgba(233, 175, 63, 0.81) 59.86%),url('./media/Hero\ Image.jpg') no-repeat;
   background-size:cover;
 }
 .Hero-image{
   width: 100%;
   padding-top: 100px;
-  height: 40vh;
+  height: 100vh;
 }
 .hero-text{
   margin-left: 150px;
+  margin-top: 100px;
 }
 .hero-text .Enhancing{
   font-size:50px;
@@ -156,10 +157,15 @@ button{
   font-size: 18px;
 }
 
+.core-values li{
+  margin: 10px 0 0 15px;
+}
+
 /* Rectangle 2 and 3*/
 .rectangle2{
   /* width: 430px; */
   height: 500px;
+  margin-left: 250px;
 }
 .vectorbuld2{
   display: flex;
@@ -1049,13 +1055,14 @@ footer .social-icons{
   }
   .hero-text{
     margin-left: 50px;
+    margin-top: 50%;
   }
   .hero-text .Enhancing{
     font-size:30px;
     font-weight:'bolder';
   }
   .hero-text .text{
-    margin-top:20px;
+    margin:20px 3px;
     font-size:17px;
   }
   button{
@@ -1469,7 +1476,7 @@ footer .social-icons{
     font-weight:'bolder';
   }
   .hero-text .text{
-    margin-top:20px;
+    margin:20px 3px;
     font-size:17px;
   }
   button{

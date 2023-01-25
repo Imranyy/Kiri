@@ -112,14 +112,16 @@ function Home(props) {
                     <div className='grid-item'>
                         <h2 className='heading' style={{fontWeight:'bold' ,paddingBottom: '20px', fontSize: '30px'}}>ABOUT US</h2>
                             <p>
-                                One thing that sets us apart from other digital marketing agencies is that we are mission-driven and deeply invested in our clients’ work. We believe that mission-driven companies and social enterprises play a significant role in supporting the economic development and sustainability of the country.<br/><br/>
+                                One thing that sets us apart from other digital marketing agencies is that we are mission-driven and deeply invested in our clients’ work. We believe that mission-driven companies and social enterprises play a significant role in supporting the economic development and sustainability of the country.</p>
+                                <br />
+                                <p>
                                 Because you focus on changing the world, you deserve the best digital marketing, branding, and PR team to help you achieve your goals and increase impact work. One that understands the importance of telling your brand story, how to say it, and where to direct it.
                             </p><br/>
                         <h3 style={{paddingBottom: '5px', fontSize: '25px', fontWeight:'normal'}}>Mission Statement!</h3>
                         To contribute to client’s business growth through result oriented, innovative and creative strategies that will deliver the WOW factor.<br/><br/>
 
                         <h3 style={{fontSize: '25px', fontWeight:'normal'}}>Core Values</h3>
-                        <ul>
+                        <ul className='core-values'>
                             <li>Professionalism</li>
                             <li>Integrity</li>
                             <li>Passion driven</li>
