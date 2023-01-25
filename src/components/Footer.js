@@ -23,7 +23,7 @@ function Footer(props) {
         <>
             <footer>
                <div className='content' style={{width:'80vw'}}>
-                    <div>
+                    <div className='footer-content'>
                         <h2>Service</h2>
                         <ul style={{listStyle:'none'}}>
                             <li><Link to='/' onClick={top}>Home</Link></li>
@@ -33,7 +33,7 @@ function Footer(props) {
                             <li><Link to='/blog/add'>Add Blog</Link></li>
                         </ul>
                     </div>
-                    <div>
+                    <div className='footer-contacts'>
                         <h2>Contact</h2>
                         <ul style={{listStyle:'none'}}>
                             <li style={{display:'flex'}}>

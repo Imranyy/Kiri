@@ -693,6 +693,7 @@ footer .social-icons{
   margin-top: 50px;
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 
@@ -872,7 +873,7 @@ footer .social-icons{
 
 .content{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .content p{
   font-size: small;
@@ -881,6 +882,9 @@ footer h2{
   font-weight: bolder;
   font-size: 20px;
   line-height: 44px;
+}
+.footer-contacts h2{
+  margin-left: 20px;
 }
 footer  ul{
   margin-top: 20px;
@@ -891,6 +895,7 @@ footer ul li{
 footer ul li img{
   width: 22px;
   height:20px;
+  margin-top: 15px;
 }
 footer ul li a{
   text-decoration: none;
