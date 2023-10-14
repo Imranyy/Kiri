@@ -20,6 +20,10 @@ import profile2 from '../media/Profile2.png';
 import profile3 from '../media/Profile3.png';
 import profile4 from '../media/Profile4.png';
 import toast from "react-hot-toast";
+import Image1 from '../media/Public relations image.png';
+import Image2 from '../media/Brand management image.png';
+import Image3 from '../media/Digital Marketing Image.png';
+import Image4 from "../media/Training Image.png";
 
 function Home(props) {
     const [name,setName]=useState('');
@@ -188,11 +192,12 @@ function Home(props) {
                     </div>
                 </div>
             </div>
+
             {/* testimony section */}
             <div className='testimony'>
                 <div style={{textAlign:"center"}}>
-                    <h2 className='heading'>TESTIMONIALS</h2>
-                    <p>We focus on deep customer insight to provide growth to our clients as we work on the principle of creativity, identity, innovation and inclusion and diversity.</p>
+                    <h2 className='heading' style={{fontSize: '30px'}}>TESTIMONIALS</h2>
+                    <p style={{fontSize: '20px', paddingTop: '10px'}}>Think we’re bluffing? See what people we’ve worked with think about us.</p>
                 </div>
                 {/* testimony cards */}
                 <div className='testimony-cards'>

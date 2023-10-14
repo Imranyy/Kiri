@@ -128,8 +128,8 @@ button{
   margin-top:20px;
    color:white;
     background: #CC2031;
-    width: 120px;
-    height:60px;
+    width: 150px;
+    height:70px;
     border:none;
     font-size: 18px;
 }
@@ -154,6 +154,7 @@ button{
 
 .grid-item {
   font-size: 18px;
+  margin-left: 40px;
 }
 
 /* Rectangle 2 and 3*/
@@ -178,7 +179,7 @@ button{
   text-align: center;
 }
 /* picture section */
-.pic-grid{
+.gallery{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   max-width: 100%;

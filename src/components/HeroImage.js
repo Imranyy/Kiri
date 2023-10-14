@@ -9,9 +9,11 @@ function HeroImage(props) {
         <div className='Hero'>
             <Navbar/>
                 <div className='Hero-image'>
-                    <div className='hero-text'>
-                        <h1 className='Enhancing'>
-                        Enhancing Brands,<br/>
+                    <div className='hero-text' style={{marginLeft:'150px'}}>
+                        <h1 className='heading' style={{fontSize:'50px',fontWeight:'lighter',color:'#1E1E1E'}}>
+                        Enhancing Brands,
+                        </h1>
+                        <h1 className='heading' style={{fontSize:'50px',fontWeight:'lighter',color:'#1E1E1E'}}>
                         Enhancing Lives
                         </h1>
                         <p className='text'>
